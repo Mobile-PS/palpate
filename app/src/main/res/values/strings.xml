@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Palpate</string>
+    <string name="hint_test">+91  |  Mobile Number <font color='#FF0000'>*</font></string>
+    <string name="tnc"><font color='#5F5F5F'>I agree to the Palpate</font><b><font color='#165860'> terms</font></b> and <b><font color='#165860'>privacy policy</font></b></string>
+    <string name="data"> <font color='#5F5F5F'>\nI consent to Palpate processing my personal data,
+        including  body matrics data, as detailed in</font> <b><font color='#165860'>privacy
+        policy.</font> </b></string>
+    <string name="trouble"><font color='#5F5F5F'>Have Trouble Logging in?</font><b><font color='#165860'>Get help</font></b></string>
+
+
+
+</resources>
