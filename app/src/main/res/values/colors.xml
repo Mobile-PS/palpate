@@ -18,11 +18,14 @@
     <color name="dashcolor3">#E5F6FF</color>
     <color name="dashcolor4">#EDB52C</color>
     <color name="dashtxtcolor">#5F5F5F</color>
-    <color name="dashcolor5">#C4C4C4</color>
+    <color name="dashcolor5">#F6F6F6</color>
     <color name="dashcolor6">#E5E7F9</color>
     <color name="dashcolor7">#FFD8E2</color>
     <color name="dashcolor8">#F7CC73</color>
     <color name="dashcolor9">#D1C8E9</color>
+    <color name="txt">#83A3A9</color>
+    <color name="img">#99FFFFFF</color>
 
-    #5F5F5F1A
+
 </resources>
+

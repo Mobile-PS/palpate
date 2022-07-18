@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+   >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,15 +33,34 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Your Location"
+                        android:fontFamily="@font/redhat"
+                        android:textFontWeight="400"
                         android:textColor="@color/dashcolor1"
-                        android:textSize="10sp" />
+                        android:textSize="14sp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Gomti Nagar, Lucknow"
                         android:textColor="@color/dashcolor1"
+                        android:fontFamily="@font/redhat"
+                        android:textFontWeight="400"
                         android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="8dp"
+                            android:src="@drawable/arrow"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="3dp"
+                            />
+                    </LinearLayout>
+
                 </LinearLayout>
 
                 <ImageView
@@ -51,11 +72,15 @@
                     android:layout_marginLeft="10dp"
                     android:background="@drawable/circular_bg"
                     android:padding="10dp"
-                    android:src="@drawable/call_icon" />
+                    android:src="@drawable/call_icon1"/>
             </RelativeLayout>
 
 
         </androidx.appcompat.widget.Toolbar>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/shadow" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -102,10 +127,10 @@
 
                                 <ImageView
                                     android:id="@+id/image_p"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
                                     android:background="@drawable/circular_bg1"
-                                    android:padding="10dp"
+                                    android:padding="5dp"
                                     android:src="@drawable/p_icon" />
 
                                 <TextView
@@ -113,8 +138,9 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="20dp"
                                     android:text="Palpate Points"
-                                    android:textColor="@color/dashcolor1"
+                                    android:fontFamily="@font/redhat"
                                     android:textFontWeight="400"
+                                    android:textColor="@color/dashcolor1"
                                     android:textSize="14sp" />
                             </LinearLayout>
 
@@ -132,15 +158,16 @@
                                     android:layout_marginRight="10dp"
                                     android:gravity="center_vertical"
                                     android:text="300"
+                                    android:fontFamily="@font/redhat"
                                     android:textColor="@color/dashcolor1"
                                     android:textFontWeight="500"
                                     android:textSize="16sp" />
 
                                 <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
                                     android:background="@drawable/circular_bg2"
-                                    android:padding="10dp"
+                                    android:padding="8dp"
                                     android:src="@drawable/left_arrow" />
                             </LinearLayout>
 
@@ -154,6 +181,7 @@
                         android:text="Health stats"
                         android:textColor="@color/dashcolor1"
                         android:textFontWeight="500"
+                        android:fontFamily="@font/redhat_medium"
                         android:textSize="14sp" />
 
                     <ImageView
@@ -198,6 +226,7 @@
                                     android:layout_marginLeft="10dp"
                                     android:text="Blood Pressure"
                                     android:textColor="@color/dashcolor1"
+
                                     android:textFontWeight="500"
                                     android:textSize="14sp" />
 
@@ -293,6 +322,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Health Insurance"
+                                android:fontFamily="@font/redhat_medium"
                                 android:textColor="@color/dashcolor1"
                                 android:textFontWeight="500"
                                 android:textSize="14sp" />
@@ -306,6 +336,7 @@
                                 android:layout_marginTop="8dp"
                                 android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                                 android:textColor="@color/dashtxtcolor"
+                                android:fontFamily="@font/redhat"
                                 android:textFontWeight="400"
                                 android:textSize="12sp" />
 
@@ -324,12 +355,13 @@
                                     android:padding="5dp"
                                     android:text="Coupons | Insurance | Points"
                                     android:textColor="@color/dashcolor2"
+                                    android:fontFamily="@font/redhat"
                                     android:textFontWeight="400"
                                     android:textSize="11sp" />
 
                                 <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
                                     android:layout_alignParentEnd="true"
                                     android:background="@drawable/circular_bg3"
                                     android:padding="8dp"
@@ -348,6 +380,7 @@
                         android:layout_marginTop="20dp"
                         android:text="Our offerings"
                         android:textColor="@color/dashcolor1"
+                        android:fontFamily="@font/redhat_medium"
                         android:textFontWeight="500"
                         android:textSize="14sp" />
 
@@ -381,6 +414,7 @@
                                 android:layout_marginTop="10dp"
                                 android:text="Find Doctor Near You"
                                 android:textColor="@color/dashcolor1"
+                                android:fontFamily="@font/redhat_medium"
                                 android:textFontWeight="500"
                                 android:textSize="12sp" />
 
@@ -391,6 +425,7 @@
                                 android:text="Confirmed Appointments"
                                 android:textColor="@color/dashtxtcolor"
                                 android:textFontWeight="400"
+                                android:fontFamily="@font/redhat"
                                 android:textSize="11sp" />
 
                         </LinearLayout>
@@ -420,6 +455,7 @@
                                 android:text="Health Assistance"
                                 android:textColor="@color/dashcolor1"
                                 android:textFontWeight="500"
+                                android:fontFamily="@font/redhat_medium"
                                 android:textSize="12sp" />
 
                             <TextView
@@ -429,6 +465,7 @@
                                 android:text="Connect with 60 Secs"
                                 android:textColor="@color/dashtxtcolor"
                                 android:textFontWeight="400"
+                                android:fontFamily="@font/redhat"
                                 android:textSize="11sp" />
                         </LinearLayout>
                     </LinearLayout>
@@ -470,6 +507,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Medicines"
                                     android:textColor="@color/dashcolor1"
+                                    android:fontFamily="@font/redhat_medium"
                                     android:textFontWeight="500"
                                     android:textSize="12sp" />
 
@@ -480,6 +518,7 @@
                                     android:text="Essentials at your doorstaps"
                                     android:textColor="@color/dashtxtcolor"
                                     android:textFontWeight="400"
+                                    android:fontFamily="@font/redhat"
                                     android:textSize="11sp" />
                             </LinearLayout>
 
@@ -517,6 +556,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Lab Test"
                                     android:textColor="@color/dashcolor1"
+                                    android:fontFamily="@font/redhat_medium"
                                     android:textFontWeight="500"
                                     android:textSize="12sp" />
 
@@ -526,6 +566,7 @@
                                     android:layout_marginTop="5dp"
                                     android:text="Sample pickup at your home"
                                     android:textColor="@color/dashtxtcolor"
+                                    android:fontFamily="@font/redhat"
                                     android:textFontWeight="400"
                                     android:textSize="11sp" />
                             </LinearLayout>
@@ -550,6 +591,7 @@
                         android:text="In the spotlight"
                         android:textColor="@color/white"
                         android:textFontWeight="500"
+                        android:fontFamily="@font/redhat_medium"
                         android:textSize="14sp" />
                     <TextView
                         android:layout_marginTop="5dp"
@@ -558,6 +600,7 @@
                         android:text="Explore deals, offers, health update and more"
                         android:textColor="@color/white"
                         android:textFontWeight="400"
+                        android:fontFamily="@font/redhat"
                         android:textSize="12sp" />
 
 
@@ -635,7 +678,7 @@
 
                         <ImageView
                             android:id="@+id/img_bottom"
-                            android:layout_width="70dp"
+                            android:layout_width="90dp"
                             android:layout_height="match_parent"
                             android:background="@drawable/dashbottom_img" />
 
@@ -653,6 +696,7 @@
                                 android:text="24x7 Emergency services"
                                 android:textColor="@color/dashcolor1"
                                 android:textFontWeight="500"
+                                android:fontFamily="@font/redhat_medium"
                                 android:textSize="14sp" />
 
 
@@ -662,6 +706,7 @@
                                 android:text="Nearby hospital, doctors, ambulance etc."
                                 android:textColor="@color/dashtxtcolor"
                                 android:textFontWeight="400"
+                                android:fontFamily="@font/redhat"
                                 android:textSize="12sp" />
 
 
@@ -673,6 +718,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
                             android:layout_margin="20dp"
                             android:background="@drawable/circular_bg4"
                             android:padding="10dp"
@@ -685,6 +731,8 @@
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
+
+
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

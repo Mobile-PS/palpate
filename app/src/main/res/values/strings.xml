@@ -7,6 +7,12 @@
         policy.</font> </b></string>
     <string name="trouble"><font color='#5F5F5F'>Have Trouble Logging in?</font><b><font color='#165860'>Get help</font></b></string>
 
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="d1"><font color='#FFFFFF'>Rajesh Kumar</font></string>
+
+    <string name="d2"><font  color='#83A3A9'>Male   ●   25 Yr</font></string>
 
 
 </resources>

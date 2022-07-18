@@ -73,8 +73,10 @@
             app:pinHeight="40dp"
             app:pinLength="4"
             app:cursorVisible="true"
-            app:forceKeyboard="true"
+            app:forceKeyboard="false"
             app:inputType="number"
+            android:focusableInTouchMode="true"
+            android:focusable="false"
             app:password="false"/>
 
         <TextView
@@ -133,6 +135,7 @@
             android:textAllCaps="false"
             android:layout_marginBottom="20dp"
             android:textColor="@color/white"
+            android:stateListAnimator="@null"
             android:textSize="16sp" />
 
     </RelativeLayout>

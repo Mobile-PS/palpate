@@ -1,28 +1,55 @@
 package com.palpate
 
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.view.inputmethod.InputMethodManager
-import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.palpate.adapter.NavigationRVAdapter
 import com.palpate.model.NavigationItemModel
 import kotlinx.android.synthetic.main.dashboard_layout.*
+import kotlinx.android.synthetic.main.drawer_layout.*
+import android.view.WindowManager
 
-class DashboardActivity: AppCompatActivity() {
+import android.os.Build
+import android.view.Window
 
+
+class DrawerActivity: AppCompatActivity() {
+
+
+    private var items = arrayListOf(
+        NavigationItemModel(R.drawable.home1, "Home"),
+        NavigationItemModel(R.drawable.health, "My Health Stats"),
+        NavigationItemModel(R.drawable.history, "Order History"),
+        NavigationItemModel(R.drawable.home, "Home Care Nursing / Health Assistance"),
+        NavigationItemModel(R.drawable.preven, "Preventive Health Checkup"),
+        NavigationItemModel(R.drawable.article, "Health Articles"),
+        NavigationItemModel(R.drawable.setting, "Settings"),
+        NavigationItemModel(R.drawable.logout, "Log Out")
+    )
+    private lateinit var adapter: NavigationRVAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.dashboard_layout)
+        setContentView(R.layout.drawer_layout)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            val window: Window = window
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.setStatusBarColor(resources.getColor(R.color.dashcolor2))
+        }
 
         setSupportActionBar(toolbar);
 
 
+        navigation_rv.layoutManager = LinearLayoutManager(this)
+        navigation_rv.setHasFixedSize(true)
+        adapter = NavigationRVAdapter(items, 0)
+        navigation_rv.adapter = adapter
+
+        back.setOnClickListener {
+
+            finish()
+        }
 
      /*   var toggle: ActionBarDrawerToggle = object : ActionBarDrawerToggle(
             this,
@@ -68,15 +95,6 @@ class DashboardActivity: AppCompatActivity() {
         toggle.syncState()*/
 
 
-        getSupportActionBar()!!.setHomeButtonEnabled(true)
-        getSupportActionBar()!!.setDisplayHomeAsUpEnabled(true)
-        getSupportActionBar()!!.setHomeAsUpIndicator(R.drawable.ic_hamburg)
-
-        toolbar.setNavigationOnClickListener {
-
-            val intent = Intent(this, DrawerActivity::class.java)
-            startActivity(intent)
-        }
 
 
 
