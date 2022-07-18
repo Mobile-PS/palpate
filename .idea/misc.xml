@@ -3,6 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable-v24/button_bg2.xml" value="0.154" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/button_bg.xml" value="0.154" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/button_bg2.xml" value="0.154" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/circular_bg.xml" value="0.154" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/circular_bg1.xml" value="0.154" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/circular_bg2.xml" value="0.154" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/circular_bg3.xml" value="0.154" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/circular_bg4.xml" value="0.154" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/layout_bg.xml" value="0.154" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/layout_bg1.xml" value="0.154" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/layout_bg5.xml" value="0.154" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/dashboard_layout.xml" value="0.17074275362318841" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/drawer_layout.xml" value="0.17074275362318841" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/healthrecord_fragment.xml" value="0.21" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/healthstats_activity.xml" value="0.25" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/healthstats_fragment.xml" value="0.17074275362318841" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/item_health_record.xml" value="0.17074275362318841" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/item_health_stats.xml" value="0.17074275362318841" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/item_medical_record.xml" value="0.17074275362318841" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/medicalhistory_fragment.xml" value="0.17074275362318841" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/profile.xml" value="0.17074275362318841" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/row_nav_drawer.xml" value="0.17074275362318841" />
         <entry key="app/src/main/res/drawable/bg.xml" value="0.1425925925925926" />
         <entry key="app/src/main/res/drawable/button_bg.xml" value="0.1425925925925926" />
         <entry key="app/src/main/res/drawable/call_icon1.xml" value="0.1425925925925926" />

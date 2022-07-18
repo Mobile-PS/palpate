@@ -94,12 +94,12 @@
             </LinearLayout>
 
             <ImageView
+                android:id="@+id/back"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerInParent="true"
                 android:layout_marginRight="10dp"
-                android:id="@+id/back"
                 android:src="@drawable/back1" />
 
 

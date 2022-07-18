@@ -72,7 +72,7 @@
                     android:layout_marginLeft="10dp"
                     android:background="@drawable/circular_bg"
                     android:padding="10dp"
-                    android:src="@drawable/call_icon1"/>
+                    android:src="@drawable/call_icon1" />
             </RelativeLayout>
 
 

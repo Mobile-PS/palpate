@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+
+    >
+
+    <ImageView
+        android:id="@+id/stats_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/circular_bg3"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        tools:ignore="ContentDescription" />
+    <LinearLayout
+        android:layout_toRightOf="@+id/stats_icon"
+        android:layout_toLeftOf="@+id/stat_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        >
+
+
+    <TextView
+        android:id="@+id/stat_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhat"
+        android:textFontWeight="400"
+        android:textColor="@color/black"
+        android:text="Custom Navigation Drawer Row"
+        android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/stat_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/redhat_medium"
+            android:textFontWeight="400"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/darker_gray"
+            android:text="Custom Navigation Drawer Row"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/stat_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhat"
+        android:textFontWeight="600"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:text=""
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

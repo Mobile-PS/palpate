@@ -26,6 +26,9 @@
     <color name="txt">#83A3A9</color>
     <color name="img">#99FFFFFF</color>
 
+    <color name="statcolor1">#5F5F5F0D</color>
+    <color name="itemreportbg">#35CEDE</color>
+
 
 </resources>
 
