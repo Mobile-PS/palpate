@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout_bottom"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linear_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/back" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="Edit Members"
+                        android:textColor="@color/login1"
+                        android:textFontWeight="500"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/quest" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@drawable/shadow" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="Member ID"
+                        android:textColor="@color/login1"
+                        android:textFontWeight="500"
+                        android:textSize="16sp" />
+
+
+                    <EditText
+                        android:id="@+id/edtxt_otp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/editxt_bg"
+                        android:fontFamily="@font/redhat"
+                        android:hint="926396"
+                        android:inputType="text"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textFontWeight="400"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="Member Name"
+                        android:textColor="@color/login1"
+                        android:textFontWeight="500"
+                        android:textSize="16sp" />
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/editxt_bg"
+                        android:fontFamily="@font/redhat"
+                        android:hint="Harikesh Kumar"
+                        android:inputType="text"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textFontWeight="400"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="Mobile No."
+                        android:textColor="@color/login1"
+                        android:textFontWeight="500"
+                        android:textSize="16sp" />
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/editxt_bg"
+                        android:fontFamily="@font/redhat"
+                        android:hint="+91 9876543210"
+                        android:inputType="text"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textFontWeight="400"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="Gender"
+                        android:textColor="@color/login1"
+                        android:textFontWeight="500"
+                        android:textSize="16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/view_below"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:fontFamily="@font/redhat"
+                            android:text="Male"
+                            android:textColor="@color/login1"
+                            android:textFontWeight="400"
+                            android:textSize="16sp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:fontFamily="@font/redhat"
+                            android:text="Female"
+                            android:textColor="@color/login1"
+                            android:textFontWeight="400"
+                            android:textSize="16sp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:fontFamily="@font/redhat"
+                            android:text="Other"
+                            android:textColor="@color/login1"
+                            android:textFontWeight="400"
+                            android:textSize="16sp" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="Date of Birth"
+                        android:textColor="@color/login1"
+                        android:textFontWeight="500"
+                        android:textSize="16sp" />
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/editxt_bg"
+                        android:drawableRight="@drawable/calender1"
+                        android:enabled="false"
+                        android:fontFamily="@font/redhat"
+                        android:hint="DD/MM/YYYY"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:textFontWeight="400"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="Relation"
+                        android:textColor="@color/login1"
+                        android:textFontWeight="500"
+                        android:textSize="16sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/editxt_bg">
+                        <Spinner
+                            android:layout_width="match_parent"
+                           android:layout_height="50dp"
+                            android:fontFamily="@font/redhat"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textFontWeight="400"
+                            android:textSize="16sp"
+                            android:entries="@array/relation"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_remove"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_bg3"
+                android:fontFamily="@font/redhat_medium"
+                android:stateListAnimator="@null"
+                android:text="Remove"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_submit"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+               android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_bg"
+                android:fontFamily="@font/redhat_medium"
+                android:stateListAnimator="@null"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textFontWeight="500"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -14,5 +14,13 @@
 
     <string name="d2"><font  color='#83A3A9'>Male   ●   25 Yr</font></string>
 
+    <string-array name="relation">
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Wife</item>
+        <item>Son</item>
+        <item>Daughter</item>
+    </string-array>
+
 
 </resources>

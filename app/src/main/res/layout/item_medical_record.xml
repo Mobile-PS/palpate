@@ -3,9 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
     android:padding="10dp"
-    android:background="@drawable/layout_bg5"
+    android:background="@drawable/layout_bg6"
     android:orientation="horizontal"
     >
 
@@ -20,13 +22,14 @@
             android:id="@+id/healthrecord_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/redhat"
+            android:fontFamily="@font/redhat_medium"
             android:text="Allergy"
-            android:textColor="@color/black"
-            android:textFontWeight="400"
+            android:textColor="@color/txtcolor2"
+            android:textFontWeight="500"
             android:textSize="14sp" />
 
         <TextView
+            android:layout_marginTop="5dp"
             android:id="@+id/healthrecord_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

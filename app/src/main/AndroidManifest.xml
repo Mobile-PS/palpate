@@ -19,18 +19,27 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".OtpActivity"
+        <activity
+            android:name=".OtpActivity"
             android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
 
             />
-<!--        <activity android:name=".DashboardActivity"/>-->
-        <activity android:name=".ProfileActivity"
-            android:windowSoftInputMode="adjustPan"
-            />
+        <!--        <activity android:name=".DashboardActivity"/>-->
+        <activity
+            android:name=".ProfileActivity"
+            android:windowSoftInputMode="adjustPan" />
 
-        <activity android:name=".DashboardActivity"/>
+        <activity android:name=".DashboardActivity" />
 
-        <activity android:name=".DrawerActivity"/>
+        <activity android:name=".DrawerActivity" />
+
+        <activity android:name=".AddMemberActivity" />
+
+        <activity android:name=".AddMemberDataActivity" />
+
+        <activity android:name=".EditMemberActivity" />
+
+        <activity android:name=".SearchMemberActivity" />
 
 
     </application>

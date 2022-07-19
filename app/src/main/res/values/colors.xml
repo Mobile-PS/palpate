@@ -28,6 +28,9 @@
 
     <color name="statcolor1">#5F5F5F0D</color>
     <color name="itemreportbg">#35CEDE</color>
+    <color name="addmembertxtcolor">#5F5F5F</color>
+    <color name="txtcolor1">#5F5F5F</color>
+    <color name="txtcolor2">#0F0F0F</color>
 
 
 </resources>
