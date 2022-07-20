@@ -185,6 +185,7 @@
                         android:textSize="14sp" />
 
                     <ImageView
+
                         android:layout_width="match_parent"
                         android:layout_height="180dp"
                         android:background="@drawable/frame1"></ImageView>
@@ -281,6 +282,15 @@
                                     android:textSize="14sp" />
 
                             </LinearLayout>
+
+                            <com.github.mikephil.charting.charts.LineChart
+                                android:layout_below="@id/linear_temp"
+                                android:layout_above="@+id/txt_tempupdate"
+                                android:id="@+id/chart1"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
 
 
                             <TextView

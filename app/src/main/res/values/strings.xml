@@ -24,5 +24,13 @@
         <item>Daughter</item>
     </string-array>
 
+    <string-array name="month">
+        <item>Month</item>
+    </string-array>
+
+    <string-array name="year">
+        <item>Year</item>
+    </string-array>
+
 
 </resources>

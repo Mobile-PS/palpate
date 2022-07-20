@@ -40,6 +40,9 @@
         <activity android:name=".EditMemberActivity" />
 
         <activity android:name=".SearchMemberActivity" />
+        <activity android:name=".AddMedicalHistoryActivity" />
+        <activity android:name=".AddHealthStatsActivity" />
+        <activity android:name=".AddWeightActivity"/>
 
 
     </application>

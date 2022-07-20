@@ -1,11 +1,14 @@
 package com.palpate.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.palpate.AddMedicalHistoryActivity
+import com.palpate.DrawerActivity
 import com.palpate.R
 import com.palpate.adapter.HealthRecordAdapter
 import com.palpate.adapter.MedicalRecordAdapter
@@ -58,6 +61,11 @@ class MedicalRecordFragment : Fragment() {
         medicalreport_rv.setHasFixedSize(true)
         adapter = MedicalRecordAdapter(items, 0)
         medicalreport_rv.adapter = adapter
+
+        btn_add_medical_report.setOnClickListener {
+            val intent = Intent(context, AddMedicalHistoryActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }

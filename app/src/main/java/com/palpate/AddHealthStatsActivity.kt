@@ -1,22 +1,14 @@
-package com.palpate.fragment
+package com.palpate
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.palpate.AddHealthStatsActivity
-import com.palpate.AddMedicalHistoryActivity
-import com.palpate.R
-import com.palpate.adapter.HealthStaticAdapter
-import com.palpate.adapter.NavigationRVAdapter
+import com.palpate.adapter.AddHealthStatsAdapter
 import com.palpate.model.HealthStateItemModel
-import kotlinx.android.synthetic.main.healthstats_fragment.*
+import kotlinx.android.synthetic.main.addhealthstate_activity.*
 
-class HealthStatFragment : Fragment() {
 
+class AddHealthStatsActivity : AppCompatActivity() {
     private var items = arrayListOf(
         HealthStateItemModel(
             R.drawable.weight_icon_blue, "Weight",
@@ -57,27 +49,22 @@ class HealthStatFragment : Fragment() {
         ),
     )
 
-    private lateinit var adapter: HealthStaticAdapter
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        val view = inflater.inflate(R.layout.healthstats_fragment, container, false)
+    private lateinit var adapter: AddHealthStatsAdapter
 
-        return view;
-    }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.addhealthstate_activity)
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        healthstat_rv.layoutManager = LinearLayoutManager(context)
-        healthstat_rv.setHasFixedSize(true)
-        adapter = HealthStaticAdapter(items, 0)
-        healthstat_rv.adapter = adapter
+        addhealthstat_rv.layoutManager = LinearLayoutManager(this)
+        addhealthstat_rv.setHasFixedSize(true)
+        adapter = AddHealthStatsAdapter(items, 0)
+        addhealthstat_rv.adapter = adapter
 
-        btn_add_health_stat.setOnClickListener {
-            val intent = Intent(context, AddHealthStatsActivity::class.java)
-            startActivity(intent)
+        back.setOnClickListener {
+            finish()
         }
 
     }
+
+
 }
