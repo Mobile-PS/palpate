@@ -14,6 +14,8 @@
 
     <string name="d2"><font  color='#83A3A9'>Male   ●   25 Yr</font></string>
 
+    <string name="star">\u002b Add Health Record</string>
+
     <string-array name="relation">
         <item>Father</item>
         <item>Mother</item>

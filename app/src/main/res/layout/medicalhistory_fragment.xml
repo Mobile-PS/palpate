@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -14,21 +14,23 @@
 
     </androidx.recyclerview.widget.RecyclerView>
 
-    <Button
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/btn_add_medical_report"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        app:backgroundTint="@null"
-        android:textSize="14sp"
-        android:textFontWeight="500"
-        android:fontFamily="@font/redhat"
-        android:background="@drawable/button_bg2"
+        android:fontFamily="@font/redhat_medium"
+        android:textAlignment="center"
+        android:text="\u002b  Add Medical History"
         android:textAllCaps="false"
-        android:text=" + Add Medical History"></Button>
+        android:textColor="@color/white"
+        android:textFontWeight="500"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="bottom|center"
+        android:textSize="14sp"></com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
 
 
-</RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
