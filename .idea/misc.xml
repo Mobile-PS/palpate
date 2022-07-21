@@ -20,6 +20,7 @@
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/layout_bg6.xml" value="0.154" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/layout_coupoun_bg.xml" value="0.1" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/mobic1.xml" value="0.154" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/oval_marker.xml" value="0.154" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/addhealthrecord_dailog.xml" value="0.25" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/addhealthstate_activity.xml" value="0.17074275362318841" />
@@ -38,8 +39,11 @@
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/item_health_stats.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/item_medical_record.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/item_member.xml" value="0.25" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/item_scale.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/item_search_member.xml" value="0.33" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/item_weight.xml" value="0.17074275362318841" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/item_weight_button.xml" value="0.25" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/marker_view.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/medicalhistory_fragment.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/myhealthstat_activity.xml" value="0.25" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/profile.xml" value="0.17074275362318841" />

@@ -58,10 +58,19 @@
                     android:src="@drawable/share_icon" />
 
                 <ImageView
+                    android:id="@+id/img_graph"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginRight="15dp"
-                    android:src="@drawable/graph_icon" />
+                    android:src="@drawable/graph_icon"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_list"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/list_icon" />
 
             </LinearLayout>
 
@@ -72,6 +81,70 @@
             android:layout_width="match_parent"
             android:layout_height="4dp"
             android:background="@drawable/shadow" />
+
+
+        <LinearLayout
+            android:id="@+id/linear_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/weightItembutton_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/redhat_medium"
+                    android:text="IN RANGE"
+                    android:textColor="#00CD00"
+                    android:textFontWeight="700"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/redhat_medium"
+                    android:text="68.0 kg"
+                    android:textColor="#0F0F0F"
+                    android:textFontWeight="700"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/redhat_medium"
+                    android:text="22 Aug 21"
+                    android:textColor="#5F5F5F"
+                    android:textFontWeight="400"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/linechart"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="18dp" />
+        </LinearLayout>
 
 
         <LinearLayout
@@ -122,7 +195,7 @@
                     android:text="Below 80"
                     android:textColor="@color/txtcolor2"
                     android:textFontWeight="500"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -162,12 +235,14 @@
             </LinearLayout>
 
         </LinearLayout>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/weightItem_rv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="gone" />
 
 
     </LinearLayout>
@@ -176,16 +251,16 @@
         android:id="@+id/btn_add_health_stat"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="10dp"
         android:fontFamily="@font/redhat_medium"
-        android:textAlignment="center"
         android:text="\u002b  Add Health Stats"
+        android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textFontWeight="500"
-        android:layout_marginBottom="10dp"
-        android:layout_gravity="bottom|center"
-        android:textSize="14sp"></com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
-
+        android:textSize="14sp"
+        android:visibility="gone"></com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
