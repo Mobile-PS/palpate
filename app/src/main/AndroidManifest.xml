@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Palpate">
         <activity
-            android:name=".HealthStatsActivity"
+            android:name=".AddHealthStatsActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,8 +41,14 @@
 
         <activity android:name=".SearchMemberActivity" />
         <activity android:name=".AddMedicalHistoryActivity" />
-        <activity android:name=".AddHealthStatsActivity" />
-        <activity android:name=".AddWeightActivity"/>
+        <activity android:name=".AddHeartRateActivity" />
+        <activity android:name=".AddWeightActivity" />
+        <activity android:name=".AddOxygenActivity" />
+        <activity android:name=".AddTempActivity" />
+        <activity android:name=".AddBPActivity" />
+        <activity android:name=".AddHeightActivity"/>
+        <activity android:name=".AddBloodSugerActivity"/>
+        <activity android:name=".AddBMIActivity"/>
 
 
     </application>
