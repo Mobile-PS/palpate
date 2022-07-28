@@ -14,8 +14,10 @@
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/circular_bg3.xml" value="0.154" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/circular_bg4.xml" value="0.154" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/custom_triangular_shape.xml" value="0.154" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/editxt_bg.xml" value="0.1515" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/layout_bg.xml" value="0.154" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/layout_bg1.xml" value="0.154" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/layout_bg10.xml" value="0.1515" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/layout_bg2.xml" value="0.154" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/layout_bg3.xml" value="0.154" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/layout_bg4.xml" value="0.154" />
@@ -27,6 +29,8 @@
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/layout_coupoun_bg.xml" value="0.1" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/mobic1.xml" value="0.154" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/oval_marker.xml" value="0.154" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/txt_bg.xml" value="0.1515" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/drawable/txt_bg1.xml" value="0.1515" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/addbloodsugar_activity.xml" value="0.21" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/addbmi_activity.xml" value="0.22" />
@@ -55,6 +59,8 @@
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/item_member.xml" value="0.25" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/item_scale.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/item_search_member.xml" value="0.33" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/item_vaccinationdetails.xml" value="0.33" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/item_vaccinationlist.xml" value="0.33" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/item_weight.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/item_weight_button.xml" value="0.25" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/marker_view.xml" value="0.17074275362318841" />
@@ -64,6 +70,7 @@
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/row_item.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/row_nav_drawer.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/searchmember_activity.xml" value="0.14" />
+        <entry key="..\:/Sagar/SapatApplication/New folder/Palpate/app/src/main/res/layout/vaccinationdeatils_activity.xml" value="0.16576086956521738" />
         <entry key="app/src/main/res/drawable/bg.xml" value="0.1425925925925926" />
         <entry key="app/src/main/res/drawable/button_bg.xml" value="0.1425925925925926" />
         <entry key="app/src/main/res/drawable/call_icon1.xml" value="0.1425925925925926" />
