@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Palpate">
         <activity
-            android:name=".VaccinationDetailsActivity"
+            android:name=".DashboardActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,6 +49,12 @@
         <activity android:name=".AddHeightActivity"/>
         <activity android:name=".AddBloodSugerActivity"/>
         <activity android:name=".AddBMIActivity"/>
+        <activity android:name=".AddVaccinationActivity"/>
+        <activity android:name=".VaccinationDetailsActivity"/>
+        <activity android:name="AddHealthStatsActivity"/>
+        <activity android:name=".EmergencyServicesActivity"/>
+        <activity android:name=".AddHealthRecordActivity"/>
+
 
 
     </application>

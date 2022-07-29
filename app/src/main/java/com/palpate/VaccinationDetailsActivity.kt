@@ -1,5 +1,6 @@
 package com.palpate
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.RadioButton
 import android.widget.RadioGroup
@@ -58,11 +59,10 @@ class VaccinationDetailsActivity : AppCompatActivity() {
                 setAdapter()
 
             })
-
-
-
-
-
+        btn_add_vacctination.setOnClickListener {
+            val intent = Intent(this, AddVaccinationActivity::class.java)
+            startActivity(intent)
+        }
         back.setOnClickListener {
             finish()
         }

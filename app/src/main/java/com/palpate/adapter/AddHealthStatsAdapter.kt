@@ -63,8 +63,8 @@ class AddHealthStatsAdapter(
             } else if (position == 7) {
                 val intent = Intent(context, AddOxygenActivity::class.java)
                 context.startActivity(intent)
-            } else if (position == 7) {
-                val intent = Intent(context, AddWeightActivity::class.java)
+            } else if (position == 8) {
+                val intent = Intent(context, VaccinationDetailsActivity::class.java)
                 context.startActivity(intent)
             }
 
