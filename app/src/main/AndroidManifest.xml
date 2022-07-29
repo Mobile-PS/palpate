@@ -29,7 +29,7 @@
             android:name=".ProfileActivity"
             android:windowSoftInputMode="adjustPan" />
 
-        <activity android:name=".DashboardActivity" />
+
 
         <activity android:name=".DrawerActivity" />
 
