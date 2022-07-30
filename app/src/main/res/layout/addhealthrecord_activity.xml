@@ -44,6 +44,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/txt_save"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -64,6 +65,7 @@
             android:background="@drawable/shadow" />
 
         <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_saveform"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -81,34 +83,64 @@
                     android:padding="10dp">
 
                     <LinearLayout
-                        android:layout_width="150dp"
-                        android:layout_height="200dp"
-                        android:background="@drawable/report_bg"
-                        android:gravity="center"
-                        android:orientation="vertical">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                        <ImageView
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/dash_circle_icon"
-                            android:padding="12dp"
-                            android:scaleType="centerInside"
-                            android:src="@drawable/add_blue_icon" />
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/report_bg"
+                            android:gravity="center"
+                            android:orientation="vertical">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/redhat"
-                            android:text="Add More"
-                            android:textColor="@color/txtcolor1"
-                            android:textFontWeight="400"
-                            android:textSize="12sp" />
+                            <ImageView
+                                android:layout_width="28dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/upload_icon" />
 
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/redhat"
+                                android:text="Upload Image"
+                                android:textColor="@color/txtcolor1"
+                                android:textFontWeight="400"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:background="@drawable/report_bg"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/dash_circle_icon"
+                                android:padding="12dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/add_blue_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/redhat"
+                                android:text="Add More"
+                                android:textColor="@color/txtcolor1"
+                                android:textFontWeight="400"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
                     </LinearLayout>
-
-
 
 
                     <TextView
@@ -120,6 +152,7 @@
                         android:textColor="@color/txtcolor1"
                         android:textFontWeight="400"
                         android:textSize="12sp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -149,9 +182,9 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_marginTop="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/redhat_medium"
                         android:text="Select Tag"
                         android:textColor="@color/login1"
@@ -179,9 +212,9 @@
                         android:textSize="13sp" />
 
                     <TextView
-                        android:layout_marginTop="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/redhat_medium"
                         android:text="Date of Consultation"
                         android:textColor="@color/login1"
@@ -205,9 +238,9 @@
                         android:textSize="13sp" />
 
                     <TextView
-                        android:layout_marginTop="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/redhat_medium"
                         android:text="Doctor Name"
                         android:textColor="@color/login1"
@@ -232,9 +265,9 @@
 
 
                     <TextView
-                        android:layout_marginTop="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/redhat_medium"
                         android:text="Hospital / Clinic Name"
                         android:textColor="@color/login1"
@@ -258,9 +291,9 @@
                         android:textSize="13sp" />
 
                     <TextView
-                        android:layout_marginTop="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/redhat_medium"
                         android:text="Medicines Prescribed"
                         android:textColor="@color/login1"
@@ -270,14 +303,15 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="3"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
                         <EditText
-                            android:layout_marginRight="5dp"
                             android:layout_width="0dp"
-                            android:layout_weight="2"
                             android:layout_height="50dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="2"
                             android:background="@drawable/editxt_bg"
                             android:fontFamily="@font/redhat"
                             android:hint="Medicines Prescribed"
@@ -290,45 +324,42 @@
                             android:textSize="13sp" />
 
                         <LinearLayout
-                            android:layout_marginLeft="5dp"
                             android:layout_width="0dp"
-                            android:layout_weight="1"
                             android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
                             android:layout_marginTop="10dp"
+                            android:layout_weight="1"
                             android:background="@drawable/editxt_bg">
+
                             <Spinner
                                 android:layout_width="match_parent"
                                 android:layout_height="50dp"
+                                android:entries="@array/frequancy"
                                 android:fontFamily="@font/redhat"
                                 android:paddingLeft="10dp"
                                 android:paddingRight="10dp"
                                 android:singleLine="true"
                                 android:textFontWeight="400"
-                                android:textSize="16sp"
-                                android:entries="@array/frequancy"
-                                />
+                                android:textSize="13sp" />
                         </LinearLayout>
                     </LinearLayout>
 
                     <ImageView
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_gravity="end"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
                         android:background="@drawable/dash_circle_icon"
                         android:padding="12dp"
                         android:scaleType="centerInside"
                         android:src="@drawable/add_blue_icon" />
 
 
-
-
-
                     <TextView
-                        android:layout_marginTop="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/redhat_medium"
                         android:text="Note"
                         android:textColor="@color/login1"
@@ -339,10 +370,10 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
+                        android:layout_gravity="start"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/editxt_bg"
                         android:fontFamily="@font/redhat"
-                        android:layout_gravity="start"
                         android:gravity="start"
                         android:hint="Note"
                         android:inputType="text"
@@ -356,6 +387,273 @@
 
                 </LinearLayout>
 
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.core.widget.NestedScrollView
+            android:visibility="gone"
+            android:id="@+id/nested_viewdetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dashcolor5"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/record_img"
+                            android:gravity="center"
+                            android:orientation="vertical"></ImageView>
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/record_img"
+                            android:gravity="center"
+                            android:orientation="vertical"></ImageView>
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/record_img"
+                            android:gravity="center"
+                            android:orientation="vertical"></ImageView>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/redhat"
+                        android:text="* You can upload a total of 4 prescriptions per record."
+                        android:textColor="@color/txtcolor1"
+                        android:textFontWeight="400"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/redhat"
+                        android:text="* Please be sure to also upload the back-side image of your prescription, if present."
+                        android:textColor="@color/txtcolor1"
+                        android:textFontWeight="400"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/redhat"
+                        android:text="* Please be sure to also upload the back-side image of your prescription, if present."
+                        android:textColor="@color/txtcolor1"
+                        android:textFontWeight="400"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/tag_bg2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:fontFamily="@font/redhat"
+                            android:gravity="center"
+                            android:text="Eye Care"
+                            android:textColor="@color/white"
+                            android:textFontWeight="500"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/dashcolor5"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/redhat"
+                                android:text="Date of Consultation"
+                                android:textColor="@color/txtcolor1"
+                                android:textFontWeight="400"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:textAlignment="textEnd"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/redhat"
+                                android:text="17 July 2021"
+                                android:textColor="@color/black"
+                                android:textFontWeight="400"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="@drawable/shadow" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/redhat"
+                                android:text="Doctor Name"
+                                android:textColor="@color/txtcolor1"
+                                android:textFontWeight="400"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:textAlignment="textEnd"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/redhat"
+                                android:text="Dr. PL Agrawal"
+                                android:textColor="@color/black"
+                                android:textFontWeight="400"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="@drawable/shadow" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/redhat"
+                                android:text="Hospital Name"
+                                android:textColor="@color/txtcolor1"
+                                android:textFontWeight="400"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:textAlignment="textEnd"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/redhat"
+                                android:text="Agrawal Hospital"
+                                android:textColor="@color/black"
+                                android:textFontWeight="400"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp">
+                        <TextView
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/redhat_medium"
+                            android:text="Medicines Prescribed"
+                            android:textColor="@color/black"
+                            android:textFontWeight="500"
+                            android:textSize="14sp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/prescription_rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/redhat_medium"
+                            android:text="Note"
+                            android:textColor="@color/black"
+                            android:textFontWeight="500"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/redhat"
+                            android:text="Lorem Ipsum is simply dummy text of the printing and type setting industry."
+                            android:textColor="@color/txtcolor1"
+                            android:textFontWeight="400"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
 
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
