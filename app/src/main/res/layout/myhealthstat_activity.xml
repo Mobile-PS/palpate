@@ -81,7 +81,7 @@
                     android:text="Switch profile to"
                     android:textColor="@color/txtcolor1"
                     android:textFontWeight="400"
-                    android:textSize="12sp" />
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -163,7 +163,7 @@
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/btn_add_member"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="10dp"
         android:fontFamily="@font/redhat_medium"
@@ -172,7 +172,7 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textFontWeight="500"
-        android:textSize="14sp"></com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
+        android:textSize="16sp"></com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -26,7 +26,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_toLeftOf="@+id/linear_call"
                     android:orientation="vertical">
 
                     <TextView
@@ -62,17 +61,30 @@
                     </LinearLayout>
 
                 </LinearLayout>
-
-                <ImageView
-                    android:id="@+id/linear_call"
+                <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/circular_bg"
-                    android:padding="10dp"
-                    android:src="@drawable/call_icon1" />
+                    android:shape="ring"
+                    app:cardCornerRadius="75dp"
+                    android:innerRadius="0dp"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="@color/teal_200"
+                    android:elevation="12dp"
+                    app:cardElevation="5dp"
+                    >
+                    <ImageView
+                        android:id="@+id/linear_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@drawable/circular_bg"
+                        android:src="@drawable/call_icon1" />
+
+                </androidx.cardview.widget.CardView>
+
+
             </RelativeLayout>
 
 
@@ -116,6 +128,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
+                            android:id="@+id/point"
                             android:gravity="center_vertical">
 
 
@@ -174,15 +187,32 @@
                         </RelativeLayout>
                     </androidx.cardview.widget.CardView>
 
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        >
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
                         android:text="Health stats"
                         android:textColor="@color/dashcolor1"
                         android:textFontWeight="500"
                         android:fontFamily="@font/redhat_medium"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        android:id="@+id/t1"
+                        />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/edit" />
+
+                    </RelativeLayout>
+
 
                     <ImageView
 
@@ -422,7 +452,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
-                                android:text="Find Doctor Near You"
+                                android:text="Preventive Health Checkup"
                                 android:textColor="@color/dashcolor1"
                                 android:fontFamily="@font/redhat_medium"
                                 android:textFontWeight="500"
@@ -462,7 +492,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
-                                android:text="Health Assistance"
+                                android:text="Home Care Nursing"
                                 android:textColor="@color/dashcolor1"
                                 android:textFontWeight="500"
                                 android:fontFamily="@font/redhat_medium"
@@ -484,6 +514,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
+                        android:visibility="gone"
                         android:weightSum="2">
 
                         <LinearLayout
@@ -676,6 +707,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
+                    android:id="@+id/emer"
                     android:layout_margin="10dp">
 
                     <RelativeLayout

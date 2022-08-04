@@ -20,27 +20,27 @@ class MedicalRecordFragment : Fragment() {
     private var items = arrayListOf(
         MedicalRecordItemModel(
             "Allergy",
-            "April 2020 - August 2021   ●   1 yr 5 mos",
+            "April 2020 - August 2021   .   1 yr 5 mos",
 
             ),
         MedicalRecordItemModel(
             "Allergy",
-            "April 2020 - August 2021   ●   1 yr 5 mos",
+            "April 2020 - August 2021   .   1 yr 5 mos",
 
             ),
         MedicalRecordItemModel(
             "Allergy",
-            "April 2020 - August 2021   ●   1 yr 5 mos",
+            "April 2020 - August 2021   .   1 yr 5 mos",
 
             ),
         MedicalRecordItemModel(
             "Allergy",
-            "April 2020 - August 2021   ●   1 yr 5 mos",
+            "April 2020 - August 2021   .   1 yr 5 mos",
 
             ),
         MedicalRecordItemModel(
             "Allergy",
-            "April 2020 - August 2021   ●   1 yr 5 mos",
+            "April 2020 - August 2021   .   1 yr 5 mos",
 
             ),
 

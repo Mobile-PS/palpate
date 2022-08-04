@@ -19,5 +19,9 @@ class AddMemberActivity : AppCompatActivity() {
             val intent = Intent(this, SearchMemberActivity::class.java)
             startActivity(intent)
         }
+
+        back.setOnClickListener {
+            finish()
+        }
     }
 }

@@ -4,6 +4,7 @@ package com.palpate
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.addheartrate_activity.*
+import kotlinx.android.synthetic.main.addheartrate_activity.back
 import kotlin.math.roundToInt
 
 class AddHeartRateActivity : AppCompatActivity() {
@@ -20,6 +21,14 @@ class AddHeartRateActivity : AppCompatActivity() {
                 txt_count.text = value.roundToInt().toString();
             }
         })
+
+        back.setOnClickListener {
+            finish()
+        }
+
+        save.setOnClickListener {
+            finish()
+        }
 
 
     }

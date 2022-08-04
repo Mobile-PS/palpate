@@ -28,7 +28,7 @@
                 android:text="Custom Navigation Drawer Row"
                 android:textColor="@color/txtcolor2"
                 android:textFontWeight="500"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_marginTop="5dp"
@@ -40,7 +40,7 @@
                 android:text="Custom Navigation Drawer Row"
                 android:textColor="@android:color/darker_gray"
                 android:textFontWeight="400"
-                android:textSize="12sp" />
+                android:textSize="14sp" />
         </LinearLayout>
 
         <TextView

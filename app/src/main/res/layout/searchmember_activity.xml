@@ -138,17 +138,35 @@
             android:layout_marginBottom="20dp"
             android:orientation="vertical">
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/redhat_medium"
+                android:text="Note: "
+                android:textColor="@color/statcolor1"
+                android:textFontWeight="500"
+                android:textSize="14sp"
+                android:id="@+id/t1"
+                />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/redhat_medium"
-                android:text="Note: You will be redirected to OTP verification page"
+                android:text="You will be redirected to OTP verification page"
                 android:textColor="@color/statcolor1"
-                android:textFontWeight="500"
+                android:textFontWeight="400"
+                android:layout_toRightOf="@+id/t1"
                 android:textSize="12sp" />
 
-
+            </RelativeLayout>
 
 
         </LinearLayout>

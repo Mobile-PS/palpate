@@ -1,9 +1,9 @@
 package com.palpate
 
-import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager.widget.ViewPager
@@ -39,24 +39,36 @@ class HealthStatsActivity : AppCompatActivity() {
         setContentView(R.layout.healthstats_activity)
         tabLayout.addTab(tabLayout.newTab().setText("Health Stats"))
         tabLayout.addTab(tabLayout.newTab().setText("Health Record"))
-        tabLayout.addTab(tabLayout.newTab().setText("Medical Record"))
-        val adapter = TabAdapter(
-            this, supportFragmentManager,
-            tabLayout.tabCount
-        )
+        tabLayout.addTab(tabLayout.newTab().setText("Medical History"))
+        val adapter = TabAdapter(this, supportFragmentManager,
+            tabLayout.tabCount)
         viewPager.adapter = adapter
         viewPager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabLayout))
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
                 viewPager.currentItem = tab.position
             }
-
             override fun onTabUnselected(tab: TabLayout.Tab) {}
             override fun onTabReselected(tab: TabLayout.Tab) {}
         })
 
+        back.setOnClickListener {
+            finish()
+        }
+
+        raj.setOnClickListener {
+
+
+                val intent = Intent(this, MyHealthStatsActivity::class.java)
+                startActivity(intent)
+
+
+        }
+
         card_sharedoctor.setOnClickListener {
                 openShareDialog();
+
+
         }
     }
 

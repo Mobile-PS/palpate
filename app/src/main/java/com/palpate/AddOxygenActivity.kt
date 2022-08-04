@@ -1,11 +1,7 @@
 package com.palpate
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.addheartrate_activity.*
 import kotlinx.android.synthetic.main.addoxygen_activity.*
-import kotlinx.android.synthetic.main.addoxygen_activity.id_txtcount
-import kotlinx.android.synthetic.main.addoxygen_activity.rel_view
-import kotlinx.android.synthetic.main.addoxygen_activity.txt_count
 import kotlin.math.roundToInt
 
 class AddOxygenActivity :AppCompatActivity() {
@@ -23,6 +19,13 @@ class AddOxygenActivity :AppCompatActivity() {
             }
         })
 
+      back.setOnClickListener {
+          finish()
+      }
+
+        save.setOnClickListener {
+            finish()
+        }
 
 
     }

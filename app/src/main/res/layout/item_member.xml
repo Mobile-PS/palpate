@@ -12,8 +12,8 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/img_member"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:padding="5dp"
             android:src="@drawable/male_icon" />
 
@@ -32,18 +32,50 @@
                 android:text="Harikesh Kumar"
                 android:textColor="@color/black"
                 android:textFontWeight="400"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/member_details"
-                android:layout_width="match_parent"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/redhat_medium"
-                android:gravity="center_vertical"
-                android:text="Male, 50 years"
-                android:textColor="@android:color/darker_gray"
-                android:textFontWeight="400"
-                android:textSize="12sp" />
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/member_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/redhat"
+                    android:gravity="center_vertical"
+                    android:text="Male"
+                    android:textColor="@android:color/darker_gray"
+                    android:textFontWeight="400"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/redhat"
+                    android:gravity="center_vertical"
+                    android:text="●"
+                    android:textColor="@android:color/darker_gray"
+                    android:textFontWeight="400"
+                    android:textSize="6sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    />
+                <TextView
+                    android:id="@+id/member_details2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/redhat"
+                    android:gravity="center_vertical"
+                    android:text="Male"
+                    android:textColor="@android:color/darker_gray"
+                    android:textFontWeight="400"
+                    android:textSize="14sp" />
+
+
+
+            </LinearLayout>
+
 
         </LinearLayout>
 

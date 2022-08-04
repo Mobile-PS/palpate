@@ -29,6 +29,9 @@ class PointHistoryActivity : AppCompatActivity() {
         }
 
 
+        back.setOnClickListener {
+            finish()
+        }
 
 
         ponit_rv.layoutManager = LinearLayoutManager(this)

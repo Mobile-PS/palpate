@@ -71,8 +71,8 @@
                     android:textFontWeight="400"
                     android:textSize="16sp"
                     android:drawablePadding="10dp"
+                    android:id="@+id/raj"
                     android:drawableRight="@drawable/down_arrow"
-
                     />
             </LinearLayout>
 
@@ -93,7 +93,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="@color/border">
+                android:background="@color/border1">
 
                 <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/card_sharedoctor"
@@ -127,7 +127,7 @@
                                 android:layout_width="20dp"
                                 android:layout_height="20dp"
                                 android:background="@drawable/doc_icon_blue"
-                                android:padding="5dp" />
+                                android:padding="2dp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -137,7 +137,7 @@
                                 android:text="Share data with doctors"
                                 android:textColor="@color/dashcolor1"
                                 android:textFontWeight="400"
-                                android:textSize="14sp" />
+                                android:textSize="16sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -164,12 +164,14 @@
                 android:id="@+id/tabLayout"
                 app:tabGravity="center"
                 app:tabMode="scrollable"
-                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                app:tabTextAppearance="@style/TabFont"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:tabIndicatorColor="@color/dashcolor2"
                 app:tabSelectedTextColor="@color/dashcolor2"
                 app:tabTextColor="@android:color/darker_gray"
+                android:fontFamily="@font/redhat"
+                android:textSize="14sp"
                 />
 
             <androidx.viewpager.widget.ViewPager

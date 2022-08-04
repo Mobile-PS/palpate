@@ -1,5 +1,6 @@
 package com.palpate
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -30,6 +31,7 @@ class DrawerActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.drawer_layout)
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -47,8 +49,12 @@ class DrawerActivity: AppCompatActivity() {
         navigation_rv.adapter = adapter
 
         back.setOnClickListener {
-
+            val intent = Intent(this, DashboardActivity::class.java)
+            startActivity(intent)
             finish()
+            overridePendingTransition(R.anim.nothing1, R.anim.slide_out);
+
+           // overridePendingTransition(R.anim.slide_enter, R.anim.slide_exit);
         }
 
      /*   var toggle: ActionBarDrawerToggle = object : ActionBarDrawerToggle(

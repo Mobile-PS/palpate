@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Palpate">
         <activity
-            android:name=".DashboardActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,12 +24,18 @@
             android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
 
             />
+
+        <activity
+            android:name=".OtpActivity1"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
+
+            />
         <!--        <activity android:name=".DashboardActivity"/>-->
         <activity
             android:name=".ProfileActivity"
             android:windowSoftInputMode="adjustPan" />
 
-
+        <activity android:name=".DashboardActivity" />
 
         <activity android:name=".DrawerActivity" />
 
@@ -41,8 +47,14 @@
 
         <activity android:name=".SearchMemberActivity" />
         <activity android:name=".AddMedicalHistoryActivity" />
+        <activity android:name=".AddHealthStatsActivity" />
+        <activity android:name=".AddWeightActivity"/>
+
+        <activity android:name=".HealthStatsActivity"/>
+
+        <activity android:name=".MyHealthStatsActivity"/>
+
         <activity android:name=".AddHeartRateActivity" />
-        <activity android:name=".AddWeightActivity" />
         <activity android:name=".AddOxygenActivity" />
         <activity android:name=".AddTempActivity" />
         <activity android:name=".AddBPActivity" />
@@ -51,11 +63,10 @@
         <activity android:name=".AddBMIActivity"/>
         <activity android:name=".AddVaccinationActivity"/>
         <activity android:name=".VaccinationDetailsActivity"/>
-        <activity android:name="AddHealthStatsActivity"/>
         <activity android:name=".EmergencyServicesActivity"/>
         <activity android:name=".AddHealthRecordActivity"/>
 
-
+        <activity android:name="PointHistoryActivity"/>
 
     </application>
 

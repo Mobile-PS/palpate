@@ -28,6 +28,20 @@ class DashboardActivity : AppCompatActivity() {
         toolbar.setNavigationOnClickListener {
             val intent = Intent(this, DrawerActivity::class.java)
             startActivity(intent)
+            finish()
+            overridePendingTransition(R.anim.slide_in, R.anim.nothing);
+        }
+
+        emer.setOnClickListener {
+
+            val intent = Intent(this, EmergencyServicesActivity::class.java)
+            startActivity(intent)
+
+        }
+
+        point.setOnClickListener {
+            val intent = Intent(this, PointHistoryActivity::class.java)
+            startActivity(intent)
         }
 
 

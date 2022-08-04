@@ -12,6 +12,7 @@
     <color name="login2">#FF5F5F5F</color>
     <color name="edit">#80F6F6F6</color>
     <color name="border">#1A5F5F5F</color>
+    <color name="border1">#0D5F5F5F</color>
 
     <color name="dashcolor1">#0F0F0F</color>
     <color name="dashcolor2">#03424D</color>
@@ -26,7 +27,9 @@
     <color name="txt">#83A3A9</color>
     <color name="img">#99FFFFFF</color>
 
-    <color name="statcolor1">#5F5F5F0D</color>
+    <color name="statcolor1">#5F5F5F</color>
+    <color name="statcolor2">#F75F5F5F</color>
+
     <color name="itemreportbg">#35CEDE</color>
     <color name="addmembertxtcolor">#5F5F5F</color>
     <color name="txtcolor1">#5F5F5F</color>

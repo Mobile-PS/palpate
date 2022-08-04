@@ -35,6 +35,13 @@ class AddHeightActivity : AppCompatActivity() {
             }
         })
 
+        back.setOnClickListener {
+            finish()
+        }
+
+        save.setOnClickListener {
+            finish()
+        }
 
     }
 

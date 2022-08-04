@@ -12,6 +12,6 @@
         android:textColor="@color/login1"
         android:fontFamily="@font/redhat"
         android:textFontWeight="400"
-        android:textSize="14sp" />
+        android:textSize="16sp" />
 
 </LinearLayout>

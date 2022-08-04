@@ -67,6 +67,10 @@ class VaccinationDetailsActivity : AppCompatActivity() {
             finish()
         }
 
+        save.setOnClickListener {
+            finish()
+        }
+
     }
 
     private fun setAdapter() {

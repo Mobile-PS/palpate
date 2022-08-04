@@ -85,7 +85,7 @@ class AddWeightActivity : AppCompatActivity() {
 
         drawLineChart()
 
-        img_list.setOnClickListener {
+       /* img_list.setOnClickListener {
             img_list.visibility=View.GONE
             img_graph.visibility=View.VISIBLE
             linear_list.visibility=View.GONE
@@ -100,7 +100,7 @@ class AddWeightActivity : AppCompatActivity() {
             weightItem_rv.visibility=View.GONE
             btn_add_health_stat.visibility=View.GONE
         }
-
+*/
 
 
     }

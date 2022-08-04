@@ -4,6 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -67,7 +70,7 @@
 
                 <ImageView
                     android:id="@+id/img_list"
-                    android:layout_width="20dp"
+                    android:layout_width="15dp"
                     android:layout_height="20dp"
                     android:layout_marginRight="15dp"
                     android:src="@drawable/list_icon" />
@@ -168,7 +171,7 @@
                     android:text="Ideal Range"
                     android:textColor="@color/txtcolor2"
                     android:textFontWeight="500"
-                    android:textSize="14sp" />
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -195,7 +198,7 @@
                     android:text="Below 80"
                     android:textColor="@color/txtcolor2"
                     android:textFontWeight="500"
-                    android:textSize="14sp" />
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -222,7 +225,7 @@
                     android:text="Above 80"
                     android:textColor="@color/txtcolor2"
                     android:textFontWeight="500"
-                    android:textSize="14sp" />
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -242,15 +245,17 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:visibility="gone" />
+            android:visibility="visible" />
 
 
     </LinearLayout>
 
+    </androidx.core.widget.NestedScrollView>
+
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/btn_add_health_stat"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="10dp"
         android:fontFamily="@font/redhat_medium"
@@ -259,8 +264,10 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textFontWeight="500"
-        android:textSize="14sp"
-        android:visibility="gone"></com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
+        android:textSize="16sp"
+        android:visibility="visible">
+
+    </com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

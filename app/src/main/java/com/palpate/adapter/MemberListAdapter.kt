@@ -40,7 +40,9 @@ class MemberListAdapter(
     override fun onBindViewHolder(holder: NavigationItemViewHolder, position: Int) {
 
         holder.itemView.member_name.text = items[position].name
-        holder.itemView.member_details.text = items[position].gender + " ● " + items[position].age
+        holder.itemView.member_details.text = items[position].gender
+        holder.itemView.member_details2.text = items[position].age
+
         holder.itemView.img_member.setImageResource(items[position].icon)
         holder.itemView.more_icon.setOnClickListener {
             val intent = Intent(context, EditMemberActivity::class.java)

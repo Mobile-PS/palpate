@@ -57,6 +57,13 @@ class AddBloodSugerActivity : AppCompatActivity() {
         adapter = BloodSugerAdapter(items, 0)
         blsugar_rv.adapter = adapter
 
+        back.setOnClickListener {
+            finish()
+        }
+
+        save.setOnClickListener {
+            finish()
+        }
 
     }
 }

@@ -33,6 +33,13 @@ class AddBPActivity : AppCompatActivity() {
             }
         })
 
+        back.setOnClickListener {
+            finish()
+        }
+
+        save.setOnClickListener {
+            finish()
+        }
 
     }
 

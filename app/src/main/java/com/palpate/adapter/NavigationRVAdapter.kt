@@ -1,6 +1,7 @@
 package com.palpate.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.PorterDuff
 import android.view.LayoutInflater
@@ -8,6 +9,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.palpate.HealthStatsActivity
+import com.palpate.MyHealthStatsActivity
+import com.palpate.ProfileActivity
 import com.palpate.R
 import com.palpate.model.NavigationItemModel
 import kotlinx.android.synthetic.main.row_nav_drawer.view.*
@@ -41,6 +45,17 @@ class NavigationRVAdapter(private var items: ArrayList<NavigationItemModel>, pri
         //val font = ResourcesCompat.getFont(context, R.font.mycustomfont)
         //holder.itemView.navigation_text.typeface = font
         //holder.itemView.navigation_text.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20.toFloat())
+
+        holder.itemView.setOnClickListener {
+
+            if(position == 1){
+
+                val intent = Intent(context, HealthStatsActivity::class.java)
+                context.startActivity(intent)
+            }
+
+
+        }
 
         holder.itemView.navigation_title.text = items[position].title
 

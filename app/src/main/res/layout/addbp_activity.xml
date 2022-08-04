@@ -51,6 +51,7 @@
                 android:layout_marginRight="10dp"
                 android:fontFamily="@font/redhat_medium"
                 android:text="Save"
+                android:id="@+id/save"
                 android:textColor="@color/dashcolor2"
                 android:textFontWeight="400"
                 android:textSize="14sp" />

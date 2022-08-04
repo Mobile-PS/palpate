@@ -26,19 +26,49 @@
             android:text="Allergy"
             android:textColor="@color/txtcolor2"
             android:textFontWeight="500"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
         <TextView
             android:layout_marginTop="5dp"
             android:id="@+id/healthrecord_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/redhat_medium"
+            android:fontFamily="@font/redhat"
             android:gravity="center_vertical"
-            android:text="April 2020 - August 2021   ●   1 yr 5 mos"
+            android:text="April 2020 - August 2021"
             android:textColor="@android:color/darker_gray"
             android:textFontWeight="400"
-            android:textSize="12sp" />
+            android:textSize="14sp" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/redhat"
+                android:gravity="center_vertical"
+                android:text="●"
+                android:textColor="@android:color/darker_gray"
+                android:textFontWeight="400"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="6sp" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/redhat"
+                android:gravity="center_vertical"
+                android:text="1 yr 5 mos"
+                android:textColor="@android:color/darker_gray"
+                android:textFontWeight="400"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
 
 
     </LinearLayout>

@@ -53,6 +53,9 @@ class EmergencyServicesActivity : AppCompatActivity() {
             emergency_rv.visibility = View.GONE
         }
 
+        back.setOnClickListener {
+            finish()
+        }
 
         emergency_rv.layoutManager = LinearLayoutManager(this)
         emergency_rv.setHasFixedSize(true)

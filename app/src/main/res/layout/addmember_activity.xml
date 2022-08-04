@@ -91,7 +91,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/redhat_medium"
+                        android:fontFamily="@font/redhat"
                         android:text="You can add your family members here"
                         android:textColor="@android:color/darker_gray"
                         android:textFontWeight="400"
@@ -128,18 +128,18 @@
                                 android:fontFamily="@font/redhat_medium"
                                 android:text="My Child"                                android:textColor="@color/black"
                                 android:textFontWeight="400"
-                                android:textSize="14sp" />
+                                android:textSize="16sp" />
 
                             <TextView
                                 android:layout_marginTop="5dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/redhat_medium"
+                                android:fontFamily="@font/redhat"
                                 android:gravity="center_vertical"
                                 android:text="Must be under 18 years"
                                 android:textColor="@android:color/darker_gray"
                                 android:textFontWeight="400"
-                                android:textSize="12sp" />
+                                android:textSize="14sp" />
 
                         </LinearLayout>
 
@@ -185,12 +185,12 @@
                                 android:layout_marginTop="5dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/redhat_medium"
+                                android:fontFamily="@font/redhat"
                                 android:gravity="center_vertical"
                                 android:text="Must be above 18 years"
                                 android:textColor="@android:color/darker_gray"
                                 android:textFontWeight="400"
-                                android:textSize="12sp" />
+                                android:textSize="14sp" />
 
                         </LinearLayout>
 

@@ -10,8 +10,8 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/img_member"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:padding="5dp"
         android:src="@drawable/male_icon" />
 
@@ -30,18 +30,19 @@
             android:text="Harikesh Kumar"
             android:textColor="@color/black"
             android:textFontWeight="400"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/member_details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/redhat_medium"
+            android:fontFamily="@font/redhat"
             android:gravity="center_vertical"
             android:text="Male, 50 years"
             android:textColor="@android:color/darker_gray"
             android:textFontWeight="400"
-            android:textSize="12sp" />
+            android:textSize="14sp" />
+
 
     </LinearLayout>
 

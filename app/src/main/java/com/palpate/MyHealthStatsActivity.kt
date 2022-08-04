@@ -5,7 +5,9 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.palpate.adapter.MemberListAdapter
+import com.palpate.adapter.MemberListAdapter1
 import com.palpate.model.MemberItemModel
+import com.palpate.model.MemberItemModel1
 import kotlinx.android.synthetic.main.myhealthstat_activity.*
 
 
@@ -29,18 +31,18 @@ class MyHealthStatsActivity : AppCompatActivity() {
         )
     )
     private var items3 = arrayListOf(
-        MemberItemModel(
+        MemberItemModel1(
             R.drawable.male_icon, "Harikesh Kumar",
-            "Father ● Male", "50 years"
+            "Father","Male", "50 years"
         ),
-        MemberItemModel(
+        MemberItemModel1(
             R.drawable.female_icon, "Monika Devi",
-            "Mother ● Female", "45 years"
+            "Mother" ,"Female", "45 years"
         )
     )
     private lateinit var adapter: MemberListAdapter
     private lateinit var adapter1: MemberListAdapter
-    private lateinit var adapter2: MemberListAdapter
+    private lateinit var adapter2: MemberListAdapter1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,7 +60,7 @@ class MyHealthStatsActivity : AppCompatActivity() {
 
         parent_rv.layoutManager = LinearLayoutManager(this)
         parent_rv.setHasFixedSize(true)
-        adapter2 = MemberListAdapter(items3, 0)
+        adapter2 = MemberListAdapter1(items3, 0)
         parent_rv.adapter = adapter2
 
         back.setOnClickListener {
