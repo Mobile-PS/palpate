@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:padding="10dp"
+    android:background="@drawable/layout_bg6"
+    android:orientation="horizontal"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/healthrecord_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/redhat_medium"
+            android:text="Allergy"
+            android:textColor="@color/txtcolor2"
+            android:textFontWeight="500"
+            android:textSize="@dimen/Text_size_16" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/healthrecord_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/redhat"
+            android:gravity="center_vertical"
+            android:text="April 2020 - August 2021"
+            android:textColor="@android:color/darker_gray"
+            android:textFontWeight="400"
+            android:textSize="@dimen/Text_Size_14" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/redhat"
+                android:gravity="center_vertical"
+                android:text="●"
+                android:textColor="@android:color/darker_gray"
+                android:textFontWeight="400"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="6sp" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/redhat"
+                android:gravity="center_vertical"
+                android:text="1 yr 5 mos"
+                android:textColor="@android:color/darker_gray"
+                android:textFontWeight="400"
+                android:textSize="@dimen/Text_Size_14" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/weight_count"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/weight_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/redhat_medium"
+                android:text="Custom Navigation Drawer Row"
+                android:textColor="@color/txtcolor2"
+                android:textFontWeight="500"
+                android:textSize="@dimen/Text_size_16" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/weight_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/redhat_medium"
+                android:gravity="center_vertical"
+                android:text="Custom Navigation Drawer Row"
+                android:textColor="@android:color/darker_gray"
+                android:textFontWeight="400"
+                android:textSize="@dimen/Text_Size_14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/weight_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/redhat"
+            android:gravity="center_vertical"
+            android:text="kdnvkn"
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textSize="@dimen/Text_Size_18" />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shadow" />
+
+</LinearLayout>

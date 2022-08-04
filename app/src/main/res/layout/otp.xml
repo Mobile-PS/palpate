@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/back"
+            android:src="@drawable/back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+
+        >
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/otp"
+            android:layout_marginTop="80dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/redhat_medium"
+            android:text="Verify with OTP"
+            android:textStyle="bold"
+            android:textFontWeight="500"
+            android:textColor="@color/login1"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/Text_size_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/redhat"
+                android:text="Sent to 9044900191"
+                android:textFontWeight="400"
+                android:textColor="@color/login2"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/Text_size_15" />
+
+        </LinearLayout>
+
+
+        <com.goodiebag.pinview.Pinview
+            android:layout_marginTop="40dp"
+            android:id="@+id/pinview"
+            app:pinBackground="@drawable/otppin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:pinWidth="40dp"
+            app:pinHeight="40dp"
+            app:pinLength="4"
+            app:cursorVisible="true"
+            app:forceKeyboard="false"
+            app:inputType="number"
+            android:focusableInTouchMode="true"
+            android:focusable="false"
+            app:password="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/redhat"
+            android:text="30 sec"
+            android:textFontWeight="400"
+            android:textColor="@color/login2"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="120dp"
+            android:textSize="@dimen/Text_Size_14" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/redhat_medium"
+            android:text="RESEND OTP"
+            android:textStyle="bold"
+            android:textFontWeight="500"
+            android:textColor="@color/teal_200"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/Text_size_16" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/redhat"
+            android:text="@string/trouble"
+            android:textFontWeight="500"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/Text_size_16" />
+
+
+
+    </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/redhat_medium"
+            android:background="@drawable/button_bg"
+            android:text="Verify"
+            android:textFontWeight="500"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            android:stateListAnimator="@null"
+            android:textSize="@dimen/Text_size_16" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

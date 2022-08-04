@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/layout_bg6"
+        android:layout_marginBottom="10dp"
+        android:paddingHorizontal="10dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/img_hospital"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:src="@drawable/medant_icon" />
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/navigation_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_hospital"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hospital_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/redhat_medium"
+                android:text="Medanta Superspeciality Hospital"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="@dimen/Text_Size_14" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/hospital_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/redhat_medium"
+                android:gravity="center_vertical"
+                android:text="Gomti Nagar, Lucknow   ●   3 KM"
+                android:textColor="@android:color/darker_gray"
+                android:textFontWeight="400"
+                android:textSize="@dimen/Text_Size_12" />
+
+        </LinearLayout>
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/navigation_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerInside"
+        android:background="@drawable/common"
+        android:padding="10dp"
+        android:src="@drawable/call_icon"
+        tools:ignore="ContentDescription" />
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

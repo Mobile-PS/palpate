@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_above="@+id/btn_add_health_stat"
+        android:id="@+id/healthstat_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_add_health_stat"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:fontFamily="@font/redhat_medium"
+        android:textAlignment="center"
+        android:text="\u002b  Add Health Stats"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textFontWeight="500"
+        android:layout_marginBottom="80dp"
+        android:layout_gravity="bottom|center"
+        android:textSize="16sp"></com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

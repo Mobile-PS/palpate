@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:background="@drawable/layout_bg5"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_member"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="5dp"
+        android:src="@drawable/male_icon" />
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/img_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/member_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/redhat_medium"
+            android:text="Harikesh Kumar"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="@dimen/Text_size_16" />
+
+        <TextView
+            android:id="@+id/member_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/redhat"
+            android:gravity="center_vertical"
+            android:text="Male, 50 years"
+            android:textColor="@android:color/darker_gray"
+            android:textFontWeight="400"
+            android:textSize="@dimen/Text_Size_14" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_alignParentEnd="true"
+        android:id="@+id/stats_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/dash_circle_icon"
+        android:padding="12dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/add_blue_icon"
+        tools:ignore="ContentDescription" />
+
+
+</RelativeLayout>
