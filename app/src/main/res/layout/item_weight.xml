@@ -35,7 +35,7 @@
                 android:id="@+id/weight_time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/redhat_medium"
+                android:fontFamily="@font/redhat"
                 android:gravity="center_vertical"
                 android:text="Custom Navigation Drawer Row"
                 android:textColor="@android:color/darker_gray"

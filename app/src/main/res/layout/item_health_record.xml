@@ -55,7 +55,7 @@
             android:fontFamily="@font/redhat_medium"
             android:gravity="center_vertical"
             android:layout_marginTop="10dp"
-            android:background="@color/itemreportbg"
+            android:background="@drawable/button_bg6"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:paddingTop="2dp"

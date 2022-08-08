@@ -75,9 +75,8 @@ class HealthRecordFragment : Fragment() {
         healthrecord_rv.adapter = adapter
 
         btn_add_health_record.setOnClickListener { 
-           // openAddRecordDailog(context);
-            val intent = Intent(context, AddHealthRecordActivity::class.java)
-            startActivity(intent)
+            openAddRecordDailog(context);
+
         }
 
     }
@@ -89,9 +88,17 @@ class HealthRecordFragment : Fragment() {
         adapter1 = SpecialistAdapter(items1, 0)
         dialogView.speaclist_rv.adapter = adapter1
 
+
+        dialogView.btn_submit.setOnClickListener {
+            val intent = Intent(context, AddHealthRecordActivity::class.java)
+            startActivity(intent)
+        }
+
         val customDialog = AlertDialog.Builder(context)
             .setView(dialogView)
             .show()
+
+
 
 
     }

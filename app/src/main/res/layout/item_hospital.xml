@@ -42,14 +42,53 @@
                 android:textFontWeight="500"
                 android:textSize="@dimen/Text_Size_14" />
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/redhat"
+                    android:gravity="center_vertical"
+                    android:text="Gomti Nagar, Lucknow"
+                    android:textColor="@android:color/darker_gray"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/Text_Size_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/redhat"
+                    android:gravity="center_vertical"
+                    android:text="●"
+                    android:textColor="@android:color/darker_gray"
+                    android:textFontWeight="400"
+                    android:textSize="6sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/redhat"
+                    android:gravity="center_vertical"
+                    android:text="3 KM"
+                    android:textColor="@android:color/darker_gray"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/Text_Size_14" />
+            </LinearLayout>
+
             <TextView
+                android:visibility="gone"
                 android:layout_marginTop="4dp"
                 android:id="@+id/hospital_details"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/redhat_medium"
                 android:gravity="center_vertical"
-                android:text="Gomti Nagar, Lucknow   ●   3 KM"
+                android:text="ow   ●   "
                 android:textColor="@android:color/darker_gray"
                 android:textFontWeight="400"
                 android:textSize="@dimen/Text_Size_12" />

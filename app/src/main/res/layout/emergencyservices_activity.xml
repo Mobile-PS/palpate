@@ -76,7 +76,7 @@
                 android:textSize="@dimen/Text_size_16"
                 android:background="@color/txtcolor3"
                 android:textColor="@color/white"
-                android:fontFamily="@font/redhat_medium"
+                android:fontFamily="@font/redhat"
                 android:text="Emergency No."/>
 
             <androidx.appcompat.widget.AppCompatButton
@@ -88,7 +88,7 @@
                 android:textAllCaps="false"
                 android:textFontWeight="500"
                 android:textSize="@dimen/Text_size_16"
-                android:fontFamily="@font/redhat_medium"
+                android:fontFamily="@font/redhat"
                 android:background="@color/dashcolor5"
                 android:textColor="@color/txtcolor1"
                 android:text="Hospitals"/>

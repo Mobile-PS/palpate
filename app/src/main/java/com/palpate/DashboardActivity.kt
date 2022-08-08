@@ -28,7 +28,6 @@ class DashboardActivity : AppCompatActivity() {
         toolbar.setNavigationOnClickListener {
             val intent = Intent(this, DrawerActivity::class.java)
             startActivity(intent)
-            finish()
             overridePendingTransition(R.anim.slide_in, R.anim.nothing);
         }
 

@@ -72,8 +72,14 @@
                     android:textSize="@dimen/Text_size_16"
                     android:drawablePadding="10dp"
                     android:id="@+id/raj"
-                    android:drawableRight="@drawable/down_arrow"
                     />
+                <ImageView
+                    android:layout_marginTop="2dp"
+                    android:layout_width="12dp"
+                    android:layout_height="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/down_arrow"/>
             </LinearLayout>
 
 

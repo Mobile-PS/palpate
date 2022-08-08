@@ -222,7 +222,7 @@
                             android:layout_width="100dp"
                             android:layout_height="30dp"
                             android:layout_toRightOf="@+id/img_discount1"
-                            android:background="@drawable/green_rect"
+                            android:background="@drawable/discount_bg"
                             android:padding="5dp">
 
                             <TextView

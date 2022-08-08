@@ -152,11 +152,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:layout_alignParentEnd="true"
-                        android:background="@color/itemreportbg"
+                        android:background="@drawable/button_bg6"
                         android:fontFamily="@font/redhat_medium"
                         android:padding="5dp"
-                        android:textAllCaps="false"
                         android:text="Book Now"
+                        android:textAllCaps="false"
                         android:textColor="@color/white"
                         android:textFontWeight="400"
                         android:textSize="@dimen/Text_size_15"></androidx.appcompat.widget.AppCompatButton>
