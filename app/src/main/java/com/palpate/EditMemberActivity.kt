@@ -13,5 +13,13 @@ class EditMemberActivity : AppCompatActivity() {
         back.setOnClickListener {
             finish()
         }
+
+        btn_remove.setOnClickListener {
+            finish()
+        }
+
+        btn_submit.setOnClickListener {
+            finish()
+        }
     }
 }

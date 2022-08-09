@@ -1,11 +1,12 @@
 package com.palpate.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.palpate.R
+import com.palpate.*
 import com.palpate.model.HealthStateItemModel
 import kotlinx.android.synthetic.main.item_health_stats.view.*
 
@@ -37,6 +38,23 @@ class HealthStaticAdapter(
         holder.itemView.stat_count.text = items[position].count
 
         holder.itemView.stats_icon.setImageResource(items[position].icon)
+
+        holder.itemView.setOnClickListener {
+
+            if(position == 8){
+                val intent = Intent(context, VaccinationDetailsActivity::class.java)
+                context.startActivity(intent)
+            }
+            else {
+
+                    val intent = Intent(context, AddWeightActivity::class.java)
+                    intent.putExtra("title",items[position].title)
+                    context.startActivity(intent)
+
+            }
+           /* val intent = Intent(context, AddHealthStatsActivity::class.java)
+            context.startActivity(intent)*/
+        }
 
     }
 }

@@ -26,5 +26,9 @@ class AddMedicalHistoryActivity : AppCompatActivity() {
             finish()
         }
 
+        save.setOnClickListener {
+            finish()
+        }
+
     }
 }

@@ -1,14 +1,20 @@
 package com.palpate
 
+import android.app.AlertDialog
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.palpate.adapter.AddHealthStatsAdapter
 import com.palpate.adapter.PrescribationAdapter
+import com.palpate.adapter.SpecialistAdapter
 import com.palpate.adapter.TagAdapter
 import com.palpate.model.HealthStateItemModel
 import kotlinx.android.synthetic.main.addhealthrecord_activity.*
+import kotlinx.android.synthetic.main.addhealthrecord_dailog.view.*
 
 class AddHealthRecordActivity : AppCompatActivity() {
     private var items = arrayListOf(
@@ -36,6 +42,12 @@ class AddHealthRecordActivity : AppCompatActivity() {
             finish()
         }
 
+        intent.extras?.let {
+            Log.d("TEST","Test")
+            nested_saveform.visibility=View.GONE
+            nested_viewdetails.visibility=View.VISIBLE
+        }
+
         txt_save.setOnClickListener {
             if (txt_save.text == "Save") {
                 txt_save.text = "Delete"
@@ -48,6 +60,30 @@ class AddHealthRecordActivity : AppCompatActivity() {
                 nested_viewdetails.visibility=View.GONE
             }
         }
+
+        img1.setOnClickListener {
+
+            openAddRecordDailog(this);
+        }
+
+        img2.setOnClickListener {
+
+            openAddRecordDailog(this);
+        }
+
+        img3.setOnClickListener {
+
+            openAddRecordDailog(this);
+        }
+
+    }
+
+    private fun openAddRecordDailog(context: Context?) {
+        val dialogView = layoutInflater.inflate(R.layout.downloadimage_dailog, null)
+
+        val customDialog = AlertDialog.Builder(context)
+            .setView(dialogView)
+            .show()
 
     }
 }

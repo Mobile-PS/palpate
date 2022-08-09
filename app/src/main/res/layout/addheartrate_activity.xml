@@ -43,6 +43,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/save"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -50,8 +51,12 @@
                 android:layout_marginRight="10dp"
                 android:fontFamily="@font/redhat_medium"
                 android:text="Save"
-                android:id="@+id/save"
-                android:textColor="@color/dashcolor2"
+                android:background="@drawable/layout_bg9"
+                android:textColor="@color/white"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
                 android:textFontWeight="400"
                 android:textSize="@dimen/Text_Size_14" />
 

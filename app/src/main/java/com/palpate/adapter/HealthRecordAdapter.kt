@@ -1,10 +1,12 @@
 package com.palpate.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.palpate.AddHealthRecordActivity
 import com.palpate.R
 import com.palpate.model.HealthRecordItemModel
 import kotlinx.android.synthetic.main.item_health_record.view.*
@@ -37,6 +39,12 @@ class HealthRecordAdapter(
         holder.itemView.healthrecord_category.text = items[position].category
 
         holder.itemView.healthrecord_icon.setImageResource(items[position].icon)
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(context, AddHealthRecordActivity::class.java)
+            intent.putExtra("test","test")
+            context.startActivity(intent)
+        }
 
     }
 }

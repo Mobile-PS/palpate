@@ -9,10 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.palpate.HealthStatsActivity
-import com.palpate.MyHealthStatsActivity
-import com.palpate.ProfileActivity
-import com.palpate.R
+import com.palpate.*
 import com.palpate.model.NavigationItemModel
 import kotlinx.android.synthetic.main.row_nav_drawer.view.*
 
@@ -47,6 +44,14 @@ class NavigationRVAdapter(private var items: ArrayList<NavigationItemModel>, pri
         //holder.itemView.navigation_text.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20.toFloat())
 
         holder.itemView.setOnClickListener {
+
+            if(position == 0){
+
+                val intent = Intent(context, DashboardActivity::class.java)
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                context.startActivity(intent)
+
+            }
 
             if(position == 1){
 

@@ -52,7 +52,12 @@
                 android:fontFamily="@font/redhat_medium"
                 android:text="Save"
                 android:id="@+id/save"
-                android:textColor="@color/dashcolor2"
+                android:background="@drawable/layout_bg9"
+                android:textColor="@color/white"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
                 android:textFontWeight="400"
                 android:textSize="@dimen/Text_Size_14" />
 
@@ -126,7 +131,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/redhat_medium"
-            android:text="Feet"
+            android:text="Centimeter"
             android:textColor="@color/login1"
             android:textFontWeight="500"
             android:textSize="@dimen/Text_Size_14" />
@@ -193,6 +198,7 @@
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/redhat_medium"
             android:text="Inch"
+            android:visibility="gone"
             android:textColor="@color/login1"
             android:textFontWeight="500"
             android:textSize="@dimen/Text_Size_14" />
@@ -201,6 +207,7 @@
             android:layout_width="match_parent"
             android:layout_height="125dp"
             android:background="#F6F6F6"
+            android:visibility="gone"
             android:orientation="vertical">
 
             <RelativeLayout

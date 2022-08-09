@@ -40,8 +40,7 @@ class HealthStatsActivity : AppCompatActivity() {
         tabLayout.addTab(tabLayout.newTab().setText("Health Stats"))
         tabLayout.addTab(tabLayout.newTab().setText("Health Record"))
         tabLayout.addTab(tabLayout.newTab().setText("Medical History"))
-        val adapter = TabAdapter(this, supportFragmentManager,
-            tabLayout.tabCount)
+        val adapter = TabAdapter(this, supportFragmentManager, tabLayout.tabCount)
         viewPager.adapter = adapter
         viewPager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabLayout))
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
@@ -79,9 +78,16 @@ class HealthStatsActivity : AppCompatActivity() {
         adapter1 = SpecialistAdapter(items1, 0)
         dialogView.speaclist_rv.adapter = adapter1
 
+
         val customDialog = AlertDialog.Builder(this)
             .setView(dialogView)
             .show()
+
+        dialogView.btn_submit.setOnClickListener {
+
+            customDialog.dismiss()
+        }
+
     }
 
 

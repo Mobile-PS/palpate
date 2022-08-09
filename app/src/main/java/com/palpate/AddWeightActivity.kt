@@ -79,7 +79,19 @@ class AddWeightActivity : AppCompatActivity() {
         adapter2 = WeightItemButtonAdapter(items2, 0)
         weightItembutton_rv.adapter = adapter2
 
+        intent.extras?.let {
+
+           var  title = intent.extras!!.getString("title")!!
+
+            title1.text = title;
+
+        }
+
         back.setOnClickListener {
+            finish()
+        }
+
+        btn_add_health_stat.setOnClickListener {
             finish()
         }
 

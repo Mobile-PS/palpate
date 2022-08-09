@@ -19,5 +19,12 @@ class OtpActivity1 : AppCompatActivity() {
             finish()
         }
 
+        btn_submit.setOnClickListener {
+            finish()
+        }
+        btn_remove.setOnClickListener {
+            finish()
+        }
+
     }
 }

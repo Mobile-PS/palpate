@@ -49,6 +49,11 @@ class DashboardActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        edit.setOnClickListener {
+            val intent = Intent(this, HealthStatsActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

@@ -18,7 +18,7 @@ class AddHeightActivity : AppCompatActivity() {
         setTextContent()
 
         rel_view.setDefaultSelectedValue(5F)
-        rel_view.setMaxValue(15F)
+        rel_view.setMaxValue(50F)
         rel_view.setChooseValueChangeListener(object : RulerView.OnChooseResulterListener {
             override fun onChooseValueChange(value: Float) {
                 feetcount = value.roundToInt()

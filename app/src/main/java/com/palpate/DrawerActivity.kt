@@ -23,7 +23,7 @@ class DrawerActivity: AppCompatActivity() {
         NavigationItemModel(R.drawable.history, "Order History"),
         NavigationItemModel(R.drawable.home, "Home Care Nursing / Health Assistance"),
         NavigationItemModel(R.drawable.preven, "Preventive Health Checkup"),
-        NavigationItemModel(R.drawable.article, "Health Articles"),
+        NavigationItemModel(R.drawable.article, "Health Tips"),
         NavigationItemModel(R.drawable.setting, "Settings"),
         NavigationItemModel(R.drawable.logout, "Log Out")
     )
@@ -49,10 +49,11 @@ class DrawerActivity: AppCompatActivity() {
         navigation_rv.adapter = adapter
 
         back.setOnClickListener {
-//            val intent = Intent(this, DashboardActivity::class.java)
-//            startActivity(intent)
+
+            val intent = Intent(this, DashboardActivity::class.java)
+            startActivity(intent)
             finish()
-            overridePendingTransition(R.anim.nothing, R.anim.slide_out);
+            overridePendingTransition(R.anim.nothing1, R.anim.slide_out);
 
            // overridePendingTransition(R.anim.slide_enter, R.anim.slide_exit);
         }

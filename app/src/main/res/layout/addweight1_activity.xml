@@ -37,7 +37,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:fontFamily="@font/redhat_medium"
-                    android:text="Add Blood Sugar"
+                    android:text="Add Weight"
                     android:textColor="@color/login1"
                     android:textFontWeight="500"
                     android:textSize="@dimen/Header_Text_size" />
@@ -126,7 +126,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/redhat_medium"
-                        android:text="58"
+                        android:text="58.20"
                         android:textColor="@color/login1"
                         android:textFontWeight="500"
                         android:textSize="@dimen/Text_Size_30" />
@@ -135,7 +135,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/redhat"
-                        android:text="  mg/dL"
+                        android:text="  kg"
                         android:textColor="@color/login1"
                         android:textFontWeight="400"
                         android:textSize="@dimen/Text_Size_14" />
@@ -174,7 +174,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentEnd="true"
                             android:fontFamily="@font/redhat"
-                            android:text="mmHg"
+                            android:text="kg"
                             android:textAlignment="center"
                             android:textColor="@color/txtcolor2"
                             android:textFontWeight="400"
@@ -204,14 +204,6 @@
                         app:scaleTextSize="12sp" />
                 </LinearLayout>
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_gravity="center"
-                    android:id="@+id/blsugar_rv"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -251,7 +243,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/redhat"
-                            android:text=" mmHg"
+                            android:text=" kg"
                             android:textColor="@color/white"
                             android:textFontWeight="400"
                             android:textSize="@dimen/Text_Size_14" />

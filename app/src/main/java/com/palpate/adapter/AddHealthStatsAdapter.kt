@@ -40,7 +40,7 @@ class AddHealthStatsAdapter(
 
         holder.itemView.setOnClickListener {
             if (position == 0) {
-                val intent = Intent(context, AddWeightActivity::class.java)
+                val intent = Intent(context, AddWeight1Activity::class.java)
                 context.startActivity(intent)
             } else if (position == 1) {
                 val intent = Intent(context, AddBMIActivity::class.java)
