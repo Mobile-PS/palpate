@@ -9,6 +9,8 @@
     android:padding="10dp"
     android:background="@drawable/layout_bg11">
 
+
+
     <ImageView
         android:id="@+id/img_category"
         android:layout_width="60dp"

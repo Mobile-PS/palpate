@@ -6,13 +6,15 @@ import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.palpate.*
-import kotlinx.android.synthetic.main.health_package_item.view.*
+import kotlinx.android.synthetic.main.item_weight_button.view.*
+import kotlinx.android.synthetic.main.package_list_item.view.*
 
 
 class HealthPackageAdapter(
-    private var currentPos: Int = 0
+    private var currentPos: Int = -1
 ) : RecyclerView.Adapter<HealthPackageAdapter.NavigationItemViewHolder>() {
 
     private lateinit var context: Context
@@ -22,7 +24,7 @@ class HealthPackageAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NavigationItemViewHolder {
         context = parent.context
         val navItem =
-            LayoutInflater.from(parent.context).inflate(R.layout.health_package_item, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.package_list_item, parent, false)
         return NavigationItemViewHolder(navItem)
     }
 
@@ -32,14 +34,31 @@ class HealthPackageAdapter(
 
     override fun onBindViewHolder(holder: NavigationItemViewHolder, position: Int) {
 
-        holder.itemView.setOnClickListener {
-            val intent = Intent(context, HealthPackageDetailActivity::class.java)
+        setlayoutbg(holder.itemView.layout_package_item,position)
+
+        holder.itemView.btn_subscribe.setOnClickListener {
+            GlobalStuff.mainNavState = 1
+            val intent = Intent(context, AddressListActivity::class.java)
             context.startActivity(intent)
         }
-        holder.itemView.btn_book_now.setOnClickListener {
-            val intent = Intent(context, PatientDetailsActivity::class.java)
+
+        holder.itemView.layout_package_item.setOnClickListener {
+            currentPos=position
+            setlayoutbg(holder.itemView.layout_package_item,position)
+            notifyDataSetChanged()
+            val intent = Intent(context, PackageDetailActivity::class.java)
             context.startActivity(intent)
+
         }
+    }
+
+    private fun setlayoutbg(layoutPackageItem: LinearLayout?, position: Int) {
+        if (currentPos == position) {
+            layoutPackageItem?.setBackgroundResource(R.drawable.layout_bg13);
+        } else {
+            layoutPackageItem?.setBackgroundResource(R.drawable.layout_bg12);
+        }
+
     }
 
 }

@@ -6,16 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.palpate.NursingListActivity
-import com.palpate.R
-import com.palpate.model.CategoryItemModel
-import kotlinx.android.synthetic.main.item_category.view.*
+import com.palpate.*
+import kotlinx.android.synthetic.main.nursing_list_item.view.*
 
 
-class CategoryAdapter(
-    private var items: ArrayList<CategoryItemModel>,
-    private var currentPos: Int=0
-) : RecyclerView.Adapter<CategoryAdapter.NavigationItemViewHolder>() {
+class NursingPackageAdapter(
+    private var currentPos: Int = 0
+) : RecyclerView.Adapter<NursingPackageAdapter.NavigationItemViewHolder>() {
 
     private lateinit var context: Context
 
@@ -24,26 +21,25 @@ class CategoryAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NavigationItemViewHolder {
         context = parent.context
         val navItem =
-            LayoutInflater.from(parent.context).inflate(R.layout.item_category, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.nursing_list_item, parent, false)
         return NavigationItemViewHolder(navItem)
     }
 
     override fun getItemCount(): Int {
-        return items.count()
+        return 10
     }
 
     override fun onBindViewHolder(holder: NavigationItemViewHolder, position: Int) {
 
-        holder.itemView.txt_category.text = items[position].title
-        holder.itemView.img_category.setBackgroundResource(items[position].icon)
         holder.itemView.setOnClickListener {
-            val intent = Intent(context, NursingListActivity::class.java)
+            val intent = Intent(context, NursingListDetailActivity::class.java)
             context.startActivity(intent)
         }
-
-
-
+        holder.itemView.btn_book_now.setOnClickListener {
+            GlobalStuff.mainNavState = 0
+            val intent = Intent(context, PatientDetailsActivity::class.java)
+            context.startActivity(intent)
+        }
     }
-
 
 }

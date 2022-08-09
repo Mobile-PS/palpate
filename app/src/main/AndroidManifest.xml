@@ -72,13 +72,18 @@
         <activity android:name=".AddPatientActivity"/>
         <activity android:name=".AddressListActivity"/>
         <activity android:name=".PatientListActivity"/>
-        <activity android:name=".HealthPackageDetailActivity"/>
-        <activity android:name=".HealthPackageActivity"/>
+        <activity android:name=".NursingListDetailActivity"/>
+        <activity android:name=".NursingListActivity"/>
         <activity android:name=".CardActivity"/>
         <activity android:name=".PaymentActivity"/>
         <activity android:name=".PaymentSuccessActivity"/>
         <activity android:name=".HomeNursingActivity"/>
         <activity android:name=".AddWeight1Activity"/>
+        <activity android:name=".PackageListActivity"/>
+        <activity android:name=".PackageDetailActivity"/>
+        <activity android:name=".CouponListActivity"/>
+        <activity android:name=".PackageHistoryListActivity"/>
+        <activity android:name=".PackageHistoryDetailActivity"/>
 
     </application>
 

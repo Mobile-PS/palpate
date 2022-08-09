@@ -5,17 +5,17 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.palpate.adapter.WeightItemButtonAdapter
-import kotlinx.android.synthetic.main.health_package_details.*
+import kotlinx.android.synthetic.main.nursing_list_details.*
 
 
-class HealthPackageDetailActivity : AppCompatActivity() {
+class NursingListDetailActivity : AppCompatActivity() {
 
     private var items2 = arrayListOf("Includes", "Description", "Instructions");
     private lateinit var adapter2: WeightItemButtonAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.health_package_details)
+        setContentView(R.layout.nursing_list_details)
 
 
         itemButton_rv.layoutManager =
@@ -29,6 +29,7 @@ class HealthPackageDetailActivity : AppCompatActivity() {
         }
 
         btn_book_now.setOnClickListener {
+            GlobalStuff.mainNavState = 0
             val intent = Intent(this, PatientDetailsActivity::class.java)
             startActivity(intent)
         }

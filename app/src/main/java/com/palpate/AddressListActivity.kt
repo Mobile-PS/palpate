@@ -29,7 +29,13 @@ class AddressListActivity : AppCompatActivity() {
         }
 
         btn_contiune.setOnClickListener {
-            finish()
+            val x = GlobalStuff.mainNavState
+            if (x==1){
+                val intent = Intent(this, CardActivity::class.java)
+                startActivity(intent)
+            }else {
+                finish()
+            }
         }
 
         linear_addaddress.setOnClickListener {

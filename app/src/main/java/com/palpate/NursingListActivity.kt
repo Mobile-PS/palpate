@@ -1,19 +1,17 @@
 package com.palpate
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.palpate.adapter.HealthPackageAdapter
-import com.palpate.model.CategoryItemModel
-import kotlinx.android.synthetic.main.health_pacakage_activity.*
+import com.palpate.adapter.NursingPackageAdapter
+import kotlinx.android.synthetic.main.nursing_list_activity.*
 
-class HealthPackageActivity : AppCompatActivity() {
+class NursingListActivity : AppCompatActivity() {
 
-    lateinit var adapter: HealthPackageAdapter
+    lateinit var adapter: NursingPackageAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.health_pacakage_activity)
+        setContentView(R.layout.nursing_list_activity)
         initUI()
         back.setOnClickListener {
             finish();
@@ -23,7 +21,7 @@ class HealthPackageActivity : AppCompatActivity() {
     fun initUI() {
         healthpackage_rv.layoutManager = LinearLayoutManager(this)
         healthpackage_rv.setHasFixedSize(true)
-        adapter = HealthPackageAdapter(0)
+        adapter = NursingPackageAdapter(0)
         healthpackage_rv.adapter = adapter
     }
 

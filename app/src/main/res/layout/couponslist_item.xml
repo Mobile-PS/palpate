@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:minHeight="0dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/img_member"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingHorizontal="10dp"
+                    android:layout_toRightOf="@+id/img_discount1"
+                    android:background="@drawable/discount_bg"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/redhat_medium"
+                        android:gravity="center"
+                        android:text="STARTER 50"
+                        android:textColor="#00CD00"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/Text_Size_14" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/redhat"
+                    android:gravity="center_vertical"
+                    android:text="Save ₹ 100"
+                    android:textColor="@android:color/darker_gray"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/Text_Size_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/redhat"
+                    android:gravity="center_vertical"
+                    android:text="Rs. 100 off on minimum purchase of ₹ 700"
+                    android:textColor="@android:color/darker_gray"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/Text_Size_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/redhat"
+                    android:gravity="center_vertical"
+                    android:text="Expires on 28 July 2021 | 11:59 PM"
+                    android:textColor="@android:color/darker_gray"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/Text_Size_14" />
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dot" />
+
+
+</LinearLayout>

@@ -22,6 +22,11 @@ class PaymentSuccessActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+        btn_orderhistory.setOnClickListener {
+            val intent = Intent(this, PackageHistoryListActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }
