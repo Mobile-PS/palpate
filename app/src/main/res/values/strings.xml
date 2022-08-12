@@ -18,6 +18,14 @@
 
     <string name="star">\u002b Add Health Record</string>
 
+    <string name="title_name">Name<font color='#FF0000'>*</font></string>
+    <string name="title_mobile">Mobile Number<font color='#FF0000'>*</font></string>
+    <string name="title_city">City<font color='#FF0000'>*</font></string>
+    <string name="title_state">State<font color='#FF0000'>*</font></string>
+    <string name="title_addresstype">Address Type<font color='#FF0000'>*</font></string>
+    <string name="title_location">Location / Area<font color='#FF0000'>*</font></string>
+    <string name="title_house">House Number &amp; Building<font color='#FF0000'>*</font></string>
+
     <string-array name="relation">
         <item>Father</item>
         <item>Mother</item>
@@ -47,6 +55,13 @@
         <item>Select State</item>
     </string-array>
 
+    <string-array name="tags">
+        <item>Covid</item>
+        <item>Eye Care</item>
+        <item>Chest</item>
+        <item>Dental</item>
+        <item>Other</item>
+    </string-array>
 
     <string name="line"><strike> ₹1600 </strike> </string>
 

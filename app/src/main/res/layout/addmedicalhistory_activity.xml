@@ -94,6 +94,7 @@
 
 
                 <EditText
+                    android:visibility="gone"
                     android:id="@+id/edtxt_otp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
@@ -112,6 +113,20 @@
                     android:textFontWeight="400"
                     android:textSize="@dimen/Text_size_16" />
 
+                <AutoCompleteTextView
+                    android:id="@+id/autoTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/editxt_bg"
+                    android:fontFamily="@font/redhat"
+                    android:hint="Enter Disease Name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textFontWeight="400"
+                    android:textSize="13sp"/>
 
                 <CheckBox
                     android:id="@+id/checkBox_current"
@@ -148,6 +163,7 @@
                         android:background="@drawable/editxt_bg">
 
                         <Spinner
+                            android:id="@+id/spinner_from_month"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:entries="@array/month"
@@ -168,6 +184,7 @@
                         android:background="@drawable/editxt_bg">
 
                         <Spinner
+                            android:id="@+id/spinner_from_year"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:entries="@array/year"
@@ -222,6 +239,7 @@
                         android:background="@drawable/editxt_bg">
 
                         <Spinner
+                            android:id="@+id/spinner_to_month"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:entries="@array/month"
@@ -242,6 +260,7 @@
                         android:background="@drawable/editxt_bg">
 
                         <Spinner
+                            android:id="@+id/spinner_to_year"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:entries="@array/year"

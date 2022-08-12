@@ -3,6 +3,7 @@ package com.palpate
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.palpate.adapter.EmergencyAdapter
 import com.palpate.adapter.HospitalAdapter
@@ -36,18 +37,18 @@ class EmergencyServicesActivity : AppCompatActivity() {
         setContentView(R.layout.emergencyservices_activity)
 
         btn_emergency.setOnClickListener {
-            btn_emergency.setBackgroundColor(getResources().getColor(R.color.txtcolor3))
-            btn_emergency.setTextColor(getResources().getColor(R.color.white))
-            btn_hospital.setBackgroundColor(getResources().getColor(R.color.dashcolor5))
+            btn_emergency.setBackground(ContextCompat.getDrawable(this, R.drawable.button_bg7));
+            btn_hospital.setBackground(ContextCompat.getDrawable(this, R.drawable.button_bg8));
+            btn_emergency.setTextColor(getResources().getColor(R.color.dashcolor5))
             btn_hospital.setTextColor(getResources().getColor(R.color.txtcolor1))
             emergency_rv.visibility = View.VISIBLE
             hospital_rv.visibility = View.GONE
         }
 
         btn_hospital.setOnClickListener {
-            btn_hospital.setBackgroundColor(getResources().getColor(R.color.txtcolor3))
-            btn_hospital.setTextColor(getResources().getColor(R.color.white))
-            btn_emergency.setBackgroundColor(getResources().getColor(R.color.dashcolor5))
+            btn_hospital.setBackground(ContextCompat.getDrawable(this, R.drawable.button_bg7));
+            btn_emergency.setBackground(ContextCompat.getDrawable(this, R.drawable.button_bg8));
+            btn_hospital.setTextColor(getResources().getColor(R.color.dashcolor5))
             btn_emergency.setTextColor(getResources().getColor(R.color.txtcolor1))
             hospital_rv.visibility = View.VISIBLE
             emergency_rv.visibility = View.GONE

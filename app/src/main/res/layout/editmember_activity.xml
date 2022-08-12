@@ -258,6 +258,7 @@
                         android:layout_marginTop="10dp"
                         android:background="@drawable/editxt_bg">
                         <Spinner
+                            android:id="@+id/spinner_relation"
                             android:layout_width="match_parent"
                            android:layout_height="50dp"
                             android:fontFamily="@font/redhat"

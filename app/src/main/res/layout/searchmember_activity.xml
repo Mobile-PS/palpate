@@ -147,24 +147,24 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/redhat_medium"
+                android:fontFamily="@font/redhat"
                 android:text="Note: "
                 android:textColor="@color/statcolor1"
-                android:textFontWeight="500"
-                android:textSize="14sp"
+                android:textFontWeight="400"
+                android:textSize="@dimen/Text_Size_13"
                 android:id="@+id/t1"
                 />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/redhat_medium"
-                android:text="You will be redirected to OTP verification page"
-                android:textColor="@color/statcolor1"
-                android:textFontWeight="400"
-                android:layout_toRightOf="@+id/t1"
-                android:textSize="12sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/t1"
+                    android:fontFamily="@font/redhat"
+                    android:text="You will be redirected to OTP verification page"
+                    android:textColor="@android:color/darker_gray"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/Text_Size_13" />
 
             </RelativeLayout>
 

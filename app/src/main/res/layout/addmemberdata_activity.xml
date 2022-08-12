@@ -218,11 +218,11 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/redhat_medium"
+                android:fontFamily="@font/redhat"
                 android:text="Note: "
                 android:textColor="@color/statcolor1"
-                android:textFontWeight="500"
-                android:textSize="14sp"
+                android:textFontWeight="400"
+                android:textSize="@dimen/Text_Size_13"
                 android:id="@+id/t1"
                 />
 
@@ -231,9 +231,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_toRightOf="@+id/t1"
-                    android:fontFamily="@font/redhat_medium"
+                    android:fontFamily="@font/redhat"
                     android:text="By continuing I agree that I am legally authorized to make decisions for this individual."
-                    android:textColor="@color/statcolor2"
+                    android:textColor="@android:color/darker_gray"
                     android:textFontWeight="400"
                     android:textSize="@dimen/Text_Size_13" />
 

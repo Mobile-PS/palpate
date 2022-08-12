@@ -107,16 +107,22 @@
         </LinearLayout>
 
 
-
-
-        <ImageView
-            android:id="@+id/more_icon"
-            android:layout_width="5dp"
-            android:layout_height="15dp"
+        <LinearLayout
+            android:id="@+id/linear_more"
             android:layout_alignParentEnd="true"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/more_icon"
-            tools:ignore="ContentDescription" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/more_icon"
+                android:layout_width="5dp"
+                android:layout_height="15dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/more_icon"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
     </RelativeLayout>
 
     <View

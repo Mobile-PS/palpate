@@ -13,11 +13,13 @@ class AddMemberActivity : AppCompatActivity() {
         linear_addchild_member.setOnClickListener {
             val intent = Intent(this, AddMemberDataActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         linear_addparent_member.setOnClickListener {
             val intent = Intent(this, SearchMemberActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         back.setOnClickListener {

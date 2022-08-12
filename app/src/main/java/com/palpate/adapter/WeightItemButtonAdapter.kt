@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatButton
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.palpate.R
 import kotlinx.android.synthetic.main.item_weight_button.view.*
@@ -47,10 +48,10 @@ class WeightItemButtonAdapter(
 
     private fun setButtonView(btnTimeline: AppCompatButton?, position: Int) {
         if (currentPos == position) {
-            btnTimeline?.setBackgroundColor(Color.parseColor("#165860"))
+            btnTimeline?.setBackground(ContextCompat.getDrawable(context, R.drawable.button_bg7));
             btnTimeline?.setTextColor(Color.parseColor("#FFFFFF"))
         } else {
-            btnTimeline?.setBackgroundColor(Color.parseColor("#F6F6F6"))
+            btnTimeline?.setBackground(ContextCompat.getDrawable(context, R.drawable.button_bg8));
             btnTimeline?.setTextColor(Color.parseColor("#5F5F5F"))
         }
     }

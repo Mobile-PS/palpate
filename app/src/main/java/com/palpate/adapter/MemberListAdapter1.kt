@@ -1,23 +1,24 @@
 package com.palpate.adapter
 
+import android.app.AlertDialog
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
+import android.widget.PopupMenu
 import androidx.recyclerview.widget.RecyclerView
 import com.palpate.AddMemberActivity
 import com.palpate.EditMemberActivity
 import com.palpate.R
-import com.palpate.model.MemberItemModel
 import com.palpate.model.MemberItemModel1
-import kotlinx.android.synthetic.main.item_member.view.*
-import kotlinx.android.synthetic.main.item_member.view.more_icon
+import kotlinx.android.synthetic.main.deleterecord_dailog.view.*
 import kotlinx.android.synthetic.main.item_member1.view.*
-import kotlinx.android.synthetic.main.item_search_member.view.*
-import kotlinx.android.synthetic.main.item_search_member.view.img_member
-import kotlinx.android.synthetic.main.item_search_member.view.member_details
-import kotlinx.android.synthetic.main.item_search_member.view.member_name
+import kotlinx.android.synthetic.main.item_member1.view.img_member
+import kotlinx.android.synthetic.main.item_member1.view.member_details
+import kotlinx.android.synthetic.main.item_member1.view.member_name
 
 
 class MemberListAdapter1(
@@ -49,9 +50,51 @@ class MemberListAdapter1(
 
 
         holder.itemView.img_member.setImageResource(items[position].icon)
-        holder.itemView.more_icon.setOnClickListener {
-            val intent = Intent(context, EditMemberActivity::class.java)
-            context.startActivity(intent)
+        holder.itemView.linear_more.setOnClickListener {
+            performOptionsMenuClick(context, holder.itemView.linear_more)
+        }
+
+    }
+
+
+    private fun performOptionsMenuClick(context: Context, moreIcon: LinearLayout) {
+        val popupMenu = PopupMenu(context, moreIcon)
+        // add the menu
+        popupMenu.inflate(R.menu.options_menu)
+        // implement on menu item click Listener
+        popupMenu.setOnMenuItemClickListener(object : PopupMenu.OnMenuItemClickListener {
+            override fun onMenuItemClick(item: MenuItem?): Boolean {
+                when (item?.itemId) {
+                    R.id.menu1 -> {
+                        val intent = Intent(context,
+                            EditMemberActivity::class.java)
+                        context.startActivity(intent)
+                        return true
+                    }
+                    // in the same way you can implement others
+                    R.id.menu2 -> {
+                        deleteAddress(context)
+                        return true
+                    }
+                }
+                return false
+            }
+        })
+        popupMenu.show()
+    }
+
+    private fun deleteAddress(context: Context) {
+        val dialogView = LayoutInflater.from(context).inflate(R.layout.deleterecord_dailog, null)
+        val mBuilder = AlertDialog.Builder(context).setView(dialogView)
+        val mAlertDialog = mBuilder.show()
+        dialogView.txt_title.text="Delete Member"
+        dialogView.txt_description.text="Are you sure want to delete this Member?"
+        dialogView.btn_yes.setOnClickListener {
+            mAlertDialog.dismiss()
+        }
+
+        dialogView.btn_no.setOnClickListener {
+            mAlertDialog.dismiss()
         }
 
     }

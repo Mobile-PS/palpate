@@ -54,7 +54,7 @@ class HealthRecordFragment : Fragment() {
         SpecialistDataModel(
             "Ear Care", false
         ),
-     
+
         )
 
     private lateinit var adapter: HealthRecordAdapter
@@ -74,9 +74,14 @@ class HealthRecordFragment : Fragment() {
         adapter = HealthRecordAdapter(items, 0)
         healthrecord_rv.adapter = adapter
 
-        btn_add_health_record.setOnClickListener { 
+        img_filter.setOnClickListener {
             openAddRecordDailog(context);
 
+        }
+
+        btn_add_health_record.setOnClickListener {
+            val intent = Intent(context, AddHealthRecordActivity::class.java)
+            startActivity(intent)
         }
 
     }
@@ -84,22 +89,22 @@ class HealthRecordFragment : Fragment() {
     private fun openAddRecordDailog(context: Context?) {
         val dialogView = layoutInflater.inflate(R.layout.addhealthrecord_dailog, null)
         dialogView.speaclist_rv.layoutManager = LinearLayoutManager(context)
+        val mBuilder = AlertDialog.Builder(context)
+            .setView(dialogView)
+        //show dialog
+        val mAlertDialog = mBuilder.show()
         dialogView.speaclist_rv.setHasFixedSize(true)
         adapter1 = SpecialistAdapter(items1, 0)
         dialogView.speaclist_rv.adapter = adapter1
 
 
         dialogView.btn_submit.setOnClickListener {
-            val intent = Intent(context, AddHealthRecordActivity::class.java)
-            startActivity(intent)
+            mAlertDialog.dismiss()
         }
 
-        val customDialog = AlertDialog.Builder(context)
-            .setView(dialogView)
-            .show()
-
-
-
+        dialogView.btn_remove.setOnClickListener {
+            mAlertDialog.dismiss()
+        }
 
     }
 }

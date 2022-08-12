@@ -56,12 +56,12 @@
                     android:id="@+id/wallet_details"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/redhat_medium"
+                    android:fontFamily="@font/redhat"
                     android:gravity="center_vertical"
                     android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
                     android:textColor="@android:color/darker_gray"
                     android:textFontWeight="400"
-                    android:textSize="@dimen/Text_Size_14" />
+                    android:textSize="@dimen/Text_Size_13" />
 
             </LinearLayout>
 

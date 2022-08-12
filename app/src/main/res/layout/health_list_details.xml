@@ -212,7 +212,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/redhat"
-                    android:text="* Lorem Ipsum is simply dummy text of the printing and type setting industry."
+                    android:text="● Lorem Ipsum is simply dummy text of the printing and type setting industry."
                     android:textColor="@color/txtcolor1"
                     android:textFontWeight="400"
                     android:textSize="@dimen/Text_Size_13" />
@@ -222,7 +222,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/redhat"
-                    android:text="* Lorem Ipsum is simply dummy text of the printing and type setting industry."
+                    android:text="● Lorem Ipsum is simply dummy text of the printing and type setting industry."
                     android:textColor="@color/txtcolor1"
                     android:textFontWeight="400"
                     android:textSize="@dimen/Text_Size_13" />
@@ -232,7 +232,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/redhat"
-                    android:text="* Lorem Ipsum is simply dummy text of the printing and type setting industry."
+                    android:text="● Lorem Ipsum is simply dummy text of the printing and type setting industry."
                     android:textColor="@color/txtcolor1"
                     android:textFontWeight="400"
                     android:textSize="@dimen/Text_Size_13" />
@@ -242,7 +242,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/redhat"
-                    android:text="* Lorem Ipsum is simply dummy text of the printing and type setting industry."
+                    android:text="● Lorem Ipsum is simply dummy text of the printing and type setting industry."
                     android:textColor="@color/txtcolor1"
                     android:textFontWeight="400"
                     android:textSize="@dimen/Text_Size_13" />
@@ -253,21 +253,23 @@
 
     </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
-        android:id="@+id/btn_subscribe"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/button_bg"
-        android:fontFamily="@font/redhat_medium"
-        android:stateListAnimator="@null"
-        android:text="Subscribe"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textFontWeight="500"
-        android:textSize="@dimen/Text_size_16" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_subscribe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/redhat_medium"
+            android:stateListAnimator="@null"
+            android:text="Subscribe"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textFontWeight="500"
+            android:textSize="@dimen/Text_size_16" />
     </RelativeLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

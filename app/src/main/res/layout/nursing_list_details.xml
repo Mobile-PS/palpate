@@ -183,7 +183,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/redhat_medium"
-                    android:text="* 5 visits in a week."
+                    android:text="● 5 visits in a week."
                     android:textColor="@color/txtcolor1"
                     android:textFontWeight="400"
                     android:textSize="@dimen/Text_Size_13" />
@@ -193,7 +193,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/redhat_medium"
-                    android:text="* Ventilator maintenance."
+                    android:text="● Ventilator maintenance."
                     android:textColor="@color/txtcolor1"
                     android:textFontWeight="400"
                     android:textSize="@dimen/Text_Size_13" />
@@ -203,7 +203,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/redhat_medium"
-                    android:text="* Stretcher cleaning."
+                    android:text="● Stretcher cleaning."
                     android:textColor="@color/txtcolor1"
                     android:textFontWeight="400"
                     android:textSize="@dimen/Text_Size_13" />
@@ -213,7 +213,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/redhat_medium"
-                    android:text="* Health status measurement."
+                    android:text="● Health status measurement."
                     android:textColor="@color/txtcolor1"
                     android:textFontWeight="400"
                     android:textSize="@dimen/Text_Size_13" />

@@ -252,7 +252,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/redhat"
-                            android:text="* Lorem Ipsum is simply dummy text of the printing and type setting industry."
+                            android:text="● Lorem Ipsum is simply dummy text of the printing and type setting industry."
                             android:textColor="@color/txtcolor1"
                             android:textFontWeight="400"
                             android:textSize="@dimen/Text_Size_13" />
@@ -262,7 +262,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/redhat"
-                            android:text="* Lorem Ipsum is simply dummy text of the printing and type setting industry."
+                            android:text="● Lorem Ipsum is simply dummy text of the printing and type setting industry."
                             android:textColor="@color/txtcolor1"
                             android:textFontWeight="400"
                             android:textSize="@dimen/Text_Size_13" />
@@ -272,7 +272,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/redhat"
-                            android:text="* Lorem Ipsum is simply dummy text of the printing and type setting industry."
+                            android:text="● Lorem Ipsum is simply dummy text of the printing and type setting industry."
                             android:textColor="@color/txtcolor1"
                             android:textFontWeight="400"
                             android:textSize="@dimen/Text_Size_13" />
@@ -282,7 +282,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/redhat"
-                            android:text="* Lorem Ipsum is simply dummy text of the printing and type setting industry."
+                            android:text="● Lorem Ipsum is simply dummy text of the printing and type setting industry."
                             android:textColor="@color/txtcolor1"
                             android:textFontWeight="400"
                             android:textSize="@dimen/Text_Size_13" />

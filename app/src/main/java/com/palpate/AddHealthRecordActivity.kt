@@ -6,6 +6,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.palpate.adapter.AddHealthStatsAdapter
@@ -13,7 +14,9 @@ import com.palpate.adapter.PrescribationAdapter
 import com.palpate.adapter.SpecialistAdapter
 import com.palpate.adapter.TagAdapter
 import com.palpate.model.HealthStateItemModel
+import kotlinx.android.synthetic.main.add_address_activity.*
 import kotlinx.android.synthetic.main.addhealthrecord_activity.*
+import kotlinx.android.synthetic.main.addhealthrecord_activity.back
 import kotlinx.android.synthetic.main.addhealthrecord_dailog.view.*
 
 class AddHealthRecordActivity : AppCompatActivity() {
@@ -21,6 +24,7 @@ class AddHealthRecordActivity : AppCompatActivity() {
         "Covid", "Eye Care", "Chest", "Dental", "Other"
     )
 
+    val frequencyarray = arrayOf<String?>("Frequency")
     private lateinit var adapter: TagAdapter
     private lateinit var adapter1: PrescribationAdapter
 
@@ -75,6 +79,18 @@ class AddHealthRecordActivity : AppCompatActivity() {
 
             openAddRecordDailog(this);
         }
+
+
+        val frequencyAdapter: ArrayAdapter<Any?> = ArrayAdapter<Any?>(this, R.layout.spinner_text, frequencyarray)
+        frequencyAdapter.setDropDownViewResource(R.layout.spinner_text)
+        spinner_frequancy.adapter = frequencyAdapter
+
+
+        val languages = resources.getStringArray(R.array.tags)
+        val adapter = ArrayAdapter(this, R.layout.spinner_text, languages)
+        autoTextView.setAdapter(adapter)
+
+
 
     }
 
