@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select an Option"
+        android:textColor="@color/login1"
+        android:fontFamily="@font/redhat_medium"
+        android:textFontWeight="500"
+        android:textSize="@dimen/Text_size_16" />
+
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:src="@drawable/dotted"
+        android:layerType="software" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/speaclist_rv"
+        android:layout_width="match_parent"
+        android:layout_height="280dp" />
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:src="@drawable/dotted"
+        android:layerType="software" />
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/redhat_medium"
+        android:text="Select Date"
+        android:textColor="@color/login1"
+        android:textFontWeight="500"
+        android:textSize="@dimen/Text_size_16" />
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/editxt_bg"
+            android:drawableRight="@drawable/calender1"
+            android:enabled="false"
+            android:fontFamily="@font/redhat"
+            android:hint="DD/MM/YYYY"
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textFontWeight="400"
+            android:textSize="@dimen/Text_size_16" />
+
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/editxt_bg"
+            android:drawableRight="@drawable/calender1"
+            android:enabled="false"
+            android:fontFamily="@font/redhat"
+            android:hint="DD/MM/YYYY"
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textFontWeight="400"
+            android:textSize="@dimen/Text_size_16" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_remove"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_bg3"
+            android:fontFamily="@font/redhat_medium"
+            android:stateListAnimator="@null"
+            android:text="Reset"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textFontWeight="500"
+            android:textSize="@dimen/Text_size_16" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/redhat_medium"
+            android:stateListAnimator="@null"
+            android:text="Select"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textFontWeight="500"
+            android:textSize="@dimen/Text_size_16" />
+
+    </LinearLayout>
+
+</LinearLayout>

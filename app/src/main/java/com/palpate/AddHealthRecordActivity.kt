@@ -9,10 +9,7 @@ import android.view.View
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.palpate.adapter.AddHealthStatsAdapter
-import com.palpate.adapter.PrescribationAdapter
-import com.palpate.adapter.SpecialistAdapter
-import com.palpate.adapter.TagAdapter
+import com.palpate.adapter.*
 import com.palpate.model.HealthStateItemModel
 import kotlinx.android.synthetic.main.add_address_activity.*
 import kotlinx.android.synthetic.main.addhealthrecord_activity.*
@@ -26,6 +23,7 @@ class AddHealthRecordActivity : AppCompatActivity() {
 
     val frequencyarray = arrayOf<String?>("Frequency")
     private lateinit var adapter: TagAdapter
+    private lateinit var adapterReporterAdapter: ReporterAdapter
     private lateinit var adapter1: PrescribationAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -90,6 +88,9 @@ class AddHealthRecordActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this, R.layout.spinner_text, languages)
         autoTextView.setAdapter(adapter)
 
+        report_img.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false)
+        val adapterReporterAdapter = ReporterAdapter()
+        report_img.setAdapter(adapterReporterAdapter)
 
 
     }

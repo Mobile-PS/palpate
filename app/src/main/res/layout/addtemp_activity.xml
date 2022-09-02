@@ -78,6 +78,7 @@
 
 
             <TextView
+                android:id="@+id/txt_selectdate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/layout_bg7"
@@ -90,6 +91,7 @@
                 android:textSize="12sp" />
 
             <TextView
+                android:id="@+id/txt_datetime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/layout_bg8"

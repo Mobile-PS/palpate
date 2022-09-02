@@ -79,6 +79,7 @@
 
 
             <TextView
+                android:id="@+id/txt_selectdate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/layout_bg7"
@@ -91,6 +92,7 @@
                 android:textSize="@dimen/Text_Size_14" />
 
             <TextView
+                android:id="@+id/txt_datetime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/layout_bg8"
@@ -118,7 +120,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/redhat_medium"
-                android:text="5’ 8”"
+                android:text="5"
                 android:textColor="@color/login1"
                 android:textFontWeight="500"
                 android:textSize="@dimen/Text_Size_30" />
@@ -287,11 +289,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/redhat_medium"
-                    android:text=" 5’ 8”"
+                    android:text=" 5"
                     android:textColor="@color/white"
                     android:textFontWeight="500"
                     android:textSize="@dimen/Text_Size_14" />
-
 
 
             </LinearLayout>

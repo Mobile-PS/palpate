@@ -42,10 +42,15 @@
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/button_bg6.xml" value="0.154" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/button_bg7.xml" value="0.1545" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/button_bg8.xml" value="0.1545" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/circular_bg.xml" value="0.1545" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/circular_bg1.xml" value="0.1545" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/circular_bg4.xml" value="0.154" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/discount_bg.xml" value="0.154" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/discount_bg1.xml" value="0.1545" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/dotted.xml" value="0.1545" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/image_bg1.xml" value="0.1545" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/image_bg2.xml" value="0.1545" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/layout_bg.xml" value="0.1545" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/layout_bg1.xml" value="0.154" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/layout_bg11.xml" value="0.1545" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/layout_bg12.xml" value="0.1545" />
@@ -78,11 +83,13 @@
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/couponslist_item.xml" value="0.25" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/dashboard_layout.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/deleterecord_dailog.xml" value="0.17255434782608695" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/demo_activity.xml" value="0.25" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/downloadimage_dailog.xml" value="0.17255434782608695" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/drawer_layout.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/editmember_activity.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/emergencyservices_activity.xml" value="0.17074275362318841" />
-        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/health_list_details.xml" value="0.2" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/filter_dailog.xml" value="0.17255434782608695" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/health_list_details.xml" value="0.33" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/health_pacakage_activity.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/health_package.xml" value="0.13012295081967212" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/health_package_activity.xml" value="0.17255434782608695" />
@@ -104,6 +111,7 @@
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/item_member1.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/item_point.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/item_prescription.xml" value="0.17074275362318841" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/item_report.xml" value="0.17255434782608695" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/item_search_member.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/item_tag.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/item_vaccinationdetails.xml" value="0.17074275362318841" />
@@ -116,7 +124,7 @@
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/myhealthstat_activity.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/nursing_list_activity.xml" value="0.17255434782608695" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/nursing_list_details.xml" value="0.17255434782608695" />
-        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/nursing_list_item.xml" value="0.17255434782608695" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/nursing_list_item.xml" value="0.5" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/otp.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/otp1.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/package_list_item.xml" value="0.25" />

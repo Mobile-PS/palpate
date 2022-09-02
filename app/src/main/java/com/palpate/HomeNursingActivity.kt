@@ -7,7 +7,9 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.palpate.adapter.CategoryAdapter
 import com.palpate.adapter.EmergencyAdapter
+import com.palpate.adapter.SpecialistAdapter
 import com.palpate.model.CategoryItemModel
+import com.palpate.model.SpecialistDataModel
 import kotlinx.android.synthetic.main.homecarenursing_activity.*
 
 class HomeNursingActivity : AppCompatActivity() {
@@ -16,6 +18,7 @@ class HomeNursingActivity : AppCompatActivity() {
     lateinit var listCategoryItemModel: ArrayList<CategoryItemModel>
     lateinit var adapter: ViewPagerAdapter1
     lateinit var categoryadapter: CategoryAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.homecarenursing_activity)

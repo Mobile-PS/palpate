@@ -179,44 +179,110 @@
                 android:layout_marginVertical="20dp"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/redhat_medium"
-                    android:text="● 5 visits in a week."
-                    android:textColor="@color/txtcolor1"
-                    android:textFontWeight="400"
-                    android:textSize="@dimen/Text_Size_13" />
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/redhat_medium"
-                    android:text="● Ventilator maintenance."
-                    android:textColor="@color/txtcolor1"
-                    android:textFontWeight="400"
-                    android:textSize="@dimen/Text_Size_13" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/redhat"
+                        android:text="●"
+                        android:textColor="@color/txtcolor1"
+                        android:textFontWeight="400"
+                        android:textSize="10sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/redhat_medium"
-                    android:text="● Stretcher cleaning."
-                    android:textColor="@color/txtcolor1"
-                    android:textFontWeight="400"
-                    android:textSize="@dimen/Text_Size_13" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/redhat"
+                        android:text="5 visits in a week."
+                        android:textColor="@color/txtcolor1"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/Text_Size_13" />
+                </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/redhat_medium"
-                    android:text="● Health status measurement."
-                    android:textColor="@color/txtcolor1"
-                    android:textFontWeight="400"
-                    android:textSize="@dimen/Text_Size_13" />
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/redhat"
+                        android:text="●"
+                        android:textColor="@color/txtcolor1"
+                        android:textFontWeight="400"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/redhat"
+                        android:text="Ventilator maintenance."
+                        android:textColor="@color/txtcolor1"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/Text_Size_13" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/redhat"
+                        android:text="●"
+                        android:textColor="@color/txtcolor1"
+                        android:textFontWeight="400"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/redhat"
+                        android:text="Stretcher cleaning."
+                        android:textColor="@color/txtcolor1"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/Text_Size_13" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/redhat"
+                        android:text="●"
+                        android:textColor="@color/txtcolor1"
+                        android:textFontWeight="400"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/redhat"
+                        android:text="Health status measurement."
+                        android:textColor="@color/txtcolor1"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/Text_Size_13" />
+                </LinearLayout>
+
+
             </LinearLayout>
 
         </LinearLayout>

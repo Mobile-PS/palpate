@@ -37,7 +37,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:fontFamily="@font/redhat_medium"
-                    android:text="Health Package"
+                    android:text="Preventive Health Checkup"
                     android:textColor="@color/login1"
                     android:textFontWeight="500"
                     android:textSize="@dimen/Header_Text_size" />
@@ -93,6 +93,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/img_filter"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_gravity="end"

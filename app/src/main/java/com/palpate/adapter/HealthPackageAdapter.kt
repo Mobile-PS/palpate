@@ -38,7 +38,7 @@ class HealthPackageAdapter(
 
         holder.itemView.btn_subscribe.setOnClickListener {
             GlobalStuff.mainNavState = 1
-            val intent = Intent(context, AddressListActivity::class.java)
+            val intent = Intent(context, PatientDetailsActivity::class.java)
             context.startActivity(intent)
         }
 
@@ -53,11 +53,11 @@ class HealthPackageAdapter(
     }
 
     private fun setlayoutbg(layoutPackageItem: LinearLayout?, position: Int) {
-        if (currentPos == position) {
-            layoutPackageItem?.setBackgroundResource(R.drawable.layout_bg13);
-        } else {
+//        if (currentPos == position) {
+//            layoutPackageItem?.setBackgroundResource(R.drawable.layout_bg13);
+//        } else {
             layoutPackageItem?.setBackgroundResource(R.drawable.layout_bg12);
-        }
+//        }
 
     }
 

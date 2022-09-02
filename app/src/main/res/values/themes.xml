@@ -22,8 +22,24 @@
         <item name="cornerSize">51%</item>
     </style>
 
+    <style name="DatePickerTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/txtcolor3</item>
+        <item name="colorPrimaryDark">@color/txtcolor3</item>
+        <item name="colorAccent">@color/txtcolor3</item>
+        <item name="colorOnPrimary">@color/txtcolor3</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/DatePickerTheme.ButtonBarNegativeButtonStyle</item>
+    </style>
+
+    <style name="DatePickerTheme.ButtonBarNegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/txtcolor3</item>
+    </style>
 
 
+
+    <style name="MyTimePickerDialogTheme" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/txtcolor3</item>
+        <item name="colorAccent">@color/txtcolor3</item>
+    </style>
 
     <style name="TabFont" parent="TextAppearance.Design.Tab">
         <item name="textSize">14sp</item>
