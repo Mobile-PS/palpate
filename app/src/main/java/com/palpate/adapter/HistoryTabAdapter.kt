@@ -4,11 +4,9 @@ import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.palpate.fragment.HealthRecordFragment
-import com.palpate.fragment.HealthStatFragment
-import com.palpate.fragment.MedicalRecordFragment
+import com.palpate.fragment.*
 
-internal class TabAdapter(
+internal class HistoryTabAdapter(
     var context: Context,
     fm: FragmentManager,
     var totalTabs: Int
@@ -17,13 +15,10 @@ internal class TabAdapter(
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0 -> {
-                HealthStatFragment()
+                NursingOrderHistoryFragment()
             }
             1 -> {
-                HealthRecordFragment()
-            }
-            2 -> {
-                MedicalRecordFragment()
+                HealthPackageHistoryFragment()
             }
             else -> getItem(position)
         }

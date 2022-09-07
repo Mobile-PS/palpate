@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relative_proceed"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linear_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/redhat_medium"
+                    android:text="Order Summary"
+                    android:textColor="@color/login1"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/Header_Text_size" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/quest"></ImageView>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/shadow" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/redhat"
+                        android:text="Order ID: #84193"
+                        android:textColor="@color/login1"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/Text_Size_14" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/green_tick" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/redhat"
+                            android:text="Paid"
+                            android:textColor="@color/login1"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/Text_Size_14" />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/redhat"
+                        android:text="16 Aug 2021 , 07:00 AM "
+                        android:textColor="@color/login1"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/Text_Size_14" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="8dp"
+                            android:fontFamily="@font/redhat"
+                            android:gravity="center_vertical"
+                            android:text="●"
+                            android:textColor="@color/greencolor"
+                            android:textFontWeight="700"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/redhat"
+                            android:text="Order Completed"
+                            android:textColor="@color/login1"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/Text_Size_14" />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginVertical="10dp"
+                    android:background="@drawable/dot" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="Personal Care Package Gold"
+                        android:textColor="@color/black"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/Text_size_15" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/redhat_medium"
+                            android:text="₹699"
+                            android:textColor="@color/black"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/Text_size_15" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/redhat"
+                            android:text="@string/line"
+                            android:textColor="@color/txtcolor1"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/Text_Size_14" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginVertical="10dp"
+                    android:background="@drawable/dot" />
+
+                <LinearLayout
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="Booking Date and Time"
+                        android:textColor="@color/black"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/Text_size_15" />
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/circular_bg3"
+                            android:padding="10dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/calender_icon"
+                            tools:ignore="ContentDescription" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/redhat"
+                                android:text="Fri, 06 Aug 2021"
+                                android:textColor="@color/black"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_Size_14" />
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/redhat"
+                                android:text="10:00 AM - 11:30 AM"
+                                android:textColor="@color/login1"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_Size_13" />
+
+
+
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginVertical="10dp"
+                    android:background="@drawable/dot" />
+
+
+                <LinearLayout
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="Address"
+                        android:textColor="@color/black"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/Text_size_15" />
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/circular_bg3"
+                            android:padding="8dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/home_icon"
+                            tools:ignore="ContentDescription" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/img_member"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/member_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/redhat_medium"
+                                android:text="Home"
+                                android:textColor="@color/black"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_size_16" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/redhat"
+                                    android:gravity="center_vertical"
+                                    android:text="Harish Kumar"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textFontWeight="400"
+                                    android:textSize="@dimen/Text_Size_14" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/redhat"
+                                    android:gravity="center_vertical"
+                                    android:text="●"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textFontWeight="400"
+                                    android:textSize="6sp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/redhat"
+                                    android:gravity="center_vertical"
+                                    android:text="9044900191"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textFontWeight="400"
+                                    android:textSize="@dimen/Text_Size_14" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/redhat"
+                                android:gravity="center_vertical"
+                                android:text="Shaheed Path, Vibhuti Khand Gomti Nagar, Lucknow - 226001"
+                                android:textColor="@android:color/darker_gray"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_Size_14" />
+
+
+
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginVertical="10dp"
+                    android:background="@drawable/dot" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginVertical="10dp"
+                    android:id="@+id/orderstatus_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_save_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:background="@drawable/button_bg8"
+                    android:fontFamily="@font/redhat_medium"
+                    android:text="Need Help?"
+                    android:textAllCaps="false"
+                    android:textColor="@color/txtcolor3"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/Text_size_16" />
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -37,7 +37,7 @@ class WalletListAdapter(
     override fun onBindViewHolder(holder: NavigationItemViewHolder, position: Int) {
 
         if (radiocheck == true && position==items.size-1) {
-            holder.itemView.btn_add_money.visibility = View.VISIBLE
+            holder.itemView.btn_add_money.visibility = View.GONE
         } else {
             holder.itemView.btn_add_money.visibility = View.GONE
         }

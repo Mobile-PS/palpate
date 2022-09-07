@@ -25,10 +25,11 @@ class PaymentActivity : AppCompatActivity() {
         WalletItemModel(
             R.drawable.mobi_icon, "Mobikwik",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        ), WalletItemModel(
-            R.drawable.wallet_icon, "Palpate Wallet",
-            "Wallet Balance ₹1300 "
-        )
+        ),
+//        WalletItemModel(
+//            R.drawable.wallet_icon, "Palpate Wallet",
+//            "Wallet Balance ₹1300 "
+//        )
     )
 
     private var itemOther = arrayListOf(

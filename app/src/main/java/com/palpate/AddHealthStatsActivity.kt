@@ -15,10 +15,10 @@ class AddHealthStatsActivity : AppCompatActivity() {
             "9 July 2021",
             "56.0"
         ),
-        HealthStateItemModel(
-            R.drawable.bmi_icon_blue, "BMI",
-            "9 July 2021", "20.1"
-        ),
+//        HealthStateItemModel(
+//            R.drawable.bmi_icon_blue, "BMI",
+//            "9 July 2021", "20.1"
+//        ),
         HealthStateItemModel(
             R.drawable.hrtrate_icon_blue, "Heart Rate",
             "1h ago", "76"

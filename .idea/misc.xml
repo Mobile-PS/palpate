@@ -48,6 +48,9 @@
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/discount_bg.xml" value="0.154" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/discount_bg1.xml" value="0.1545" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/dotted.xml" value="0.1545" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/ic_marker.xml" value="0.1545" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/ic_marker_active.xml" value="0.1545" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/ic_marker_inactive.xml" value="0.1545" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/image_bg1.xml" value="0.1545" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/image_bg2.xml" value="0.1545" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/drawable/layout_bg.xml" value="0.1545" />
@@ -61,9 +64,10 @@
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/add_address_activity.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/add_patient_activity.xml" value="0.18" />
-        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/addbloodsugar_activity.xml" value="0.17074275362318841" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/addbloodsugar_activity.xml" value="0.18" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/addbmi_activity.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/addbp_activity.xml" value="0.17074275362318841" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/addhb_dailog.xml" value="0.17255434782608695" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/addhealthrecord_activity.xml" value="0.25" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/addhealthrecord_dailog.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/addhealthstate_activity.xml" value="0.17074275362318841" />
@@ -114,6 +118,7 @@
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/item_report.xml" value="0.17255434782608695" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/item_search_member.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/item_tag.xml" value="0.17074275362318841" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/item_timeline.xml" value="0.17255434782608695" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/item_vaccinationdetails.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/item_vaccinationlist.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/item_weight.xml" value="0.17074275362318841" />
@@ -125,6 +130,10 @@
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/nursing_list_activity.xml" value="0.17255434782608695" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/nursing_list_details.xml" value="0.17255434782608695" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/nursing_list_item.xml" value="0.5" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/nursingorderhistory_activity.xml" value="0.17255434782608695" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/order_list_item.xml" value="0.22" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/orderhistory_activity.xml" value="0.17255434782608695" />
+        <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/orderhistory_details_activity.xml" value="0.25" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/otp.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/otp1.xml" value="0.17074275362318841" />
         <entry key="..\:/Sagar/SapatApplication/palpate-master/palpate/app/src/main/res/layout/package_list_item.xml" value="0.25" />

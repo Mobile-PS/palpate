@@ -82,8 +82,11 @@
         <activity android:name=".PackageListActivity"/>
         <activity android:name=".PackageDetailActivity"/>
         <activity android:name=".CouponListActivity"/>
-        <activity android:name=".PackageHistoryListActivity"/>
-        <activity android:name=".PackageHistoryDetailActivity"/>
+        <activity android:name=".HealthPackageHistoryListActivity"/>
+        <activity android:name=".HealthPackageHistoryDetailActivity"/>
+        <activity android:name=".NursingOrderHistoryActivity"/>
+        <activity android:name=".NursingOrderHistoryDetailActivity"/>
+        <activity android:name=".OrderHistoryActivity"/>
 
     </application>
 

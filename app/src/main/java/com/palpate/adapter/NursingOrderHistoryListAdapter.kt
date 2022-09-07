@@ -5,17 +5,14 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.CompoundButton
 import androidx.recyclerview.widget.RecyclerView
-import com.palpate.PackageDetailActivity
-import com.palpate.PackageHistoryDetailActivity
+import com.palpate.NursingOrderHistoryDetailActivity
 import com.palpate.R
-import kotlinx.android.synthetic.main.packagehistory_list_item.view.*
 
 
-class PackageHistoryListAdapter(
+class NursingOrderHistoryListAdapter(
     private var currentPos: Int,
-) : RecyclerView.Adapter<PackageHistoryListAdapter.NavigationItemViewHolder>() {
+) : RecyclerView.Adapter<NursingOrderHistoryListAdapter.NavigationItemViewHolder>() {
 
     private lateinit var context: Context
 
@@ -24,7 +21,7 @@ class PackageHistoryListAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NavigationItemViewHolder {
         context = parent.context
         val navItem =
-            LayoutInflater.from(parent.context).inflate(R.layout.packagehistory_list_item, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.nursingorder_list_item, parent, false)
         return NavigationItemViewHolder(navItem)
     }
 
@@ -34,7 +31,7 @@ class PackageHistoryListAdapter(
 
     override fun onBindViewHolder(holder: NavigationItemViewHolder, position: Int) {
         holder.itemView.setOnClickListener {
-            val intent = Intent(context, PackageHistoryDetailActivity::class.java)
+            val intent = Intent(context, NursingOrderHistoryDetailActivity::class.java)
             context.startActivity(intent)
         }
 

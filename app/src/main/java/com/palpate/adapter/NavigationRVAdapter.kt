@@ -2,12 +2,9 @@ package com.palpate.adapter
 
 import android.content.Context
 import android.content.Intent
-import android.graphics.Color
-import android.graphics.PorterDuff
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.palpate.*
 import com.palpate.model.NavigationItemModel
@@ -61,7 +58,7 @@ class NavigationRVAdapter(private var items: ArrayList<NavigationItemModel>, pri
 
             if(position == 2){
 
-                val intent = Intent(context, PackageHistoryListActivity::class.java)
+                val intent = Intent(context, OrderHistoryActivity::class.java)
                 context.startActivity(intent)
             }
 

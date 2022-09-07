@@ -39,33 +39,59 @@ class AddHealthStatsAdapter(
         holder.itemView.stats_iconstart.setImageResource(items[position].icon)
 
         holder.itemView.setOnClickListener {
-            if (position == 0) {
+//            if (position == 0) {
+//                val intent = Intent(context, AddWeight1Activity::class.java)
+//                context.startActivity(intent)
+//            } else if (position == 1) {
+//                val intent = Intent(context, AddBMIActivity::class.java)
+//                context.startActivity(intent)
+//            } else if (position == 2) {
+//                val intent = Intent(context, AddHeartRateActivity::class.java)
+//                context.startActivity(intent)
+//            } else if (position == 3) {
+//                val intent = Intent(context, AddBPActivity::class.java)
+//                context.startActivity(intent)
+//            } else if (position == 4) {
+//                val intent = Intent(context, AddTempActivity::class.java)
+//                context.startActivity(intent)
+//            } else if (position == 5) {
+//                val intent = Intent(context, AddBloodSugerActivity::class.java)
+//                context.startActivity(intent)
+//            } else if (position == 6) {
+//                val intent = Intent(context, AddHeightActivity::class.java)
+//                context.startActivity(intent)
+//            } else if (position == 7) {
+//                val intent = Intent(context, AddOxygenActivity::class.java)
+//                context.startActivity(intent)
+//            } else if (position == 8) {
+//                val intent = Intent(context, VaccinationDetailsActivity::class.java)
+//                context.startActivity(intent)
+//            }
+
+            if (items[position].title == "Weight") {
                 val intent = Intent(context, AddWeight1Activity::class.java)
-                context.startActivity(intent)
-            } else if (position == 1) {
+               context.startActivity(intent)
+            } else if (items[position].title == "BMI") {
                 val intent = Intent(context, AddBMIActivity::class.java)
-                context.startActivity(intent)
-            } else if (position == 2) {
+               context.startActivity(intent)
+            } else if (items[position].title == "Heart Rate") {
                 val intent = Intent(context, AddHeartRateActivity::class.java)
-                context.startActivity(intent)
-            } else if (position == 3) {
+               context.startActivity(intent)
+            } else if (items[position].title == "Blood Pressure") {
                 val intent = Intent(context, AddBPActivity::class.java)
-                context.startActivity(intent)
-            } else if (position == 4) {
+               context.startActivity(intent)
+            } else if (items[position].title == "Temperature") {
                 val intent = Intent(context, AddTempActivity::class.java)
-                context.startActivity(intent)
-            } else if (position == 5) {
+               context.startActivity(intent)
+            } else if (items[position].title == "Blood Sugar") {
                 val intent = Intent(context, AddBloodSugerActivity::class.java)
-                context.startActivity(intent)
-            } else if (position == 6) {
+               context.startActivity(intent)
+            } else if (items[position].title == "Height") {
                 val intent = Intent(context, AddHeightActivity::class.java)
-                context.startActivity(intent)
-            } else if (position == 7) {
+               context.startActivity(intent)
+            } else if (items[position].title == "Oxygen Saturation") {
                 val intent = Intent(context, AddOxygenActivity::class.java)
-                context.startActivity(intent)
-            } else if (position == 8) {
-                val intent = Intent(context, VaccinationDetailsActivity::class.java)
-                context.startActivity(intent)
+               context.startActivity(intent)
             }
 
         }

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -10,10 +8,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/btn_login"
         android:orientation="vertical">
 
         <RelativeLayout
-            android:id="@+id/relative_header"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
             android:orientation="horizontal">
@@ -22,8 +20,7 @@
                 android:id="@+id/linear_header"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:orientation="horizontal">
+                android:layout_centerVertical="true">
 
                 <ImageView
                     android:id="@+id/back"
@@ -45,19 +42,12 @@
                     android:textSize="@dimen/Header_Text_size" />
             </LinearLayout>
 
-            <ImageView
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerInParent="true"
-                android:layout_margin="10dp"
-                android:background="@drawable/quest"></ImageView>
+
 
 
         </RelativeLayout>
 
         <View
-            android:id="@+id/view"
             android:layout_width="match_parent"
             android:layout_height="4dp"
             android:background="@drawable/shadow" />
@@ -65,19 +55,29 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginVertical="20dp"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
 
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/packagehistorylist_rv"
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                app:tabGravity="center"
+                app:tabMode="scrollable"
+                app:tabTextAppearance="@style/TabFont"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp" />
+                app:tabIndicatorColor="@color/dashcolor2"
+                app:tabSelectedTextColor="@color/dashcolor2"
+                app:tabTextColor="@android:color/darker_gray"
+                android:fontFamily="@font/redhat"
+                android:textSize="14sp"
+                />
 
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
         </LinearLayout>
 

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginBottom="10dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:id="@+id/layout_package_item"
+    android:background="@drawable/layout_bg12">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raj Kumar"
+            android:textColor="@color/black"
+            android:fontFamily="@font/redhat_medium"
+            android:textFontWeight="400"
+            android:textSize="@dimen/Text_size_15" />
+
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹699"
+            android:textColor="@color/black"
+            android:fontFamily="@font/redhat_medium"
+            android:textFontWeight="400"
+            android:textSize="@dimen/Text_size_15" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/redhat"
+        android:text="Personal Care Package Gold"
+        android:textColor="@color/login1"
+        android:textFontWeight="400"
+        android:textSize="@dimen/Text_Size_14" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/redhat"
+        android:text="16 Aug 2021 , 07:00 AM "
+        android:textColor="@color/login1"
+        android:textFontWeight="400"
+        android:textSize="@dimen/Text_Size_14" />
+
+
+    <ImageView
+        android:layout_marginVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/dot"/>
+
+
+
+
+    <LinearLayout
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/redhat"
+            android:gravity="center_vertical"
+            android:text="●"
+            android:textColor="@color/greencolor"
+            android:textFontWeight="700"
+            android:textSize="20sp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Completed"
+            android:textColor="@color/login1"
+            android:fontFamily="@font/redhat"
+            android:textFontWeight="400"
+            android:textSize="@dimen/Text_Size_14" />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.packagehistory_details_activity.*
 
 
-class PackageHistoryDetailActivity : AppCompatActivity() {
+class HealthPackageHistoryDetailActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

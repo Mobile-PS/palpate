@@ -1,15 +1,22 @@
 package com.palpate
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentPagerAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 import com.palpate.adapter.SpecialistAdapter
 import com.palpate.adapter.TabAdapter
+import com.palpate.fragment.HealthRecordFragment
+import com.palpate.fragment.HealthStatFragment
+import com.palpate.fragment.MedicalRecordFragment
 import com.palpate.model.SpecialistDataModel
 import kotlinx.android.synthetic.main.sharerecord_dailog.view.*
 import kotlinx.android.synthetic.main.healthstats_activity.*
@@ -47,6 +54,7 @@ class HealthStatsActivity : AppCompatActivity() {
             override fun onTabSelected(tab: TabLayout.Tab) {
                 viewPager.currentItem = tab.position
             }
+
             override fun onTabUnselected(tab: TabLayout.Tab) {}
             override fun onTabReselected(tab: TabLayout.Tab) {}
         })
@@ -58,14 +66,14 @@ class HealthStatsActivity : AppCompatActivity() {
         raj.setOnClickListener {
 
 
-                val intent = Intent(this, MyHealthStatsActivity::class.java)
-                startActivity(intent)
+            val intent = Intent(this, MyHealthStatsActivity::class.java)
+            startActivity(intent)
 
 
         }
 
         card_sharedoctor.setOnClickListener {
-                openShareDialog();
+            openShareDialog();
 
 
         }
@@ -92,3 +100,4 @@ class HealthStatsActivity : AppCompatActivity() {
 
 
 }
+

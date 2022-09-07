@@ -1,20 +1,17 @@
 package com.palpate
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.palpate.adapter.AddressListAdapter
-import com.palpate.adapter.CouponListAdapter
-import com.palpate.adapter.PackageHistoryListAdapter
+import com.palpate.adapter.HealthPackageHistoryListAdapter
 import kotlinx.android.synthetic.main.packagehistory_activity.*
 
 
-class PackageHistoryListActivity : AppCompatActivity() {
+class HealthPackageHistoryListActivity : AppCompatActivity() {
 
 
 
-    private lateinit var adapter: PackageHistoryListAdapter
+    private lateinit var adapter: HealthPackageHistoryListAdapter
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +20,7 @@ class PackageHistoryListActivity : AppCompatActivity() {
 
         packagehistorylist_rv.layoutManager = LinearLayoutManager(this)
         packagehistorylist_rv.setHasFixedSize(true)
-        adapter = PackageHistoryListAdapter(0)
+        adapter = HealthPackageHistoryListAdapter(0)
         packagehistorylist_rv.adapter = adapter
 
         back.setOnClickListener {

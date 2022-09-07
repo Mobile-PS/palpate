@@ -101,46 +101,112 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+            <RelativeLayout
                 android:layout_marginTop="10dp"
-                android:orientation="vertical">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-                <TextView
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_left"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/new_left_aroow"
+                  ></ImageView>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_toRightOf="@+id/img_left"
+                    android:layout_toLeftOf="@+id/linear_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="IN RANGE"
+                        android:textColor="#00CD00"
+                        android:textFontWeight="700"
+                        android:textSize="@dimen/Text_Size_14" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="68.0 kg"
+                        android:textColor="#0F0F0F"
+                        android:textFontWeight="700"
+                        android:textSize="@dimen/Text_Size_14" />
+
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="22 Aug 21"
+                        android:textColor="#5F5F5F"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/Text_Size_13" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_toRightOf="@+id/img_left"
+                    android:id="@+id/linear_switch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:fontFamily="@font/redhat_medium"
-                    android:text="IN RANGE"
-                    android:textColor="#00CD00"
-                    android:textFontWeight="700"
-                    android:textSize="@dimen/Text_Size_14" />
-
-                <TextView
-                    android:layout_marginTop="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:fontFamily="@font/redhat_medium"
-                    android:text="68.0 kg"
-                    android:textColor="#0F0F0F"
-                    android:textFontWeight="700"
-                    android:textSize="@dimen/Text_Size_14" />
-
-                <TextView
-                    android:layout_marginTop="2dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:fontFamily="@font/redhat_medium"
-                    android:text="22 Aug 21"
-                    android:textColor="#5F5F5F"
-                    android:textFontWeight="400"
-                    android:textSize="@dimen/Text_Size_13" />
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
 
 
-            </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="Duration"
+                        android:textColor="#0F0F0F"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/Text_Size_14" />
+                    <Switch
+                        android:id="@+id/btn_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:checked="false"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="Age"
+                        android:textColor="#0F0F0F"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/Text_Size_14" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_right"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/new_right_aroow"
+                    ></ImageView>
+
+            </RelativeLayout>
+
 
             <com.github.mikephil.charting.charts.LineChart
                 android:id="@+id/linechart"
@@ -148,6 +214,7 @@
                 android:layout_height="400dp"
                 android:layout_margin="10dp"
                 android:layout_marginTop="18dp" />
+
         </LinearLayout>
 
 
