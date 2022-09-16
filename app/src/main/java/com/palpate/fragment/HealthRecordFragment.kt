@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.palpate.AddHealthRecordActivity
+import com.palpate.GlobalStuff
 import com.palpate.R
 import com.palpate.adapter.HealthRecordAdapter
 import com.palpate.adapter.SpecialistAdapter
@@ -80,6 +81,7 @@ class HealthRecordFragment : Fragment() {
         }
 
         btn_add_health_record.setOnClickListener {
+            GlobalStuff.mainNavState = 2
             val intent = Intent(context, AddHealthRecordActivity::class.java)
             startActivity(intent)
         }

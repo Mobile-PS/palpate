@@ -27,16 +27,16 @@ class AddBloodSugerActivity : AppCompatActivity() {
         BloodSugerItemModel(
             R.drawable.dish_icon, "Fasting",
         ),
-        BloodSugerItemModel(
-            R.drawable.dish_icon1, "Pre-meal",
-        ),
+//        BloodSugerItemModel(
+//            R.drawable.dish_icon1, "Pre-meal",
+//        ),
         BloodSugerItemModel(
             R.drawable.dish_icon1, "Post-meal",
         ),
 
-        BloodSugerItemModel(
-            R.drawable.night_icon, "Before Sleep",
-        ),
+//        BloodSugerItemModel(
+//            R.drawable.night_icon, "Before Sleep",
+//        ),
 
         BloodSugerItemModel(
             R.drawable.random_icon, "Random",
@@ -56,19 +56,19 @@ class AddBloodSugerActivity : AppCompatActivity() {
 
         rel_view.setDefaultSelectedValue(58f)
         id_txtcount.text = "58"
-        txt_count.text = "58"
+       // txt_count.text = "58"
         txt_count1.text = "58"
         rel_view.setChooseValueChangeListener(object : RulerView.OnChooseResulterListener {
             override fun onChooseValueChange(value: Float) {
                 id_txtcount.text = value.roundToInt().toString();
-                txt_count.text = value.roundToInt().toString();
+              //  txt_count.text = value.roundToInt().toString();
                 txt_count1.text = value.roundToInt().toString();
             }
         })
 
         blsugar_rv.layoutManager = GridLayoutManager(this, 3);
         blsugar_rv.setHasFixedSize(true)
-        adapter = BloodSugerAdapter(items, 0)
+        adapter = BloodSugerAdapter(items, 2)
         blsugar_rv.adapter = adapter
 
         back.setOnClickListener {

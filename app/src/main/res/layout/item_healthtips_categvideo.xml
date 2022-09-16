@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/relative_categ"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <ImageView
+            android:id="@+id/img_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/health_tip_cat1" />
+
+
+        <TextView
+            android:id="@+id/txt_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginVertical="20dp"
+            android:background="@color/itemreportbg"
+            android:fontFamily="@font/redhat_medium"
+            android:paddingVertical="5dp"
+            android:text="Mind &amp; Mood"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textFontWeight="500"
+            android:textSize="@dimen/Text_Size_13" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp">
+
+            <ImageView
+                android:id="@+id/img_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/health_tip_video1" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/play_white"></ImageView>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_category_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/redhat"
+                android:text="Fitness"
+                android:textColor="@color/itemreportbg"
+                android:textFontWeight="400"
+                android:textSize="@dimen/Text_Size_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/redhat_medium"
+                android:maxLines="1"
+                android:text="Easily distracte..."
+                android:textColor="@color/login1"
+                android:textFontWeight="400"
+                android:textSize="@dimen/Text_Size_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/redhat"
+                android:text="September 23, 2021"
+                android:textColor="@android:color/darker_gray"
+                android:textFontWeight="400"
+                android:textSize="@dimen/Text_Size_13" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

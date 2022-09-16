@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_bottom"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linear_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/redhat_medium"
+                    android:text="My Health QR"
+                    android:textColor="@color/login1"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/Header_Text_size" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/shadow" />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="50dp"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="@drawable/qr_code"/>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/redhat_medium"
+                android:text="Raj Kumar"
+                android:textColor="@color/login1"
+                android:textFontWeight="500"
+                android:textSize="@dimen/Text_Size_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/redhat"
+                android:text="#64891"
+                android:textColor="@color/login1"
+                android:textFontWeight="500"
+                android:textSize="@dimen/Text_Size_14" />
+
+            <TextView
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/redhat_medium"
+                android:text="Scan my QR code to view"
+                android:textColor="@color/login1"
+                android:textFontWeight="500"
+                android:textSize="@dimen/Text_size_16" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/bt_qr_details"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:fontFamily="@font/redhat_medium"
+        android:textAlignment="center"
+        app:icon="@drawable/qr_icon"
+        app:iconTint="@color/white"
+        android:text="My QR Details"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textFontWeight="500"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="bottom|center"
+        android:textSize="@dimen/Text_size_16"></com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -30,6 +30,17 @@ class AddHealthRecordActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.addhealthrecord_activity)
 
+        val intent = getIntent();
+        val myValue = intent.getStringExtra("type")
+
+        if(myValue!=null){
+            txt_save.text = "Delete"
+            nested_saveform.visibility=View.GONE
+            nested_viewdetails.visibility=View.VISIBLE
+            txt_save.setBackgroundResource(R.drawable.layout_bg14);
+            txt_title.text="View Health Record"
+        }
+
         tag_rv.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         tag_rv.setHasFixedSize(true)
         adapter = TagAdapter(items, 0)
@@ -44,22 +55,28 @@ class AddHealthRecordActivity : AppCompatActivity() {
             finish()
         }
 
-        intent.extras?.let {
-            Log.d("TEST","Test")
-            nested_saveform.visibility=View.GONE
-            nested_viewdetails.visibility=View.VISIBLE
-        }
+//        intent.extras?.let {
+//            Log.d("TEST","Test")
+//            nested_saveform.visibility=View.GONE
+//            nested_viewdetails.visibility=View.VISIBLE
+//            txt_title.text="View Health Record"
+//
+//        }
 
-        txt_save.setOnClickListener {
-            if (txt_save.text == "Save") {
-                txt_save.text = "Delete"
-                nested_saveform.visibility=View.GONE
-                nested_viewdetails.visibility=View.VISIBLE
+        if(myValue==null) {
+            txt_save.setOnClickListener {
+                if (txt_save.text == "Save") {
+                    txt_save.text = "Delete"
+                    nested_saveform.visibility = View.GONE
+                    nested_viewdetails.visibility = View.VISIBLE
+                    txt_save.setBackgroundResource(R.drawable.layout_bg14);
 
-            } else if (txt_save.text == "Delete") {
-                txt_save.text = "Save"
-                nested_saveform.visibility=View.VISIBLE
-                nested_viewdetails.visibility=View.GONE
+                } else if (txt_save.text == "Delete") {
+                    txt_save.text = "Save"
+                    nested_saveform.visibility = View.VISIBLE
+                    nested_viewdetails.visibility = View.GONE
+                    txt_save.setBackgroundResource(R.drawable.layout_bg9);
+                }
             }
         }
 

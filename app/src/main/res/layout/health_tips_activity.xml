@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_bottom"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linear_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/redhat_medium"
+                    android:text="Health Tips"
+                    android:textColor="@color/login1"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/Header_Text_size" />
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_alignParentEnd="true"
+               android:layout_centerInParent="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/search_black" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/shadow" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_filter"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="end"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/filter_icon_grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/healthtip_header"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/redhat_medium"
+                            android:text="Resource Center:"
+                            android:textColor="@color/white"
+                            android:textFontWeight="500"
+                            android:textSize="@dimen/Header_Text_size" />
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/redhat"
+                            android:text="25 Valuable Health &amp; Wellness Blogs to Follow in 2021"
+                            android:textColor="@color/white"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/Text_Size_14" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Latest Articles"
+                        android:textColor="@color/dashcolor1"
+                        android:fontFamily="@font/redhat_medium"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/Text_Size_14" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/artical_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Catagory"
+                        android:textColor="@color/dashcolor1"
+                        android:fontFamily="@font/redhat_medium"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/Text_Size_14" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/artical_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Videos"
+                        android:textColor="@color/dashcolor1"
+                        android:fontFamily="@font/redhat_medium"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/Text_Size_14" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/artical_Videos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

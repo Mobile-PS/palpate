@@ -19,7 +19,7 @@ class PackageDetailActivity : AppCompatActivity() {
 
         btn_subscribe.setOnClickListener {
             GlobalStuff.mainNavState = 1
-            val intent = Intent(this, AddressListActivity::class.java)
+            val intent = Intent(this, PatientDetailsActivity::class.java)
             startActivity(intent)
         }
 

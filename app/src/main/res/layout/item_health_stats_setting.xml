@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/stats_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/circular_bg3"
+            android:padding="15dp"
+            android:scaleType="centerInside"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/btn_switch"
+            android:layout_toRightOf="@+id/stats_icon"
+            android:id="@+id/stat_title"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/redhat_medium"
+            android:text="Custom Navigation Drawer Row"
+            android:textColor="@color/txtcolor2"
+            android:textFontWeight="500"
+            android:textSize="@dimen/Text_size_16" />
+
+        <Switch
+            android:id="@+id/btn_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+           android:layout_centerInParent="true"
+            android:fontFamily="@font/redhat"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textSize="@dimen/Text_Size_18" />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shadow" />
+
+</LinearLayout>

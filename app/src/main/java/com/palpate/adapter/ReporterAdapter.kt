@@ -33,11 +33,19 @@ class ReporterAdapter(
 
     override fun onBindViewHolder(holder: NavigationItemViewHolder, position: Int) {
 
-        holder.itemView.img_srch.setOnClickListener {
-            val dialogView = LayoutInflater.from(context).inflate(R.layout.downloadimage_dailog, null)
-            val customDialog = AlertDialog.Builder(context)
-                .setView(dialogView)
-                .show()
+        if(position==2){
+            holder.itemView.card_pdf.visibility=View.VISIBLE
+            holder.itemView.card_img.visibility=View.GONE
+        }else {
+            holder.itemView.card_pdf.visibility=View.GONE
+            holder.itemView.card_img.visibility=View.VISIBLE
+            holder.itemView.img_srch.setOnClickListener {
+                val dialogView =
+                    LayoutInflater.from(context).inflate(R.layout.downloadimage_dailog, null)
+                val customDialog = AlertDialog.Builder(context)
+                    .setView(dialogView)
+                    .show()
+            }
         }
 
 

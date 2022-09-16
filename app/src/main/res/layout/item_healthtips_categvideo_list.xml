@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/img_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/artical_1" />
+
+            <ImageView
+                android:id="@+id/btn_play"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/play_white"></ImageView>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/redhat_medium"
+                android:maxLines="1"
+                android:text="Long-lasting healthy changes "
+                android:textColor="@color/login1"
+                android:textFontWeight="500"
+                android:textSize="@dimen/Text_size_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/redhat"
+                android:text="By Dr. Navneet Srivastava  ●  28 Sep 2021"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/Text_Size_12" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/redhat"
+                android:text="Abundant research shows that healthy lifestyle factors protect."
+                android:textFontWeight="400"
+                android:textSize="@dimen/Text_Size_14" />
+
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_gravity="end"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="10dp"
+                android:src="@drawable/right_arrow_grey"
+                android:background="@drawable/circular_bg3"></ImageView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/dot"/>
+
+</LinearLayout>

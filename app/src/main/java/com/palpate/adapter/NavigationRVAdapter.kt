@@ -74,6 +74,17 @@ class NavigationRVAdapter(private var items: ArrayList<NavigationItemModel>, pri
                 context.startActivity(intent)
             }
 
+            if(position == 5){
+
+                val intent = Intent(context, HealthTipsActivity::class.java)
+                context.startActivity(intent)
+            }
+            if(position == 6){
+
+                val intent = Intent(context, SeetingsActivity::class.java)
+                context.startActivity(intent)
+            }
+
 
         }
 

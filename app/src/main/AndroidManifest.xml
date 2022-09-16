@@ -87,6 +87,14 @@
         <activity android:name=".NursingOrderHistoryActivity"/>
         <activity android:name=".NursingOrderHistoryDetailActivity"/>
         <activity android:name=".OrderHistoryActivity"/>
+        <activity android:name=".HealthTipsActivity"/>
+        <activity android:name=".HealthTipsListActivity"/>
+        <activity android:name=".HealthTipsDetailsActivity"/>
+        <activity android:name=".SeetingsActivity"/>
+        <activity android:name=".QrCodeActivity"/>
+        <activity android:name=".QrCodeDetailsActivity"/>
+        <activity android:name=".SettingHealthStatesActivity"/>
+        <activity android:name=".SettingProfileActivity"/>
 
     </application>
 
