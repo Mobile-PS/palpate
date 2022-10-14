@@ -161,7 +161,7 @@
                             android:text="●"
                             android:textColor="@color/txtcolor1"
                             android:textFontWeight="400"
-                            android:textSize="10sp"
+                            android:textSize="8sp"
                             android:layout_marginRight="5dp"
                             />
 
@@ -186,7 +186,7 @@
                             android:text="●"
                             android:textColor="@color/txtcolor1"
                             android:textFontWeight="400"
-                            android:textSize="10sp"
+                            android:textSize="8sp"
                             android:layout_marginRight="5dp"
                             />
 
@@ -211,7 +211,7 @@
                             android:text="●"
                             android:textColor="@color/txtcolor1"
                             android:textFontWeight="400"
-                            android:textSize="10sp"
+                            android:textSize="8sp"
                             android:layout_marginRight="5dp"
                             />
 
@@ -469,7 +469,7 @@
         </androidx.core.widget.NestedScrollView>
 
         <androidx.core.widget.NestedScrollView
-            android:visibility="gone"
+          android:visibility="gone"
             android:id="@+id/nested_viewdetails"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -533,36 +533,81 @@
                     </LinearLayout>
                     </HorizontalScrollView>
 
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                    <LinearLayout
                         android:layout_marginTop="15dp"
-                        android:fontFamily="@font/redhat"
-                        android:text="● You can upload a total of 4 prescriptions per record."
-                        android:textColor="@color/txtcolor1"
-                        android:textFontWeight="400"
-                        android:textSize="@dimen/Text_Size_13" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:fontFamily="@font/redhat"
-                        android:text="● Please be sure to also upload the back-side image of your prescription, if present."
-                        android:textColor="@color/txtcolor1"
-                        android:textFontWeight="400"
-                        android:textSize="@dimen/Text_Size_13" />
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/redhat"
+                            android:text="●"
+                            android:textColor="@color/txtcolor1"
+                            android:textFontWeight="400"
+                            android:textSize="8sp"
+                            android:layout_marginRight="5dp"
+                            />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/redhat"
+                            android:text="You can upload a total of 4 prescriptions per record."
+                            android:textColor="@color/txtcolor1"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/Text_Size_13" />
+                    </LinearLayout>
+                    <LinearLayout
                         android:layout_marginTop="5dp"
-                        android:fontFamily="@font/redhat"
-                        android:text="● Please be sure to also upload the back-side image of your prescription, if present."
-                        android:textColor="@color/txtcolor1"
-                        android:textFontWeight="400"
-                        android:textSize="@dimen/Text_Size_13" />
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/redhat"
+                            android:text="●"
+                            android:textColor="@color/txtcolor1"
+                            android:textFontWeight="400"
+                            android:textSize="8sp"
+                            android:layout_marginRight="5dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/redhat"
+                            android:text="Please be sure to also upload the back-side image of your prescription, if present."
+                            android:textColor="@color/txtcolor1"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/Text_Size_13" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/redhat"
+                            android:text="●"
+                            android:textColor="@color/txtcolor1"
+                            android:textFontWeight="400"
+                            android:textSize="8sp"
+                            android:layout_marginRight="5dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/redhat"
+                            android:text="Please be sure to also upload the back-side image of your prescription, if present."
+                            android:textColor="@color/txtcolor1"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/Text_Size_13" />
+                    </LinearLayout>
 
                 </LinearLayout>
 

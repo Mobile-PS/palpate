@@ -8,13 +8,12 @@
     <string name="trouble"><font color='#5F5F5F'>Have Trouble Logging in?</font><b><font color='#165860'>Get help</font></b></string>
 
 
-
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="d1"><font color='#FFFFFF'>Rajesh Kumar</font></string>
 
-    <string name="d2"><font  color='#83A3A9'>Male   ●   25 Yr</font></string>
+    <string name="d2"><font color='#83A3A9'>Male   ●   25 Yr</font></string>
 
     <string name="star">\u002b Add Health Record</string>
 
@@ -25,6 +24,7 @@
     <string name="title_addresstype">Address Type<font color='#FF0000'>*</font></string>
     <string name="title_location">Location / Area<font color='#FF0000'>*</font></string>
     <string name="title_house">House Number &amp; Building<font color='#FF0000'>*</font></string>
+    <string name="artical_desc">Long-lasting healthy changes Abundant research shows that healthy lifestyle factors protect people against serious health problems like diabetes, high blood pressure, heart disease, stroke, cancer, and more. Even small steps toward a healthier lifestyle can make a big difference in our lives––heres practical advice for making healthy changes stick.Long-lasting healthy changes Abundant research shows that healthy lifestyle factors protect people against serious health problems like diabetes, high blood pressure, heart disease, stroke, cancer, and more. Even small steps toward a healthier lifestyle can make a big difference in our lives––heres practical advice for making healthy changes stick.Long-lasting healthy changes Abundant research shows that healthy lifestyle factors protect people against serious health problems like diabetes, high blood pressure, heart disease, stroke, cancer, and more. Even small steps toward a healthier lifestyle can make a big difference in our lives––heres practical advice for making healthy changes stick.</string>
 
     <string-array name="relation">
         <item>Father</item>
@@ -64,7 +64,6 @@
     </string-array>
 
     <string name="line"><strike> ₹1600 </strike> </string>
-
 
 
 </resources>

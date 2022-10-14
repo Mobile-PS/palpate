@@ -11,6 +11,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/relative_proceed"
+            android:layout_marginBottom="20dp"
             android:orientation="vertical">
 
             <RelativeLayout
@@ -91,6 +92,56 @@
                         android:orientation="vertical"
                         android:padding="10dp">
 
+                        <LinearLayout
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Order ID: #84193"
+                                android:textColor="@color/txtcolor1"
+                                android:fontFamily="@font/redhat"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_Size_14" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/redhat"
+                                android:gravity="center_vertical"
+                                android:text="●"
+                                android:textColor="@android:color/darker_gray"
+                                android:textFontWeight="400"
+                                android:textSize="6sp"
+                                android:layout_marginHorizontal="10dp"
+                                />
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/info_red_iocn"/>
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/redhat"
+                                android:text="16 Jan 2022 , 07:00 AM "
+                                android:textColor="@color/login1"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_Size_14" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_marginVertical="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@drawable/dot"/>
+
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -110,7 +161,34 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/redhat_medium"
+                                        android:text="Good Health Package"
+                                        android:textColor="@color/black"
+                                        android:textFontWeight="400"
+                                        android:textSize="@dimen/Text_size_15" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:fontFamily="@font/redhat_medium"
+                                        android:text="₹699"
+                                        android:textColor="@color/black"
+                                        android:textFontWeight="400"
+                                        android:textSize="@dimen/Text_size_15" />
+
+                                </RelativeLayout>
                                 <TextView
+                                    android:visibility="gone"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Good Health Package"
@@ -118,25 +196,42 @@
                                     android:fontFamily="@font/redhat_medium"
                                     android:textFontWeight="400"
                                     android:textSize="@dimen/Text_size_15" />
+
                                 <TextView
-                                    android:layout_marginTop="5dp"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Valid for 3 Months from subscription"
-                                    android:textColor="@color/txtcolor1"
+                                    android:layout_centerVertical="true"
                                     android:fontFamily="@font/redhat"
+                                    android:text="16 Aug 2021 , 07:00 AM "
+                                    android:textColor="@color/login1"
                                     android:textFontWeight="400"
                                     android:textSize="@dimen/Text_Size_14" />
+
+
                             </LinearLayout>
 
                             <ImageView
-                                android:layout_alignParentEnd="true"
+                                android:visibility="gone"
                                 android:id="@+id/img_left"
-                                android:layout_centerInParent="true"
                                 android:layout_width="8dp"
                                 android:layout_height="12dp"
-                                android:src="@drawable/left_arrow"/>
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/left_arrow" />
                         </RelativeLayout>
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+
+
+                        </LinearLayout>
+
 
 
                         <ImageView
@@ -149,22 +244,40 @@
 
 
                         <RelativeLayout
-                            android:layout_marginTop="5dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:gravity="center_vertical"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:layout_centerVertical="true"
+                            <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="16 Aug 2021 , 07:00 AM "
-                                android:textColor="@color/login1"
-                                android:fontFamily="@font/redhat"
-                                android:textFontWeight="400"
-                                android:textSize="@dimen/Text_Size_14" />
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="8dp"
+                                    android:fontFamily="@font/redhat"
+                                    android:text="●"
+                                    android:textColor="@color/greencolor"
+                                    android:textFontWeight="700"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/redhat"
+                                    android:text="Order Completed"
+                                    android:textColor="@color/login1"
+                                    android:textFontWeight="400"
+                                    android:textSize="@dimen/Text_Size_14" />
+
+
+                            </LinearLayout>
 
                             <LinearLayout
                                 android:layout_alignParentEnd="true"
@@ -222,25 +335,27 @@
                             android:textSize="@dimen/Text_size_15" />
                         
                         <ImageView
-                            android:visibility="gone"
+
                             android:id="@+id/img_down_arrow"
                             android:layout_centerVertical="true"
                             android:layout_width="12dp"
                             android:layout_height="8dp"
                             android:layout_alignParentEnd="true"
                             android:background="@drawable/arrow"/>
-                        <ImageView
 
+                        <ImageView
+                            android:visibility="gone"
                             android:id="@+id/img_up_arrow"
-                            android:layout_centerVertical="true"
                             android:layout_width="12dp"
                             android:layout_height="8dp"
                             android:layout_alignParentEnd="true"
-                            android:background="@drawable/up_arrow"/>
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/up_arrow" />
                     </RelativeLayout>
                    
 
                     <LinearLayout
+                        android:visibility="gone"
                         android:id="@+id/linear_description"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -351,6 +466,361 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/layout_bg12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="Patient Details "
+                        android:textColor="@color/black"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/Text_size_15" />
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/circular_bg3"
+                            android:padding="8dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/user_icon"
+                            tools:ignore="ContentDescription" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/img_member"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/redhat_medium"
+                                android:text="Harish Kumar"
+                                android:textColor="@color/black"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_size_16" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/redhat"
+                                    android:gravity="center_vertical"
+                                    android:text="54 year"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textFontWeight="400"
+                                    android:textSize="@dimen/Text_Size_14" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/redhat"
+                                    android:gravity="center_vertical"
+                                    android:text="●"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textFontWeight="400"
+                                    android:textSize="6sp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/redhat"
+                                    android:gravity="center_vertical"
+                                    android:text="Male"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textFontWeight="400"
+                                    android:textSize="@dimen/Text_Size_14" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/redhat"
+                                android:gravity="center_vertical"
+                                android:text="9029292992 | harish@gmail.com"
+                                android:textColor="@android:color/darker_gray"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_Size_14" />
+
+                            <TextView
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/redhat"
+                                android:gravity="center_vertical"
+                                android:text="Shaheed Path, Vibhuti Khand Gomti Nagar, Lucknow - 226001"
+                                android:textColor="@android:color/darker_gray"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_Size_14" />
+
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/layout_bg12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="Patient Address"
+                        android:textColor="@color/black"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/Text_size_15" />
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/circular_bg3"
+                            android:padding="8dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/home_icon"
+                            tools:ignore="ContentDescription" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/img_member"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/redhat_medium"
+                                android:text="Home"
+                                android:textColor="@color/black"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_size_16" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/redhat"
+                                    android:gravity="center_vertical"
+                                    android:text="Harish Kumar"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textFontWeight="400"
+                                    android:textSize="@dimen/Text_Size_14" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/redhat"
+                                    android:gravity="center_vertical"
+                                    android:text="●"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textFontWeight="400"
+                                    android:textSize="6sp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/redhat"
+                                    android:gravity="center_vertical"
+                                    android:text="9029292992"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textFontWeight="400"
+                                    android:textSize="@dimen/Text_Size_14" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/redhat"
+                                android:gravity="center_vertical"
+                                android:text="9029292992 | harish@gmail.com"
+                                android:textColor="@android:color/darker_gray"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_Size_14" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/redhat"
+                                android:gravity="center_vertical"
+                                android:text="Shaheed Path, Vibhuti Khand Gomti Nagar, Lucknow - 226001"
+                                android:textColor="@android:color/darker_gray"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_Size_14" />
+
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/layout_bg12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="Doctor Details"
+                        android:textColor="@color/black"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/Text_size_15" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_user"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:padding="8dp"
+                            android:src="@drawable/patient_icon2"
+                            tools:ignore="ContentDescription" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toLeftOf="@+id/img_call"
+                            android:layout_toRightOf="@+id/img_user"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/redhat_medium"
+                                android:text="Meena Kumari"
+                                android:textColor="@color/black"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_size_16" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/redhat"
+                                    android:gravity="center_vertical"
+                                    android:text="26 Years"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textFontWeight="400"
+                                    android:textSize="@dimen/Text_Size_14" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:fontFamily="@font/redhat"
+                                    android:gravity="center_vertical"
+                                    android:text="●"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textFontWeight="400"
+                                    android:textSize="6sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/redhat"
+                                    android:gravity="center_vertical"
+                                    android:text="Female"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textFontWeight="400"
+                                    android:textSize="@dimen/Text_Size_14" />
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/redhat"
+                                android:gravity="center_vertical"
+                                android:text="Exp (2 years)"
+                                android:textColor="@android:color/darker_gray"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_Size_14" />
+
+
+                        </LinearLayout>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_call"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_alignParentEnd="true"
+                           android:layout_marginRight="10dp"
+                            android:src="@drawable/call_blue_icon"
+                            tools:ignore="ContentDescription" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
 
 
                 <LinearLayout
@@ -467,8 +937,8 @@
                         android:layout_height="2dp"
                         android:background="@drawable/dot" />
 
+
                     <LinearLayout
-                        android:visibility="gone"
                         android:id="@+id/linear_redme"
                         android:orientation="vertical"
                         android:layout_width="match_parent"
@@ -486,7 +956,7 @@
                                 android:layout_alignParentStart="true"
                                 android:layout_centerVertical="true"
                                 android:fontFamily="@font/redhat"
-                                android:text="Palpate Points 8 "
+                                android:text="Palpate Points "
                                 android:textColor="@color/txtcolor1"
                                 android:textFontWeight="400"
                                 android:textSize="@dimen/Text_Size_14" />
@@ -552,8 +1022,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="20dp"
-                    android:layout_marginHorizontal="10dp"
+                 android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/layout_bg12"
                     android:orientation="vertical">
 
                     <TextView
@@ -657,6 +1128,53 @@
 
                     </LinearLayout>
                 </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/layout_bg12">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginVertical="10dp"
+                        android:id="@+id/orderstatus_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_Visit_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:background="@drawable/button_bg"
+                    android:fontFamily="@font/redhat_medium"
+                    android:text="Package details"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/Text_size_16" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_save_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:background="@drawable/button_bg8"
+                    android:fontFamily="@font/redhat_medium"
+                    android:text="Need Help?"
+                    android:textAllCaps="false"
+                    android:textColor="@color/txtcolor3"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/Text_size_16" />
+
+
+
 
             </LinearLayout>
 

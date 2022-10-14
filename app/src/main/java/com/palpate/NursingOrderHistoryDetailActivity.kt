@@ -1,6 +1,8 @@
 package com.palpate
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -26,6 +28,25 @@ class NursingOrderHistoryDetailActivity : AppCompatActivity() {
         back.setOnClickListener {
             finish()
         }
+
+        btn_Visit_details.setOnClickListener {
+            val intent = Intent(this, VisitDetailsActivity::class.java)
+            intent.putExtra("key", "visit")
+            startActivity(intent)
+        }
+
+        relative_description.setOnClickListener {
+            if (img_down_arrow.visibility == View.VISIBLE) {
+                img_down_arrow.visibility = View.GONE
+                img_up_arrow.visibility = View.VISIBLE
+                linear_description.visibility = View.VISIBLE
+            } else if (img_up_arrow.visibility == View.VISIBLE) {
+                img_down_arrow.visibility = View.VISIBLE
+                img_up_arrow.visibility = View.GONE
+                linear_description.visibility = View.GONE
+            }
+        }
+
 
 
 

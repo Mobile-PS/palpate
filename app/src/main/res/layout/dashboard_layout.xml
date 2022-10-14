@@ -215,8 +215,8 @@
                     </RelativeLayout>
 
 
+                    
                     <ImageView
-
                         android:layout_width="match_parent"
                         android:layout_height="180dp"
                         android:background="@drawable/frame1"></ImageView>

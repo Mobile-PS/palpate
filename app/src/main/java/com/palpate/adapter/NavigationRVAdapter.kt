@@ -62,24 +62,29 @@ class NavigationRVAdapter(private var items: ArrayList<NavigationItemModel>, pri
                 context.startActivity(intent)
             }
 
-            if(position == 3){
+            if(position == 4){
 
                 val intent = Intent(context, HomeNursingActivity::class.java)
                 context.startActivity(intent)
             }
 
-            if(position == 4){
+            if(position == 3){
 
                 val intent = Intent(context, PackageListActivity::class.java)
                 context.startActivity(intent)
             }
-
             if(position == 5){
+
+                val intent = Intent(context, OrganDonationActivity::class.java)
+                context.startActivity(intent)
+            }
+
+            if(position == 6){
 
                 val intent = Intent(context, HealthTipsActivity::class.java)
                 context.startActivity(intent)
             }
-            if(position == 6){
+            if(position == 7){
 
                 val intent = Intent(context, SeetingsActivity::class.java)
                 context.startActivity(intent)

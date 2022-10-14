@@ -71,7 +71,7 @@
                     android:padding="10dp"
                     android:textColor="@color/login1"
                     android:textFontWeight="400"
-                    android:textSize="@dimen/Text_Size_13" />
+                    android:textSize="@dimen/Text_size_15" />
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -107,13 +107,13 @@
                             android:textColor="@color/black"
                             android:textFontWeight="400"
                             android:textSize="@dimen/Text_size_16" />
+
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             >
                             <TextView
-                                android:id="@+id/member_details"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/redhat"
@@ -136,40 +136,16 @@
                                 android:layout_marginLeft="5dp"
                                 />
                             <TextView
-                                android:id="@+id/member_detailss2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/redhat"
                                 android:gravity="center_vertical"
-                                android:text="Male"
-                                android:textColor="@android:color/darker_gray"
-                                android:textFontWeight="400"
-                                android:textSize="@dimen/Text_Size_14" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/redhat"
-                                android:gravity="center_vertical"
-                                android:text="●"
-                                android:textColor="@android:color/darker_gray"
-                                android:textFontWeight="400"
-                                android:textSize="6sp"
-                                android:layout_marginRight="5dp"
-                                android:layout_marginLeft="5dp"
-                                />
-
-                            <TextView
-                                android:id="@+id/member_detailss1"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/redhat"
-                                android:gravity="center_vertical"
-                                android:text="Male, 50 years"
+                                android:text="50 years"
                                 android:textColor="@android:color/darker_gray"
                                 android:textFontWeight="400"
                                 android:textSize="@dimen/Text_Size_14" />
                         </LinearLayout>
+
 
 
                     </LinearLayout>
@@ -187,14 +163,44 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/redhat"
                         android:textAlignment="textStart"
+                        android:text="Address "
+                        android:padding="10dp"
+                        android:textColor="@color/login1"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/Text_Size_14" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/redhat"
+                        android:text="Shaheed Path, Vibhuti Khand Gomti Nagar, Lucknow - 226001"
+                        android:padding="10dp"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/login1"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/Text_Size_14" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/redhat"
+                        android:textAlignment="textStart"
                         android:text="Emergency Contact Number "
                         android:padding="10dp"
                         android:textColor="@color/login1"
                         android:textFontWeight="400"
-                        android:textSize="@dimen/Text_Size_13" />
+                        android:textSize="@dimen/Text_Size_14" />
                     <TextView
                         android:layout_width="0dp"
                         android:layout_weight="1"
+                        android:layout_gravity="end"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/redhat"
                         android:textAlignment="textEnd"
@@ -202,7 +208,7 @@
                         android:padding="10dp"
                         android:textColor="@color/login1"
                         android:textFontWeight="400"
-                        android:textSize="@dimen/Text_Size_13" />
+                        android:textSize="@dimen/Text_Size_14" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_marginTop="10dp"
@@ -220,7 +226,7 @@
                         android:padding="10dp"
                         android:textColor="@color/login1"
                         android:textFontWeight="400"
-                        android:textSize="@dimen/Text_Size_13" />
+                        android:textSize="@dimen/Text_Size_14" />
                     <TextView
                         android:layout_width="0dp"
                         android:layout_weight="1"
@@ -231,7 +237,7 @@
                         android:padding="10dp"
                         android:textColor="@color/login1"
                         android:textFontWeight="400"
-                        android:textSize="@dimen/Text_Size_13" />
+                        android:textSize="@dimen/Text_Size_14" />
                 </LinearLayout>
 
                 <ImageView
@@ -266,7 +272,7 @@
                         android:padding="10dp"
                         android:textColor="@color/login1"
                         android:textFontWeight="400"
-                        android:textSize="@dimen/Text_Size_13" />
+                        android:textSize="@dimen/Text_Size_14" />
                     <TextView
                         android:layout_width="0dp"
                         android:layout_weight="1"
@@ -277,7 +283,7 @@
                         android:padding="10dp"
                         android:textColor="@color/login1"
                         android:textFontWeight="400"
-                        android:textSize="@dimen/Text_Size_13" />
+                        android:textSize="@dimen/Text_Size_14" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_marginTop="10dp"
@@ -295,7 +301,7 @@
                         android:padding="10dp"
                         android:textColor="@color/login1"
                         android:textFontWeight="400"
-                        android:textSize="@dimen/Text_Size_13" />
+                        android:textSize="@dimen/Text_Size_14" />
                     <TextView
                         android:layout_width="0dp"
                         android:layout_weight="1"
@@ -306,7 +312,7 @@
                         android:padding="10dp"
                         android:textColor="@color/login1"
                         android:textFontWeight="400"
-                        android:textSize="@dimen/Text_Size_13" />
+                        android:textSize="@dimen/Text_Size_14" />
                 </LinearLayout>
 
                 <ImageView
@@ -341,7 +347,7 @@
                         android:padding="10dp"
                         android:textColor="@color/login1"
                         android:textFontWeight="400"
-                        android:textSize="@dimen/Text_Size_13" />
+                        android:textSize="@dimen/Text_Size_14" />
                     <TextView
                         android:layout_width="0dp"
                         android:layout_weight="1"
@@ -352,7 +358,7 @@
                         android:padding="10dp"
                         android:textColor="@color/login1"
                         android:textFontWeight="400"
-                        android:textSize="@dimen/Text_Size_13" />
+                        android:textSize="@dimen/Text_Size_14" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_marginTop="10dp"
@@ -370,7 +376,7 @@
                         android:padding="10dp"
                         android:textColor="@color/login1"
                         android:textFontWeight="400"
-                        android:textSize="@dimen/Text_Size_13" />
+                        android:textSize="@dimen/Text_Size_14" />
                     <TextView
                         android:layout_width="0dp"
                         android:layout_weight="1"
@@ -381,7 +387,91 @@
                         android:padding="10dp"
                         android:textColor="@color/login1"
                         android:textFontWeight="400"
-                        android:textSize="@dimen/Text_Size_13" />
+                        android:textSize="@dimen/Text_Size_14" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginVertical="10dp"
+                    android:background="@drawable/dot" />
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="Organ Donation "
+                        android:textColor="@color/black"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/Text_size_15" />
+
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/redhat"
+                            android:gravity="center_vertical"
+                            android:text="●"
+                            android:textColor="@color/login1"
+                            android:textFontWeight="400"
+                            android:textSize="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/redhat"
+                            android:gravity="center_vertical"
+                            android:text="Corina"
+                            android:textColor="@color/login1"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/Text_Size_14" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/redhat"
+                            android:gravity="center_vertical"
+                            android:text="●"
+                            android:textColor="@color/login1"
+                            android:textFontWeight="400"
+                            android:textSize="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/redhat"
+                            android:gravity="center_vertical"
+                            android:text="Liver"
+                            android:textColor="@color/login1"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/Text_Size_14" />
+                    </LinearLayout>
                 </LinearLayout>
 
                 <ImageView
@@ -390,78 +480,28 @@
                     android:layout_marginVertical="10dp"
                     android:background="@drawable/dot" />
 
-                <TextView
-                    android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/redhat_medium"
-                    android:text="Organ Donation "
-                    android:textColor="@color/black"
-                    android:textFontWeight="500"
-                    android:textSize="@dimen/Text_size_15" />
-
                 <LinearLayout
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
+                    android:orientation="vertical">
                     <TextView
-                        android:layout_gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/redhat"
-                        android:gravity="center_vertical"
-                        android:text="●"
-                        android:textColor="@color/login1"
-                        android:textFontWeight="400"
-                        android:textSize="10dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginLeft="5dp"
-                        />
-
-                    <TextView
+                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/redhat"
-                        android:gravity="center_vertical"
-                        android:text="Corina"
-                        android:textColor="@color/login1"
-                        android:textFontWeight="400"
-                        android:textSize="@dimen/Text_Size_14" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="Medical History "
+                        android:textColor="@color/black"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/Text_size_15" />
 
-                    <TextView
-                        android:layout_gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/redhat"
-                        android:gravity="center_vertical"
-                        android:text="●"
-                        android:textColor="@color/login1"
-                        android:textFontWeight="400"
-                        android:textSize="10dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginLeft="5dp"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/redhat"
-                        android:gravity="center_vertical"
-                        android:text="Liver"
-                        android:textColor="@color/login1"
-                        android:textFontWeight="400"
-                        android:textSize="@dimen/Text_Size_14" />
+                   <androidx.recyclerview.widget.RecyclerView
+                       android:layout_margin="10dp"
+                       android:id="@+id/medicalreport_rv"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
                 </LinearLayout>
+
+
 
             </LinearLayout>
         </ScrollView>

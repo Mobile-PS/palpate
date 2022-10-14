@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/linear_more"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/member_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/redhat_medium"
+                android:text="Home"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/Text_size_16" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/redhat"
+                    android:gravity="center_vertical"
+                    android:text="Harish Kumar"
+                    android:textColor="@color/login1"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/Text_Size_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/redhat"
+                    android:gravity="center_vertical"
+                    android:text="●"
+                    android:textColor="@color/login1"
+                    android:textFontWeight="400"
+                    android:textSize="6sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/redhat"
+                    android:gravity="center_vertical"
+                    android:text="9044900191"
+                    android:textColor="@color/login1"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/Text_Size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/redhat"
+                    android:gravity="center_vertical"
+                    android:text="Vibhuti Khand, Gomti Nagar, Lucknow"
+                    android:textColor="@color/material_grey_500"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/Text_Size_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/redhat"
+                    android:gravity="center_vertical"
+                    android:text="●"
+                    android:textColor="@color/material_grey_500"
+                    android:textFontWeight="400"
+                    android:textSize="6sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/redhat"
+                    android:gravity="center_vertical"
+                    android:text="226001"
+                    android:textColor="@color/material_grey_500"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/Text_Size_14" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/more_icon"
+                android:layout_width="5dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:src="@drawable/more_icon"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dot" />
+
+
+</LinearLayout>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.palpate">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -95,6 +94,10 @@
         <activity android:name=".QrCodeDetailsActivity"/>
         <activity android:name=".SettingHealthStatesActivity"/>
         <activity android:name=".SettingProfileActivity"/>
+        <activity android:name=".SettingAddressActivity"/>
+        <activity android:name=".VisitDetailsActivity"/>
+        <activity android:name=".OrganDonationActivity"/>
+        <activity android:name=".OrganDonationSuccessActivity"/>
 
     </application>
 

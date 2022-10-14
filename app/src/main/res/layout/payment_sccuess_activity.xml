@@ -69,14 +69,16 @@
             android:layout_margin="20dp"
             android:orientation="vertical">
 
+
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:padding="12dp"
-                android:src="@drawable/check_white"
-                android:background="@drawable/circular_bg5" />
+                android:src="@drawable/success_icon"
+
+                />
+
 
             <TextView
                 android:layout_width="wrap_content"

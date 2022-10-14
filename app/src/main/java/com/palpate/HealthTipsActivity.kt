@@ -19,7 +19,7 @@ import kotlinx.android.synthetic.main.health_tips_activity.*
 class HealthTipsActivity : AppCompatActivity() {
 
     private var itemsArtical = arrayListOf(
-        R.drawable.artical_1, R.drawable.artical_2
+        R.drawable.artical_1, R.drawable.artical_2, R.drawable.artical_1, R.drawable.artical_2
     )
 
     private var itemFilter = arrayListOf(

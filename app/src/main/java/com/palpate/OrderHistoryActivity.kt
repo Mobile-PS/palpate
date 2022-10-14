@@ -12,8 +12,8 @@ class OrderHistoryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.orderhistory_activity)
-        tabLayout.addTab(tabLayout.newTab().setText("Home Care Nursing"))
         tabLayout.addTab(tabLayout.newTab().setText("Preventive Health Checkup"))
+        tabLayout.addTab(tabLayout.newTab().setText("Home Care Nursing"))
         val adapter = HistoryTabAdapter(this, supportFragmentManager, tabLayout.tabCount)
         viewPager.adapter = adapter
         viewPager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabLayout))

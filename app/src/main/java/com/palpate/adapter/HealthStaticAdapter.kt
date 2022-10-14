@@ -13,7 +13,8 @@ import kotlinx.android.synthetic.main.item_health_stats.view.*
 
 class HealthStaticAdapter(
     private var items: ArrayList<HealthStateItemModel>,
-    private var currentPos: Int
+    private var currentPos: Int,
+    var status: Boolean
 ) : RecyclerView.Adapter<HealthStaticAdapter.NavigationItemViewHolder>() {
 
     private lateinit var context: Context
@@ -39,21 +40,22 @@ class HealthStaticAdapter(
 
         holder.itemView.stats_icon.setImageResource(items[position].icon)
 
-        holder.itemView.setOnClickListener {
+        if(status) {
+            holder.itemView.setOnClickListener {
 
-            if(position == 8){
-                val intent = Intent(context, VaccinationDetailsActivity::class.java)
-                context.startActivity(intent)
-            }
-            else {
+                if (position == 8) {
+                    val intent = Intent(context, VaccinationDetailsActivity::class.java)
+                    context.startActivity(intent)
+                } else {
 
                     val intent = Intent(context, AddWeightActivity::class.java)
-                    intent.putExtra("title",items[position].title)
+                    intent.putExtra("title", items[position].title)
                     context.startActivity(intent)
 
-            }
-           /* val intent = Intent(context, AddHealthStatsActivity::class.java)
+                }
+                /* val intent = Intent(context, AddHealthStatsActivity::class.java)
             context.startActivity(intent)*/
+            }
         }
 
     }

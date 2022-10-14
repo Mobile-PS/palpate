@@ -21,8 +21,9 @@ class DrawerActivity: AppCompatActivity() {
         NavigationItemModel(R.drawable.home1, "Home"),
         NavigationItemModel(R.drawable.health, "My Health Stats"),
         NavigationItemModel(R.drawable.history, "Order History"),
-        NavigationItemModel(R.drawable.home, "Home Care Nursing / Health Assistance"),
         NavigationItemModel(R.drawable.preven, "Preventive Health Checkup"),
+        NavigationItemModel(R.drawable.home, "Home Care Nursing / Health Assistance"),
+        NavigationItemModel(R.drawable.organ_icon,"Organ Donation" ),
         NavigationItemModel(R.drawable.article, "Health Tips"),
         NavigationItemModel(R.drawable.setting, "Settings"),
         NavigationItemModel(R.drawable.logout, "Log Out")

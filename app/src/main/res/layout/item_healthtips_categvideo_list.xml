@@ -51,14 +51,44 @@
                 android:textFontWeight="500"
                 android:textSize="@dimen/Text_size_16" />
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/redhat"
-                android:text="By Dr. Navneet Srivastava  ●  28 Sep 2021"
-                android:textColor="@android:color/darker_gray"
-                android:textSize="@dimen/Text_Size_12" />
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/redhat"
+                    android:gravity="center_vertical"
+                    android:text="By Dr. Navneet Srivastava"
+                    android:textColor="@android:color/darker_gray"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/Text_Size_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/redhat"
+                    android:gravity="center_vertical"
+                    android:text="●"
+                    android:textColor="@android:color/darker_gray"
+                    android:textFontWeight="400"
+                    android:textSize="6sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/redhat"
+                    android:gravity="center_vertical"
+                    android:text="28 Sep 2021"
+                    android:textColor="@android:color/darker_gray"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/Text_Size_14" />
+            </LinearLayout>
+
 
             <TextView
                 android:layout_marginTop="5dp"

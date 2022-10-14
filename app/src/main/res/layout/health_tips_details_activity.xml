@@ -99,7 +99,7 @@
                         android:fontFamily="@font/redhat"
                         android:text="Children's Health"
                         android:textFontWeight="400"
-                        android:textSize="@dimen/Text_Size_13" />
+                        android:textSize="@dimen/Text_Size_14" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -112,14 +112,43 @@
                         android:textFontWeight="500"
                         android:textSize="@dimen/Text_size_16" />
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:fontFamily="@font/redhat"
-                        android:text="By Dr. Navneet Srivastava  ●  28 Sep 2021"
-                        android:textColor="@android:color/darker_gray"
-                        android:textSize="@dimen/Text_Size_12" />
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/redhat"
+                            android:gravity="center_vertical"
+                            android:text="By Dr. Navneet Srivastava"
+                            android:textColor="@android:color/darker_gray"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/Text_Size_14" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/redhat"
+                            android:gravity="center_vertical"
+                            android:text="●"
+                            android:textColor="@android:color/darker_gray"
+                            android:textFontWeight="400"
+                            android:textSize="6sp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/redhat"
+                            android:gravity="center_vertical"
+                            android:text="28 Sep 2021"
+                            android:textColor="@android:color/darker_gray"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/Text_Size_14" />
+                    </LinearLayout>
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -136,7 +165,7 @@
                         android:text="Long-lasting healthy changes"
                         android:textColor="@color/login1"
                         android:textFontWeight="500"
-                        android:textSize="@dimen/Text_Size_13" />
+                        android:textSize="@dimen/Text_size_15" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -144,23 +173,20 @@
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/redhat"
                         android:maxLines="6"
-                        android:text="Long-lasting healthy changes
-Abundant research shows that healthy lifestyle factors protect people against serious health problems like diabetes, high blood pressure, heart disease, stroke, cancer, and more. Even small steps toward a healthier lifestyle can make a big difference in our lives––here's practical advice for making healthy changes stick.Long-lasting healthy changes
-Abundant research shows that healthy lifestyle factors protect people against serious health problems like diabetes, high blood pressure, heart disease, stroke, cancer, and more. Even small steps toward a healthier lifestyle can make a big difference in our lives––here's practical advice for making healthy changes stick.Long-lasting healthy changes
-Abundant research shows that healthy lifestyle factors protect people against serious health problems like diabetes, high blood pressure, heart disease, stroke, cancer, and more. Even small steps toward a healthier lifestyle can make a big difference in our lives––here's practical advice for making healthy changes stick."
-                        android:textColor="@android:color/darker_gray"
-                        android:textSize="@dimen/Text_Size_12" />
+                        android:textFontWeight="400"
+                        android:text="@string/artical_desc"                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/Text_Size_14" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginTop="10dp"
                         android:fontFamily="@font/redhat_medium"
                         android:maxLines="1"
                         android:text="Long-lasting healthy changes"
                         android:textColor="@color/login1"
                         android:textFontWeight="500"
-                        android:textSize="@dimen/Text_Size_13" />
+                        android:textSize="@dimen/Text_size_15" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -168,23 +194,19 @@ Abundant research shows that healthy lifestyle factors protect people against se
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/redhat"
                         android:maxLines="6"
-                        android:text="Long-lasting healthy changes
-Abundant research shows that healthy lifestyle factors protect people against serious health problems like diabetes, high blood pressure, heart disease, stroke, cancer, and more. Even small steps toward a healthier lifestyle can make a big difference in our lives––here's practical advice for making healthy changes stick.Long-lasting healthy changes
-Abundant research shows that healthy lifestyle factors protect people against serious health problems like diabetes, high blood pressure, heart disease, stroke, cancer, and more. Even small steps toward a healthier lifestyle can make a big difference in our lives––here's practical advice for making healthy changes stick.Long-lasting healthy changes
-Abundant research shows that healthy lifestyle factors protect people against serious health problems like diabetes, high blood pressure, heart disease, stroke, cancer, and more. Even small steps toward a healthier lifestyle can make a big difference in our lives––here's practical advice for making healthy changes stick."
-                        android:textColor="@android:color/darker_gray"
-                        android:textSize="@dimen/Text_Size_12" />
-
+                        android:textFontWeight="400"
+                        android:text="@string/artical_desc"                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/Text_Size_14" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginTop="10dp"
                         android:fontFamily="@font/redhat_medium"
                         android:maxLines="1"
                         android:text="Long-lasting healthy changes"
                         android:textColor="@color/login1"
                         android:textFontWeight="500"
-                        android:textSize="@dimen/Text_Size_13" />
+                        android:textSize="@dimen/Text_size_15" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -192,13 +214,9 @@ Abundant research shows that healthy lifestyle factors protect people against se
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/redhat"
                         android:maxLines="6"
-                        android:text="Long-lasting healthy changes
-Abundant research shows that healthy lifestyle factors protect people against serious health problems like diabetes, high blood pressure, heart disease, stroke, cancer, and more. Even small steps toward a healthier lifestyle can make a big difference in our lives––here's practical advice for making healthy changes stick.Long-lasting healthy changes
-Abundant research shows that healthy lifestyle factors protect people against serious health problems like diabetes, high blood pressure, heart disease, stroke, cancer, and more. Even small steps toward a healthier lifestyle can make a big difference in our lives––here's practical advice for making healthy changes stick.Long-lasting healthy changes
-Abundant research shows that healthy lifestyle factors protect people against serious health problems like diabetes, high blood pressure, heart disease, stroke, cancer, and more. Even small steps toward a healthier lifestyle can make a big difference in our lives––here's practical advice for making healthy changes stick."
-                        android:textColor="@android:color/darker_gray"
-                        android:textSize="@dimen/Text_Size_12" />
-
+                        android:textFontWeight="400"
+                        android:text="@string/artical_desc"                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/Text_Size_14" />
                 </LinearLayout>
 
             </LinearLayout>

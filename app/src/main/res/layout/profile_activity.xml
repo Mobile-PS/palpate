@@ -108,7 +108,7 @@
                         android:layout_marginEnd="10dp"
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/circular_bg2"
-                        android:padding="10dp"
+                        android:padding="12dp"
                         android:src="@drawable/edit_blue_icon" />
 
                         <ImageView
@@ -133,6 +133,7 @@
                 </RelativeLayout>
 
                 <LinearLayout
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
@@ -147,7 +148,7 @@
                         android:text="Personal Details"
                         android:textColor="@color/login1"
                         android:textFontWeight="500"
-                        android:textSize="@dimen/Header_Text_size" />
+                        android:textSize="@dimen/Text_Size_14" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -165,7 +166,7 @@
                             android:text="Member ID"
                             android:textColor="@color/login1"
                             android:textFontWeight="500"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <EditText
                             android:layout_width="match_parent"
@@ -175,11 +176,13 @@
                             android:fontFamily="@font/redhat"
                             android:hint="234567"
                             android:inputType="text"
+                            android:paddingRight="10dp"
+                            android:drawableRight="@drawable/copy"
                             android:maxLines="1"
                             android:paddingLeft="10dp"
                             android:singleLine="true"
                             android:textFontWeight="400"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -189,7 +192,7 @@
                             android:text="Full Name"
                             android:textColor="@color/login1"
                             android:textFontWeight="500"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <EditText
                             android:layout_width="match_parent"
@@ -203,7 +206,7 @@
                             android:paddingLeft="10dp"
                             android:singleLine="true"
                             android:textFontWeight="400"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -213,7 +216,7 @@
                             android:text="Mobile Number"
                             android:textColor="@color/login1"
                             android:textFontWeight="500"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <EditText
                             android:layout_width="match_parent"
@@ -223,11 +226,13 @@
                             android:fontFamily="@font/redhat"
                             android:hint="Enter Mobile Number"
                             android:inputType="text"
+                            android:paddingRight="10dp"
+                            android:drawableRight="@drawable/mobic1"
                             android:maxLines="1"
                             android:paddingLeft="10dp"
                             android:singleLine="true"
                             android:textFontWeight="400"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -237,7 +242,7 @@
                             android:text="Emergency Mobile Number"
                             android:textColor="@color/login1"
                             android:textFontWeight="500"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <EditText
                             android:layout_width="match_parent"
@@ -247,11 +252,13 @@
                             android:fontFamily="@font/redhat"
                             android:hint="Enter Emergency Mobile Number"
                             android:inputType="text"
+                            android:paddingRight="10dp"
+                            android:drawableRight="@drawable/mobic1"
                             android:maxLines="1"
                             android:paddingLeft="10dp"
                             android:singleLine="true"
                             android:textFontWeight="400"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -261,7 +268,7 @@
                             android:text="Date of Birth"
                             android:textColor="@color/login1"
                             android:textFontWeight="500"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <EditText
                             android:layout_width="match_parent"
@@ -275,7 +282,7 @@
                             android:paddingLeft="10dp"
                             android:singleLine="true"
                             android:textFontWeight="400"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -285,7 +292,7 @@
                             android:text="Email ID"
                             android:textColor="@color/login1"
                             android:textFontWeight="500"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <EditText
                             android:layout_width="match_parent"
@@ -299,7 +306,7 @@
                             android:paddingLeft="10dp"
                             android:singleLine="true"
                             android:textFontWeight="400"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -309,7 +316,7 @@
                             android:text="Blood Group"
                             android:textColor="@color/login1"
                             android:textFontWeight="500"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <EditText
                             android:layout_width="match_parent"
@@ -323,7 +330,7 @@
                             android:paddingLeft="10dp"
                             android:singleLine="true"
                             android:textFontWeight="400"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                     </LinearLayout>
 
@@ -353,7 +360,7 @@
                             android:text="@string/title_house"
                             android:textColor="@color/login1"
                             android:textFontWeight="500"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <EditText
                             android:layout_width="match_parent"
@@ -367,7 +374,7 @@
                             android:paddingLeft="10dp"
                             android:singleLine="true"
                             android:textFontWeight="400"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -377,7 +384,7 @@
                             android:text="@string/title_location"
                             android:textColor="@color/login1"
                             android:textFontWeight="500"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <EditText
                             android:layout_width="match_parent"
@@ -391,7 +398,7 @@
                             android:paddingLeft="10dp"
                             android:singleLine="true"
                             android:textFontWeight="400"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
 
                         <LinearLayout
@@ -416,7 +423,7 @@
                                     android:text="@string/title_city"
                                     android:textColor="@color/login1"
                                     android:textFontWeight="500"
-                                    android:textSize="@dimen/Text_size_16" />
+                                    android:textSize="@dimen/Text_Size_14" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -434,7 +441,7 @@
                                         android:paddingRight="10dp"
                                         android:singleLine="true"
                                         android:textFontWeight="400"
-                                        android:textSize="@dimen/Text_size_16" />
+                                        android:textSize="@dimen/Text_Size_14" />
                                 </LinearLayout>
 
 
@@ -455,7 +462,7 @@
                                     android:text="@string/title_state"
                                     android:textColor="@color/login1"
                                     android:textFontWeight="500"
-                                    android:textSize="@dimen/Text_size_16" />
+                                    android:textSize="@dimen/Text_Size_14" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -473,7 +480,7 @@
                                         android:paddingRight="10dp"
                                         android:singleLine="true"
                                         android:textFontWeight="400"
-                                        android:textSize="@dimen/Text_size_16" />
+                                        android:textSize="@dimen/Text_Size_14" />
                                 </LinearLayout>
 
 
@@ -489,7 +496,7 @@
                             android:text="@string/title_addresstype"
                             android:textColor="@color/login1"
                             android:textFontWeight="500"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -564,7 +571,7 @@
                             android:text="Company Name"
                             android:textColor="@color/login1"
                             android:textFontWeight="500"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <EditText
                             android:layout_width="match_parent"
@@ -578,7 +585,7 @@
                             android:paddingLeft="10dp"
                             android:singleLine="true"
                             android:textFontWeight="400"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -588,7 +595,7 @@
                             android:text="Policy Number"
                             android:textColor="@color/login1"
                             android:textFontWeight="500"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <EditText
                             android:layout_width="match_parent"
@@ -602,7 +609,7 @@
                             android:paddingLeft="10dp"
                             android:singleLine="true"
                             android:textFontWeight="400"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                     </LinearLayout>
 
@@ -632,7 +639,7 @@
                             android:text="Company Name"
                             android:textColor="@color/login1"
                             android:textFontWeight="500"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <EditText
                             android:layout_width="match_parent"
@@ -646,7 +653,7 @@
                             android:paddingLeft="10dp"
                             android:singleLine="true"
                             android:textFontWeight="400"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -656,7 +663,7 @@
                             android:text="Policy Number"
                             android:textColor="@color/login1"
                             android:textFontWeight="500"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                         <EditText
                             android:layout_width="match_parent"
@@ -670,7 +677,7 @@
                             android:paddingLeft="10dp"
                             android:singleLine="true"
                             android:textFontWeight="400"
-                            android:textSize="@dimen/Text_size_16" />
+                            android:textSize="@dimen/Text_Size_14" />
 
                     </LinearLayout>
 

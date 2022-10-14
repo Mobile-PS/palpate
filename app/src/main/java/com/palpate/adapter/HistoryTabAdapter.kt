@@ -15,10 +15,11 @@ internal class HistoryTabAdapter(
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0 -> {
-                NursingOrderHistoryFragment()
+                HealthPackageHistoryFragment()
+
             }
             1 -> {
-                HealthPackageHistoryFragment()
+                NursingOrderHistoryFragment()
             }
             else -> getItem(position)
         }

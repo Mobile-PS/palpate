@@ -31,6 +31,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    namespace 'com.palpate'
 }
 
 dependencies {
@@ -51,6 +52,8 @@ dependencies {
     implementation 'com.google.android.exoplayer:exoplayer-core:2.7.3'
     implementation 'com.google.android.exoplayer:exoplayer-dash:2.7.3'
     implementation 'com.google.android.exoplayer:exoplayer-ui:2.7.3'
+    implementation 'com.github.Gruzer:simple-gauge-android:0.3.1'
+    implementation 'com.github.shuhart:stepview:1.5.1'
 
 
 }

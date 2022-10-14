@@ -28,11 +28,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Starter Package"
-                android:textColor="@color/black"
-                android:fontFamily="@font/redhat"
-                android:textFontWeight="400"
-                android:textSize="@dimen/Text_Size_14" />
+                android:text="Doctor Visit Package"
+                android:textColor="@color/dashcolor1"
+                android:fontFamily="@font/redhat_medium"
+                android:textFontWeight="500"
+                android:textSize="@dimen/Text_size_16" />
             <TextView
                 android:layout_marginTop="5dp"
                 android:layout_width="wrap_content"
@@ -52,16 +52,6 @@
         android:layout_height="2dp"
         android:background="@drawable/dot"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Doctor Visit Package"
-        android:textColor="@color/dashcolor1"
-        android:fontFamily="@font/redhat_medium"
-        android:textFontWeight="500"
-        android:textSize="@dimen/Text_size_16" />
-
-
     <RelativeLayout
         android:layout_marginTop="5dp"
         android:layout_width="match_parent"
@@ -71,7 +61,7 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:gravity="bottom"
+            android:gravity="center_vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -124,7 +114,7 @@
             android:background="@drawable/button_bg6"
             android:fontFamily="@font/redhat_medium"
             android:padding="5dp"
-            android:text="Subscribe"
+            android:text="Book Now"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textFontWeight="400"

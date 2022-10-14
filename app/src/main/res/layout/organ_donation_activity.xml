@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_contiune"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linear_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/back" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="Organ Donation"
+                        android:textColor="@color/login1"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/Header_Text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/quest"></ImageView>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@drawable/shadow" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <com.shuhart.stepview.StepView
+                        android:id="@+id/step_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:sv_animationDuration="1"
+                        app:sv_animationType="Line"
+                        app:sv_doneCircleColor="@color/itemreportbg"
+                        app:sv_doneCircleRadius="20dp"
+                        app:sv_doneStepLineColor="@color/itemreportbg"
+                        app:sv_doneStepMarkColor="@android:color/white"
+                        app:sv_doneTextColor="@android:color/white"
+                        app:sv_nextStepCircleColor="@color/txtxolor5"
+                        app:sv_nextStepCircleEnabled="true"
+                        app:sv_nextStepLineColor="@color/txtxolor5"
+                        app:sv_nextTextColor="@color/black"
+                        app:sv_selectedCircleColor="@color/itemreportbg"
+                        app:sv_selectedCircleRadius="12dp"
+                        app:sv_selectedStepNumberColor="@color/white"
+                        app:sv_selectedTextColor="@color/itemreportbg"
+                        app:sv_stepLineWidth="1dp"
+                        app:sv_stepNumberTextSize="12sp"
+                        app:sv_stepPadding="4dp"
+                        app:sv_stepViewStyle="@style/StepView"
+                        app:sv_stepsNumber="3"
+                        app:sv_textSize="12sp" />
+
+                    <LinearLayout
+
+                        android:id="@+id/linear_personal_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/redhat_medium"
+                            android:text="Personal Details"
+                            android:textColor="@color/login1"
+                            android:textFontWeight="500"
+                            android:textSize="@dimen/Text_Size_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="20dp"
+                            android:background="@drawable/layout_bg"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/redhat_medium"
+                                android:text="Full Name"
+                                android:textColor="@color/login1"
+                                android:textFontWeight="500"
+                                android:textSize="@dimen/Text_Size_14" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/editxt_bg"
+                                android:fontFamily="@font/redhat"
+                                android:hint="Enter Full Name"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:paddingLeft="10dp"
+                                android:singleLine="true"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_Size_14" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/redhat_medium"
+                                android:text="Mobile Number"
+                                android:textColor="@color/login1"
+                                android:textFontWeight="500"
+                                android:textSize="@dimen/Text_Size_14" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/editxt_bg"
+                                android:drawableRight="@drawable/mobic1"
+                                android:fontFamily="@font/redhat"
+                                android:hint="Enter Mobile Number"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_Size_14" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/redhat_medium"
+                                android:text="Gender"
+                                android:textColor="@color/login1"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_Size_14" />
+
+                            <RadioGroup
+                                android:id="@+id/radio_group"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/view_below"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radio1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:checked="true"
+                                    android:fontFamily="@font/redhat"
+                                    android:text="Male"
+                                    android:textColor="@color/login1"
+                                    android:textFontWeight="400"
+                                    android:textSize="@dimen/Text_Size_14" />
+
+
+                                <RadioButton
+                                    android:id="@+id/radio2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:checked="true"
+                                    android:fontFamily="@font/redhat"
+                                    android:text="Female"
+                                    android:textColor="@color/login1"
+                                    android:textFontWeight="400"
+                                    android:textSize="@dimen/Text_Size_14" />
+
+
+                                <RadioButton
+                                    android:id="@+id/radio4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:checked="true"
+                                    android:fontFamily="@font/redhat"
+                                    android:text="Other"
+                                    android:textColor="@color/login1"
+                                    android:textFontWeight="400"
+                                    android:textSize="@dimen/Text_Size_14" />
+                            </RadioGroup>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/redhat_medium"
+                                android:text="Date of Birth"
+                                android:textColor="@color/login1"
+                                android:textFontWeight="500"
+                                android:textSize="@dimen/Text_Size_14" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/editxt_bg"
+                                android:fontFamily="@font/redhat"
+                                android:hint="DD/MM/YYYY"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:paddingLeft="10dp"
+                                android:singleLine="true"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_Size_14" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/redhat_medium"
+                                android:text="Email ID"
+                                android:textColor="@color/login1"
+                                android:textFontWeight="500"
+                                android:textSize="@dimen/Text_Size_14" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/editxt_bg"
+                                android:fontFamily="@font/redhat"
+                                android:hint="Email ID"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:paddingLeft="10dp"
+                                android:singleLine="true"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_Size_14" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/redhat_medium"
+                                android:text="Blood Group"
+                                android:textColor="@color/login1"
+                                android:textFontWeight="500"
+                                android:textSize="@dimen/Text_Size_14" />
+
+                            <EditText
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/editxt_bg"
+                                android:fontFamily="@font/redhat"
+                                android:hint="Enter Blood Group"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:paddingLeft="10dp"
+                                android:singleLine="true"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_Size_14" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/editxt_bg">
+
+                                <Spinner
+                                    android:id="@+id/spinner_bloodgrp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:entries="@array/city"
+                                    android:fontFamily="@font/redhat"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:singleLine="true"
+                                    android:textFontWeight="400"
+                                    android:textSize="@dimen/Text_size_16" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_address_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/redhat_medium"
+                            android:text="Address Details"
+                            android:textColor="@color/login1"
+                            android:textFontWeight="500"
+                            android:textSize="@dimen/Header_Text_size" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="20dp"
+                            android:background="@drawable/layout_bg"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/redhat_medium"
+                                android:text="@string/title_house"
+                                android:textColor="@color/login1"
+                                android:textFontWeight="500"
+                                android:textSize="@dimen/Text_Size_14" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/editxt_bg"
+                                android:fontFamily="@font/redhat"
+                                android:hint="Enter House Number &amp; Building"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:paddingLeft="10dp"
+                                android:singleLine="true"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_Size_14" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/redhat_medium"
+                                android:text="@string/title_location"
+                                android:textColor="@color/login1"
+                                android:textFontWeight="500"
+                                android:textSize="@dimen/Text_Size_14" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/editxt_bg"
+                                android:fontFamily="@font/redhat"
+                                android:hint="Location / Area"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:paddingLeft="10dp"
+                                android:singleLine="true"
+                                android:textFontWeight="400"
+                                android:textSize="@dimen/Text_Size_14" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="20dp"
+                                        android:fontFamily="@font/redhat_medium"
+                                        android:text="@string/title_city"
+                                        android:textColor="@color/login1"
+                                        android:textFontWeight="500"
+                                        android:textSize="@dimen/Text_Size_14" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/editxt_bg">
+
+                                        <Spinner
+                                            android:id="@+id/spinner_city"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:entries="@array/city"
+                                            android:fontFamily="@font/redhat"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:singleLine="true"
+                                            android:textFontWeight="400"
+                                            android:textSize="@dimen/Text_Size_14" />
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="20dp"
+                                        android:fontFamily="@font/redhat_medium"
+                                        android:text="@string/title_state"
+                                        android:textColor="@color/login1"
+                                        android:textFontWeight="500"
+                                        android:textSize="@dimen/Text_Size_14" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/editxt_bg">
+
+                                        <Spinner
+                                            android:id="@+id/spinner_state"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:entries="@array/state"
+                                            android:fontFamily="@font/redhat"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:singleLine="true"
+                                            android:textFontWeight="400"
+                                            android:textSize="@dimen/Text_Size_14" />
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                  android:visibility="gone"
+                    android:id="@+id/linear_organ_details"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/redhat_medium"
+                        android:text="Organs Details"
+                        android:textColor="@color/login1"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/Header_Text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/layout_bg">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/organ_rv"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+                    </LinearLayout>
+
+
+
+                    <CheckBox
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textFontWeight="400"
+                        android:textColor="@color/material_grey_500"
+                        android:textSize="@dimen/Text_Size_14"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp"
+                        android:text="I declare that I am a citizen of India and above 18 years of age. "/>
+
+                    <CheckBox
+                        android:id="@+id/checkbox_ID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/tnc"
+                        android:fontFamily="@font/redhat"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/Text_Size_14"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp" />
+
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_contiune"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/redhat_medium"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textFontWeight="500"
+            android:textSize="@dimen/Text_size_16" />
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

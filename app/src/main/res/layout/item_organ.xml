@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <CheckBox
+        android:id="@+id/chck_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhat"
+        android:textFontWeight="400"
+        android:textColor="@color/txtcolor1"
+        android:textSize="@dimen/Text_Size_14"
+        android:text=" All Organs"/>
+
+
+</LinearLayout>

@@ -53,7 +53,7 @@ class SettingsAdapter(
             if (position==2)
             {
                 GlobalStuff.mainNavState = 0
-                val intent = Intent(context, AddressListActivity::class.java)
+                val intent = Intent(context, SettingAddressActivity::class.java)
                 context.startActivity(intent)
             }
         }

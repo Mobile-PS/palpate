@@ -17,8 +17,11 @@ import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.formatter.ValueFormatter
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
 import com.google.android.material.snackbar.Snackbar
+import com.palpate.adapter.BSCategButtonAdapter
 import com.palpate.adapter.WeightItemAdapter
 import com.palpate.adapter.WeightItemButtonAdapter
+import com.palpate.model.BSCategItemModel
+import com.palpate.model.BloodSugerItemModel
 import com.palpate.model.WeigthItemModel
 import kotlinx.android.synthetic.main.addweight_activity.*
 
@@ -64,9 +67,35 @@ class AddWeightActivity : AppCompatActivity() {
 
     private var items2 = arrayListOf("1 Week", "1 Month", "6 Months", "1 Year", "Maximum");
 
+    private var itemsBSCat = arrayListOf(
+        BSCategItemModel(
+            true, "Fasting",
+        ),
+//        BSCategItemModel(
+//            false, "Pre-meal",
+//        ),
+        BSCategItemModel(
+            false, "Post-meal",
+        ),
+
+//        BSCategItemModel(
+//            R.drawable.night_icon, "Before Sleep",
+//        ),
+
+        BSCategItemModel(
+            false, "Random",
+        ),
+
+        BSCategItemModel(
+            false, "HbA1c",
+        ),
+
+        )
+
     private lateinit var adapter: WeightItemAdapter
 
     private lateinit var adapter2: WeightItemButtonAdapter
+    private lateinit var adapter3: BSCategButtonAdapter
     var title = ""
     var swtichValue = false;
 
@@ -96,6 +125,16 @@ class AddWeightActivity : AppCompatActivity() {
         weightItembutton_rv.setHasFixedSize(true)
         adapter2 = WeightItemButtonAdapter(items2, 0)
         weightItembutton_rv.adapter = adapter2
+
+        if (title == "Blood Sugar") {
+            bscategory_rv.visibility=View.VISIBLE
+            bscategory_rv.layoutManager =
+                LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+            bscategory_rv.setHasFixedSize(true)
+            adapter3 = BSCategButtonAdapter(itemsBSCat, 0)
+            bscategory_rv.adapter = adapter3
+
+        }
 
 
 

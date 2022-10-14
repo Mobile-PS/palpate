@@ -8,10 +8,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.palpate.AddHealthStatsActivity
-import com.palpate.AddMedicalHistoryActivity
 import com.palpate.R
 import com.palpate.adapter.HealthStaticAdapter
-import com.palpate.adapter.NavigationRVAdapter
 import com.palpate.model.HealthStateItemModel
 import kotlinx.android.synthetic.main.healthstats_fragment.*
 
@@ -63,7 +61,6 @@ class HealthStatFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.healthstats_fragment, container, false)
-
         return view;
     }
 
@@ -71,7 +68,7 @@ class HealthStatFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         healthstat_rv.layoutManager = LinearLayoutManager(context)
         healthstat_rv.setHasFixedSize(true)
-        adapter = HealthStaticAdapter(items, 0)
+        adapter = HealthStaticAdapter(items, 0, true)
         healthstat_rv.adapter = adapter
 
         btn_add_health_stat.setOnClickListener {

@@ -277,7 +277,7 @@ cashback of ₹100"
                                 android:layout_alignParentStart="true"
                                 android:layout_centerVertical="true"
                                 android:fontFamily="@font/redhat"
-                                android:text="Palpate Points 8 "
+                                android:text="Palpate Points "
                                 android:textColor="@color/txtcolor1"
                                 android:textFontWeight="400"
                                 android:textSize="@dimen/Text_Size_14" />
