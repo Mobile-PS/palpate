@@ -59,6 +59,10 @@ class DashboardActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        linear_healthsub.setOnClickListener {
+            val intent = Intent(this, OrderHistoryActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }

@@ -1208,7 +1208,7 @@
                     android:textSize="@dimen/Text_size_16" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_save_confirm"
+                    android:id="@+id/btn_help"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"

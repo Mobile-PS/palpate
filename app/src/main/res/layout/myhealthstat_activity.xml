@@ -111,7 +111,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/redhat"
-                    android:text="My Child"
+                    android:text="Child"
                     android:textColor="@color/txtcolor2"
                     android:textFontWeight="400"
                     android:textSize="@dimen/Text_size_16" />
@@ -134,7 +134,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/redhat"
-                    android:text="My Parents / Someone Else"
+                    android:text="Spouse/ Parents / Others"
                     android:textColor="@color/txtcolor2"
                     android:textFontWeight="400"
                     android:textSize="@dimen/Text_size_16" />

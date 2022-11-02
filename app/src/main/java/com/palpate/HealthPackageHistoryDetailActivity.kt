@@ -4,8 +4,13 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.palpate.adapter.HelpAdapter
+import com.palpate.model.CategoryItemModel
 import com.palpate.model.OrderStatus
 import com.palpate.model.TimeLineModel
 import com.palpate.timeline.ExampleTimeLineAdapter
@@ -17,6 +22,25 @@ class HealthPackageHistoryDetailActivity : AppCompatActivity() {
     private lateinit var mAdapter: ExampleTimeLineAdapter
     private val mDataList = ArrayList<TimeLineModel>()
     private lateinit var mLayoutManager: LinearLayoutManager
+
+    private var listCategoryItemModel = arrayListOf<CategoryItemModel>(
+        CategoryItemModel(
+            R.drawable.call_us,
+            "Call Us"
+        ),
+        CategoryItemModel(
+            R.drawable.callback_icon,
+            "Call Back Request"
+        ),
+        CategoryItemModel(
+            R.drawable.whatsapp_icon,
+            "Whats App"
+        ), CategoryItemModel(
+            R.drawable.email_icon,
+            "Email Us"
+        )
+    )
+    lateinit var adapter: HelpAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,8 +71,27 @@ class HealthPackageHistoryDetailActivity : AppCompatActivity() {
             }
         }
 
+        btn_help.setOnClickListener {
+            openBottomHelp()
+        }
 
 
+    }
+
+    private fun openBottomHelp() {
+        val dialog =
+            this?.let { it1 -> BottomSheetDialog(it1, R.style.MyBottomSheetDialogTheme) }
+        val behavior = dialog?.behavior
+        behavior?.state = BottomSheetBehavior.STATE_EXPANDED
+        val view = layoutInflater.inflate(R.layout.helper_bottom_sheet, null)
+        val recyclePlan = view.findViewById<RecyclerView>(R.id.help_rv)
+        recyclePlan.layoutManager = GridLayoutManager(this, 3)
+        recyclePlan.setHasFixedSize(true)
+        adapter = HelpAdapter(listCategoryItemModel, 0)
+        recyclePlan.adapter = adapter
+        dialog?.setCancelable(true)
+        dialog?.setContentView(view)
+        dialog?.show()
     }
 
     private fun setDataListItems() {
