@@ -23,6 +23,7 @@ class DrawerActivity: AppCompatActivity() {
         NavigationItemModel(R.drawable.history, "Order History"),
         NavigationItemModel(R.drawable.preven, "Preventive Health Checkup"),
         NavigationItemModel(R.drawable.home, "Home Care Nursing / Health Assistance"),
+        NavigationItemModel(R.drawable.srch_doctor,"Search Hospitals"),
         NavigationItemModel(R.drawable.organ_icon,"Organ Donation" ),
         NavigationItemModel(R.drawable.article, "Health Tips"),
         NavigationItemModel(R.drawable.setting, "Settings"),

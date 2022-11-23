@@ -27,6 +27,7 @@
         android:text="Catagories "
         android:layout_marginTop="10dp"
         android:textColor="@color/login1"
+        android:textAlignment="center"
         android:textFontWeight="500"
         android:textSize="@dimen/Text_Size_14" />
 

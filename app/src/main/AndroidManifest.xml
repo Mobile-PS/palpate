@@ -99,6 +99,10 @@
         <activity android:name=".VisitDetailsActivity"/>
         <activity android:name=".OrganDonationActivity"/>
         <activity android:name=".OrganDonationSuccessActivity"/>
+        <activity android:name=".SrchHospitalActivity"/>
+        <activity android:name=".HospitalListActivity"/>
+        <activity android:name=".HospitalDetailsActivity"/>
+        <activity android:name=".DoctorListActivity"/>
 
     </application>
 

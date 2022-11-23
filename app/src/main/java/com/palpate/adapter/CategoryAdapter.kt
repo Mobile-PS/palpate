@@ -6,15 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.palpate.NursingListActivity
-import com.palpate.R
+import com.palpate.*
 import com.palpate.model.CategoryItemModel
 import kotlinx.android.synthetic.main.item_category.view.*
 
 
 class CategoryAdapter(
     private var items: ArrayList<CategoryItemModel>,
-    private var currentPos: Int=0
+    private var currentPos: Int = 0
 ) : RecyclerView.Adapter<CategoryAdapter.NavigationItemViewHolder>() {
 
     private lateinit var context: Context
@@ -37,10 +36,19 @@ class CategoryAdapter(
         holder.itemView.txt_category.text = items[position].title
         holder.itemView.img_category.setBackgroundResource(items[position].icon)
         holder.itemView.setOnClickListener {
-            val intent = Intent(context, NursingListActivity::class.java)
-            context.startActivity(intent)
+            if (currentPos == 0) {
+                val intent = Intent(context, NursingListActivity::class.java)
+                context.startActivity(intent)
+            }
+            if (currentPos == 1) {
+                val intent = Intent(context, HospitalListActivity::class.java)
+                context.startActivity(intent)
+            }
+            if (currentPos == 2) {
+                val intent = Intent(context, DoctorListActivity::class.java)
+                context.startActivity(intent)
+            }
         }
-
 
 
     }
